@@ -129,11 +129,11 @@
 
 html:has(body[data-page="home"]) {
   scroll-snap-type: y proximity;
-  scroll-padding-top: 60px;
 }
 
 body[data-page="home"] #main > section {
   scroll-snap-align: start;
+  scroll-margin-top: 0;
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;

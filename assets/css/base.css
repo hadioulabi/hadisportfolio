@@ -8,7 +8,7 @@ html {
 
 /* Sticky header offset for anchor links */
 section[id] {
-  scroll-margin-top: 72px;
+  scroll-margin-top: 0;
 }
 
 body {
