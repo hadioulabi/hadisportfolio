@@ -1,0 +1,59 @@
+<svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+  <rect width="760" height="320" fill="#f6f8fb"/>
+
+  <!-- Title -->
+  <text x="380" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em" text-transform="uppercase">KI-GESTÜTZTE TOOLCHAIN</text>
+
+  <!-- Row 1: Auslöser -->
+  <text x="380" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#58677a" letter-spacing="0.04em">OPERATIVE REIBUNGSPUNKTE</text>
+
+  <!-- Three input boxes -->
+  <!-- Box 1 -->
+  <rect x="40" y="84" width="180" height="56" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"/>
+  <text x="130" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Dokumente</text>
+  <text x="130" y="124" text-anchor="middle" font-size="11" fill="#58677a">manuell kopiert &amp; angepasst</text>
+
+  <!-- Box 2 -->
+  <rect x="290" y="84" width="180" height="56" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"/>
+  <text x="380" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Social Media</text>
+  <text x="380" y="124" text-anchor="middle" font-size="11" fill="#58677a">uneinheitliche Gestaltung</text>
+
+  <!-- Box 3 -->
+  <rect x="540" y="84" width="180" height="56" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"/>
+  <text x="630" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">ABD / IAAP</text>
+  <text x="630" y="124" text-anchor="middle" font-size="11" fill="#58677a">unübersichtliche Eingabe</text>
+
+  <!-- Arrows down -->
+  <line x1="130" y1="140" x2="130" y2="168" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="380" y1="140" x2="380" y2="168" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="630" y1="140" x2="630" y2="168" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Central bar: WebApps -->
+  <rect x="40" y="172" width="680" height="52" rx="6" fill="#edf2fa" stroke="#1d4fa0" stroke-width="1.5"/>
+  <text x="380" y="193" text-anchor="middle" font-size="11" font-weight="800" fill="#1d4fa0" letter-spacing="0.04em">INTERNE WEBAPPS</text>
+  <text x="380" y="212" text-anchor="middle" font-size="11" fill="#0c1e48">HTML · CSS · JavaScript · Python · KI-gestützte Entwicklung</text>
+
+  <!-- Arrows down -->
+  <line x1="130" y1="224" x2="130" y2="252" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="380" y1="224" x2="380" y2="252" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="630" y1="224" x2="630" y2="252" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Output boxes -->
+  <rect x="40" y="256" width="180" height="48" rx="6" fill="#0c1e48"/>
+  <text x="130" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Dokument-Generator</text>
+  <text x="130" y="292" text-anchor="middle" font-size="10.5" fill="#edf2fa">Word-Export, strukturiert</text>
+
+  <rect x="290" y="256" width="180" height="48" rx="6" fill="#0c1e48"/>
+  <text x="380" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Social-Media-Generator</text>
+  <text x="380" y="292" text-anchor="middle" font-size="10.5" fill="#edf2fa">CI-konform, FB &amp; Instagram</text>
+
+  <rect x="540" y="256" width="180" height="48" rx="6" fill="#1d4fa0"/>
+  <text x="630" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">ABD-Software</text>
+  <text x="630" y="292" text-anchor="middle" font-size="10.5" fill="#edf2fa">bessere Führung, Stammdaten</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1,1 L7,4 L1,7" stroke="#d3dae8" stroke-width="1" fill="none"/>
+    </marker>
+  </defs>
+</svg>

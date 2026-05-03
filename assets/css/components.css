@@ -1,0 +1,631 @@
+.eyebrow {
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+}
+
+/* ── Buttons ─────────────────────────────────── */
+
+.button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-5);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 140ms ease, opacity 140ms ease, box-shadow 140ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.button.primary {
+  background: var(--color-strong);
+  color: var(--color-surface);
+  box-shadow: 0 2px 8px rgba(12, 30, 72, 0.22);
+}
+
+.button.primary:hover,
+.button.primary:focus-visible {
+  opacity: 0.9;
+  box-shadow: 0 4px 16px rgba(12, 30, 72, 0.28);
+}
+
+.button.secondary {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+}
+
+.button.secondary:hover,
+.button.secondary:focus-visible {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+/* ── Signal board (case sidebar panel) ───────── */
+
+.signal-board {
+  padding: var(--space-5);
+  border-radius: var(--radius);
+  background: var(--color-surface-2);
+}
+
+.signal-board-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+.signal-track {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.signal-step {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: var(--space-2) var(--space-3);
+  align-items: center;
+  padding: var(--space-3) 0;
+}
+
+.signal-step span:last-child {
+  grid-column: 2;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.step-index {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-small);
+  background: rgba(29, 79, 160, 0.1);
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.signal-line {
+  width: 1px;
+  height: 18px;
+  margin-left: 34px;
+  background: var(--color-border);
+}
+
+/* ── Competency grid ─────────────────────────── */
+
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+/* ── Core surface types ──────────────────────── */
+/*
+  No borders. Hierarchy via:
+  - background color (surface vs surface-2)
+  - shadow (interactive / elevated elements only)
+  - spacing
+*/
+
+.profile-card {
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: 0 2px 12px rgba(23, 32, 46, 0.07), 0 1px 3px rgba(23, 32, 46, 0.04);
+}
+
+.case-card {
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: 0 1px 3px rgba(23, 32, 46, 0.05), 0 2px 8px rgba(23, 32, 46, 0.03);
+}
+
+.competency-item,
+.skill-card,
+.fact-item,
+.detail-card,
+.evidence-item,
+.profile-text {
+  border-radius: var(--radius);
+  background: var(--color-surface-2);
+}
+
+.method-item,
+.update-panel {
+  border-radius: var(--radius);
+  background: transparent;
+}
+
+.case-summary {
+  border-radius: var(--radius);
+  background: var(--color-surface-2);
+}
+
+/* ── Portrait slot ───────────────────────────── */
+
+.portrait-slot {
+  position: relative;
+  width: 60%;
+  margin-inline: auto;
+  margin-bottom: var(--space-4);
+  overflow: hidden;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(29, 79, 160, 0.1), rgba(38, 98, 184, 0.06)),
+    var(--color-surface-2);
+}
+
+.portrait-slot span {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-strong);
+  font-size: 2rem;
+  font-weight: 850;
+}
+
+.portrait-slot.has-photo {
+  background: var(--color-surface);
+}
+
+.portrait-slot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.profile-card-copy h2 {
+  margin-bottom: var(--space-2);
+}
+
+.profile-card-copy p:not(.eyebrow) {
+  color: var(--color-muted);
+}
+
+/* ── Stats ───────────────────────────────────── */
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.stat-item {
+  padding-top: var(--space-3);
+  border-top: 1px solid rgba(23, 32, 46, 0.08);
+}
+
+.stat-item strong,
+.stat-item span {
+  display: block;
+}
+
+.stat-item strong {
+  color: var(--color-strong);
+  font-size: 1.05rem;
+}
+
+.stat-item span {
+  color: var(--color-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* ── Resume intro ────────────────────────────── */
+
+.resume-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.resume-intro .section-heading p {
+  color: var(--color-muted);
+}
+
+/* ── Fact grid ───────────────────────────────── */
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.profile-text {
+  grid-row: span 2;
+  padding: var(--space-5);
+}
+
+.profile-text p {
+  color: var(--color-muted);
+}
+
+.profile-text p:last-child {
+  margin-bottom: 0;
+}
+
+.fact-item {
+  padding: var(--space-4);
+}
+
+.fact-item span,
+.fact-item strong {
+  display: block;
+}
+
+.fact-item span {
+  margin-bottom: var(--space-2);
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.fact-item strong {
+  color: var(--color-text);
+  line-height: 1.35;
+}
+
+/* ── Timeline ────────────────────────────────── */
+
+.timeline {
+  display: grid;
+  gap: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  border-top: 1px solid rgba(23, 32, 46, 0.07);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-period {
+  color: var(--color-accent);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.timeline-copy h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-1);
+}
+
+.timeline-copy p {
+  max-width: 760px;
+  margin-bottom: 0;
+  font-size: 0.92rem;
+  color: var(--color-muted);
+}
+
+/* ── Skills ──────────────────────────────────── */
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.skill-card {
+  padding: var(--space-5);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.skill-card h3 {
+  margin-bottom: 0;
+}
+
+.skill-card .chip-row {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.case-card .chip-row {
+  flex: 1;
+  align-content: flex-start;
+  margin-bottom: var(--space-3);
+}
+
+/* ── Competency items ────────────────────────── */
+
+.competency-item {
+  padding: var(--space-5);
+  min-height: 200px;
+}
+
+.competency-item .marker {
+  width: 24px;
+  height: 3px;
+  margin-bottom: var(--space-4);
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+.competency-item:nth-child(2) .marker {
+  background: var(--color-blue);
+}
+
+.competency-item:nth-child(3) .marker {
+  background: var(--color-accent-2);
+}
+
+.competency-item p,
+.case-card p,
+.method-item p,
+.case-summary p,
+.detail-card p,
+.evidence-item p,
+.skill-card p {
+  color: var(--color-muted);
+}
+
+/* ── Case card ───────────────────────────────── */
+
+.case-card {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  text-decoration: none;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.case-card:hover,
+.case-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(23, 32, 46, 0.1), 0 2px 8px rgba(23, 32, 46, 0.06);
+  outline: none;
+}
+
+.case-card.compact {
+  min-height: 180px;
+}
+
+.case-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-2);
+}
+
+.case-card p {
+  font-size: 0.9rem;
+}
+
+.case-card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: auto;
+}
+
+/* ── Group label ─────────────────────────────── */
+
+.group-label {
+  margin-bottom: var(--space-3);
+  color: var(--color-muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── Chips ───────────────────────────────────── */
+
+.chip-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 var(--space-3);
+  border: none;
+  border-radius: 999px;
+  background: rgba(23, 32, 46, 0.06);
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+.status-chip {
+  background: rgba(23, 32, 46, 0.07);
+  color: var(--color-strong);
+  font-weight: 700;
+}
+
+.status-chip.chip--active {
+  background: var(--color-status-active-bg);
+  color: var(--color-status-active);
+}
+
+.status-chip.chip--dev {
+  background: var(--color-status-dev-bg);
+  color: var(--color-status-dev);
+}
+
+.status-chip.chip--planned {
+  background: var(--color-status-planned-bg);
+  color: var(--color-status-planned);
+}
+
+/* ── Method list ─────────────────────────────── */
+
+.method-list {
+  display: grid;
+  gap: 0;
+}
+
+.method-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-top: 1px solid rgba(23, 32, 46, 0.07);
+}
+
+.method-item:last-child {
+  border-bottom: none;
+}
+
+.method-number {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(29, 79, 160, 0.1);
+  color: var(--color-accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+/* ── Update panel ────────────────────────────── */
+
+.update-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: center;
+  padding: var(--space-6) 0;
+}
+
+.update-panel p {
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
+
+/* ── Contact ─────────────────────────────────── */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.contact-layout .section-heading p {
+  color: var(--color-muted);
+}
+
+.contact-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+.contact-panel {
+  display: grid;
+  gap: var(--space-1);
+  padding: 0;
+  background: transparent;
+}
+
+.contact-list {
+  display: grid;
+  gap: 0;
+}
+
+.contact-item {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid rgba(23, 32, 46, 0.07);
+  text-decoration: none;
+}
+
+.contact-item:first-child {
+  border-top: 1px solid rgba(23, 32, 46, 0.07);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item span {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.contact-item strong {
+  color: var(--color-text);
+  overflow-wrap: anywhere;
+}
+
+.contact-item:hover strong,
+.contact-item:focus-visible strong {
+  color: var(--color-accent);
+}
+
+/* ── Responsive ──────────────────────────────── */
+
+@media (max-width: 920px) {
+  .competency-grid,
+  .resume-intro,
+  .skill-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .update-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-text {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .fact-grid,
+  .timeline-item,
+  .stat-row {
+    grid-template-columns: 1fr;
+  }
+}
