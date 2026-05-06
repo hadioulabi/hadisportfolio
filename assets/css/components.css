@@ -169,7 +169,7 @@
 
 .portrait-slot {
   position: relative;
-  width: 60%;
+  width: 48%;
   margin-inline: auto;
   margin-bottom: var(--space-4);
   overflow: hidden;

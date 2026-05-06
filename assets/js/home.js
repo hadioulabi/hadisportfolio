@@ -21,18 +21,8 @@
     }
 
     const copy = ui.el("div", "profile-card-copy");
-    copy.append(ui.el("p", "eyebrow", "Profil"));
     copy.append(ui.el("h2", "", site.profile.name));
     copy.append(ui.el("p", "", site.profile.headline));
-
-    const stats = ui.el("div", "stat-row");
-    site.profile.quickStats.forEach((item) => {
-      const stat = ui.el("div", "stat-item");
-      stat.append(ui.el("span", "", item.label));
-      stat.append(ui.el("strong", "", item.value));
-      stats.append(stat);
-    });
-    copy.append(stats);
 
     mount.append(portrait, copy);
   }
