@@ -22,7 +22,9 @@
 
     const copy = ui.el("div", "profile-card-copy");
     copy.append(ui.el("h2", "", site.profile.name));
-    copy.append(ui.el("p", "", site.profile.headline));
+    if (site.profile.cardSubtitle) {
+      copy.append(ui.el("p", "", site.profile.cardSubtitle));
+    }
 
     mount.append(portrait, copy);
   }
@@ -33,8 +35,10 @@
 
     const intro = ui.el("article", "profile-text");
     intro.append(ui.el("h3", "", "Kurzprofil"));
-    intro.append(ui.el("p", "", site.profile.intro));
-    intro.append(ui.el("p", "", site.profile.focus));
+    const profileParagraphs = site.profile.introParagraphs || [site.profile.intro, site.profile.focus].filter(Boolean);
+    profileParagraphs.forEach((paragraph) => {
+      intro.append(ui.el("p", "", paragraph));
+    });
     mount.append(intro);
 
     site.profile.facts.forEach((item) => {
@@ -43,6 +47,26 @@
       fact.append(ui.el("strong", "", item.value));
       mount.append(fact);
     });
+
+    if (site.profile.languages?.length) {
+      const languages = ui.el("article", "fact-item");
+      languages.append(ui.el("span", "", "Sprachen"));
+
+      site.profile.languages.forEach((item) => {
+        const row = ui.el("div");
+        const label = ui.el("strong", "", `${item.name}: ${item.level}`);
+        const meter = ui.el("meter");
+        meter.min = 0;
+        meter.max = 100;
+        meter.value = item.bar;
+        meter.textContent = `${item.bar}%`;
+        meter.setAttribute("aria-label", `${item.name} ${item.level}`);
+        row.append(label, meter);
+        languages.append(row);
+      });
+
+      mount.append(languages);
+    }
   }
 
   function renderTimeline() {
@@ -54,7 +78,14 @@
       row.append(ui.el("div", "timeline-period", item.period));
       const copy = ui.el("div", "timeline-copy");
       copy.append(ui.el("h3", "", item.title));
-      copy.append(ui.el("p", "", item.text));
+      if (item.text) copy.append(ui.el("p", "", item.text));
+      if (item.items?.length) {
+        const list = ui.el("ul");
+        item.items.forEach((point) => {
+          list.append(ui.el("li", "", point));
+        });
+        copy.append(list);
+      }
       row.append(copy);
       mount.append(row);
     });
@@ -81,20 +112,24 @@
     const mount = document.getElementById("contactList");
     if (!mount || !site.contact) return;
 
-    [
-      ["Privat", `mailto:${site.contact.primaryEmail}`, site.contact.primaryEmail],
-      ["Geschäftlich", `mailto:${site.contact.businessEmail}`, site.contact.businessEmail],
-      ...site.contact.links.map((item) => [item.label, item.href, item.display || item.label])
-    ].forEach(([label, href, value]) => {
-      const link = ui.el("a", "contact-item");
-      link.href = href;
-      if (href.startsWith("http")) {
-        link.target = "_blank";
-        link.rel = "noreferrer";
+    const items = site.contact.items || [
+      { label: "Privat", href: `mailto:${site.contact.primaryEmail}`, display: site.contact.primaryEmail },
+      { label: "Geschäftlich", href: `mailto:${site.contact.businessEmail}`, display: site.contact.businessEmail },
+      ...(site.contact.links || []).map((item) => ({ ...item, display: item.display || item.label }))
+    ];
+
+    items.forEach((item) => {
+      const entry = ui.el(item.href ? "a" : "div", "contact-item");
+      if (item.href) {
+        entry.href = item.href;
+        if (item.href.startsWith("http")) {
+          entry.target = "_blank";
+          entry.rel = "noreferrer";
+        }
       }
-      link.append(ui.el("span", "", label));
-      link.append(ui.el("strong", "", value));
-      mount.append(link);
+      entry.append(ui.el("span", "", item.label));
+      entry.append(ui.el("strong", "", item.display || item.label));
+      mount.append(entry);
     });
   }
 

@@ -11,68 +11,118 @@ window.PORTFOLIO_SITE = {
     name: "Hadi Oulabi",
     initials: "HA",
     headline: "Fashion Management, Business Operations und KI-Automatisierung",
-    intro: "Ich studiere Fashion Management im vierten Semester und arbeite seit September 2025 als Werkstudent bei der Outatex GmbH an der Schnittstelle von operativen Prozessen, ERP-Systemen, Export, Buchhaltung und interner Automatisierung.",
-    focus: "Mein Profil verbindet echte Unternehmenspraxis mit Systemdenken: Prozesse verstehen, Daten strukturieren, Tools einführen und wiederkehrende Arbeit digital vereinfachen.",
+    companyLogoPath: "outatex.jpg",
+    introParagraphs: [
+      "Ich studiere Fashion Management am Texoversum LDT in Nagold und arbeite auf meinen Bachelor of Arts hin. Mein Ziel ist es, mir Schritt fuer Schritt eine Laufbahn in der Fashion- und Textilbranche aufzubauen. Dabei verbinde ich Neugier, Verlaesslichkeit und praktische Erfahrung mit der Bereitschaft, neue Aufgaben engagiert und optimistisch anzugehen.",
+      "Besonders interessieren mich die Stellen, an denen Produkte, Prozesse und Menschen zusammenkommen: im operativen Tagesgeschaeft, in der Zusammenarbeit mit anderen Abteilungen, in digitalen Systemen und in Projekten, die Ablaeufe klarer oder effizienter machen. Durch meine Arbeit bei Outatex konnte ich frueh Verantwortung uebernehmen und lernen, wie wichtig strukturierte Kommunikation, saubere Daten und ein gutes Verstaendnis fuer Unternehmensprozesse sind.",
+      "Ich sehe mich als jemand, der gerne dazulernt, Aufgaben gruendlich angeht und praktische Loesungen sucht. Mode und Textilien interessieren mich nicht nur als Produkte, sondern auch als Branche mit vielen beweglichen Teilen: Einkauf, Logistik, Vertrieb, Systeme, Menschen und internationale Zusammenarbeit."
+    ],
     facts: [
-      { label: "Studium", value: "Fashion Management · LDT Texoversum · 4. Semester" },
-      { label: "Rolle", value: "Werkstudent seit September 2025" },
-      { label: "Unternehmen", value: "Outatex GmbH · Textilbranche · international" },
-      { label: "Standort", value: "Raum Stuttgart · Baden-Württemberg · Deutschland" },
-      { label: "Geboren", value: "15.12.2006 · 19 Jahre" },
-      { label: "Sprachen", value: "Deutsch Muttersprache · Arabisch fließend · Englisch C1" }
+      { label: "Studium", value: "Fashion Management, LDT Texoversum Nagold, Abschluss vsl. 07.2027" },
+      { label: "Rolle", value: "Mitarbeit seit 07.2022, Werkstudent seit 09.2025" },
+      { label: "Unternehmen", value: "Outatex GmbH, internationale Textilbranche" },
+      { label: "Standort", value: "Mötzingen, Baden-Württemberg, Deutschland" },
+      { label: "Geboren", value: "15.12.2006" }
+    ],
+    languages: [
+      { name: "Deutsch", level: "muttersprachlich", bar: 100 },
+      { name: "Arabisch", level: "fließend in Wort und Schrift", bar: 95 },
+      { name: "Englisch", level: "verhandlungssicher (C1)", bar: 88 },
+      { name: "Französisch", level: "Grundkenntnisse", bar: 45 }
     ],
     quickStats: [
-      { value: "4.", label: "Semester" },
+      { value: "07/2022", label: "Outatex seit" },
       { value: "09/2025", label: "Werkstudent seit" },
-      { value: "DE/AR/EN", label: "Sprachen" }
+      { value: "DE/AR/EN/FR", label: "Sprachen" }
     ]
   },
   contact: {
-    primaryEmail: "hadi@oulabi.com",
-    businessEmail: "hadi.oulabi@outatex.com",
-    links: [
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/hadi-oulabi-43443a317/", display: "Profil ansehen" },
-      { label: "GitHub", href: "https://github.com/hadioulabi", display: "hadioulabi" }
-    ],
-    photoPath: "assets/images/profile/hadi.jpg"
+    photoPath: "assets/images/profile/hadi.jpg",
+    items: [
+      { label: "Privat", href: "mailto:hadi@oulabi.com", display: "hadi@oulabi.com" },
+      { label: "Telefon", href: "tel:+4915792309022", display: "+49 1579 2309022" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/hadi-oulabi-43443a317/", display: "LinkedIn" },
+      { label: "GitHub", href: "https://github.com/hadioulabi", display: "GitHub" },
+      { label: "Geschäftlich", href: "mailto:hadi.oulabi@outatex.com", display: "hadi.oulabi@outatex.com" }
+    ]
   },
   timeline: [
     {
-      period: "2016 – 2024",
-      title: "Abitur · Otto-Hahn-Gymnasium Nagold",
-      text: "Allgemeine Hochschulreife mit Notendurchschnitt 3,1. Seminarfacharbeit im Kurs Filmanalyse, Note: gut."
+      period: "07.2022 - laufend",
+      title: "Werkstudent Business Operations · Outatex GmbH",
+      text: "Mitarbeit ab 07.2022, Werkstudent seit 09.2025.",
+      items: [
+        "Eigenständige Exportabwicklung",
+        "Begleitung einer individuellen ERP-Einführung",
+        "Einrichtung und Nutzung einer neuen Finanzbuchhaltungssoftware für Eingangs-/Ausgangsrechnungen",
+        "Entwicklung interner WebApps für Dokumente, Social-Media-Posts und ABD-Prozesse mit KI-Unterstützung",
+        "Messevorbereitung Techtextil Frankfurt 2026 und NASTEX Syrien"
+      ]
     },
     {
-      period: "Ab 2024",
-      title: "Studium Fashion Management · LDT Texoversum",
-      text: "Bachelor of Arts, voraussichtlicher Abschluss 2027. Schwerpunkte in Betriebswirtschaft, Textilwirtschaft und Management."
+      period: "03.2025 - laufend",
+      title: "Ehrenamtliches Spenden-Management · Ihssan gemeinnützige GmbH / Ahsin Spendenorganisation",
+      items: [
+        "Büroarbeiten sowie Vorbereitung, Durchführung und Nachbereitung sozialer Projekte und Veranstaltungen",
+        "Unterstützung in Öffentlichkeits- und PR-Arbeit sowie strukturierter Spendenkoordination"
+      ]
     },
     {
-      period: "Ab September 2025",
-      title: "Werkstudent · Outatex GmbH",
-      text: "Operative und projektbezogene Verantwortung in einem internationalen Textilunternehmen — von Export und ERP bis zu Buchhaltung, Messe und KI-gestützter Automatisierung."
+      period: "02.2025 - 06.2025",
+      title: "Verkäufer mit Kassiertätigkeit · Lidl Vertriebs-GmbH & Co. KG",
+      items: [
+        "Kassenbedienung inklusive Abrechnung, Warenverräumung und Lagerorganisation",
+        "Kundenberatung und Pflege der Verkaufsfläche"
+      ]
+    },
+    {
+      period: "04.2022",
+      title: "BOGY-Praktikum, Architektur · Fichtner Bauconsulting GmbH",
+      items: [
+        "Einwöchiges Schulpraktikum mit Einblicken in gestalterische und planerische Arbeitsprozesse"
+      ]
+    },
+    {
+      period: "2024 - 07.2027 vsl.",
+      title: "Bachelor of Arts, Fashion Management · LDT Texoversum",
+      items: [
+        "BWL mit Schwerpunkt Fashion & Textile Management",
+        "Marketing, Einkauf, Produktentwicklung, Warenkunde, Supply Chain",
+        "Branchennahe Module, Projekte und Exkursionen in der Mode- und Textilwirtschaft"
+      ]
+    },
+    {
+      period: "2016 - 07.2024",
+      title: "Allgemeine Hochschulreife · Otto-Hahn-Gymnasium",
+      items: [
+        "Seminarfacharbeit im Kurs Filmanalyse mit der Note gut"
+      ]
+    },
+    {
+      period: "2015 - 2016",
+      title: "Grundschuljahr Ausland · Nefertari Deutsche Internationale Schule"
     }
   ],
   skillGroups: [
     {
-      title: "Business Operations",
-      desc: "Export, Logistik, Messe und Rechnungswesen — operative Abläufe von A bis Z im Tagesgeschäft bei Outatex.",
-      skills: ["Exportabwicklung", "Prozessdokumentation", "Messevorbereitung", "operative Koordination", "Rechnungsprozesse"]
+      title: "Operations & Export",
+      skills: ["Exportabwicklung", "Spediteurskoordination", "CargoX", "Ursprungszeugnisse", "ABD / IAAP", "Warenannahme & Versand", "Logistik", "Messevorbereitung"]
     },
     {
-      title: "Systeme & Daten",
-      desc: "ERP-Einführung, Odoo-Konfiguration und strukturierte Datenpflege — Systeme aufsetzen, testen und im Alltag nutzen.",
-      skills: ["ERP-Einführung", "Odoo-Konfiguration", "Datenpflege", "Systemtesting", "Mitarbeiter-Onboarding", "Fehlerdokumentation"]
+      title: "Systeme, Daten & Buchhaltung",
+      skills: ["ERP-Einführung", "Odoo Konfiguration", "Datenpflege", "Systemtesting", "Fehlerdokumentation", "Onboarding", "Eingangs-/Ausgangsrechnungen"]
     },
     {
-      title: "Automatisierung & Web",
-      desc: "Interne Tools und Webapplikationen selbst entwickelt — von der Idee bis zum fertigen Prototyp im Einsatz.",
-      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "Python", "PWA", "Word-Export", "Frontend-Prototyping"]
+      title: "Web & Automation",
+      skills: ["HTML / CSS / JS", "TypeScript", "Python", "PWA", "Word-Export", "Frontend-Prototyping", "GitHub", "Netlify"]
     },
     {
-      title: "KI-gestützte Arbeit",
-      desc: "KI als tägliches Arbeitswerkzeug für Entwicklung, Analyse, Konzeption und Recherche — nicht als Buzzword.",
-      skills: ["Prompting", "KI-gestützte Entwicklung", "Tool-Konzeption", "Recherche", "Debugging", "Prozessanalyse"]
+      title: "KI-gestützt",
+      skills: ["Prompting", "KI-gestützte Entwicklung", "Tool-Konzeption", "Recherche", "Debugging", "Prozessanalyse", "Claude / ChatGPT / Codex"]
+    },
+    {
+      title: "Tools & Weiteres",
+      skills: ["MS Office", "Excel", "Canva", "Odoo", "Jira", "Perplexity", "Führerschein Klasse B197"]
     }
   ],
   competencies: [

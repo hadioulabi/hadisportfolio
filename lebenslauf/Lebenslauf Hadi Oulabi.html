@@ -1,0 +1,750 @@
+<!DOCTYPE html><html lang="de"><head>
+
+
+<meta charset="utf-8">
+<title>Lebenslauf — Hadi Oulabi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  /* ---------- A4 page ---------- */
+  :root{
+    --bg: #f1f0ec;
+    --paper: #ffffff;
+    --ink: #14213d;        /* navy */
+    --ink-2: #0f1d3a;
+    --muted: #5b6478;
+    --line: #d8d8d2;
+    --rule: #e7e7e1;
+    --accent: #2e54a8;     /* calm blue */
+    --accent-soft: #eaf0fb;
+    --warm: #b8704a;       /* sparing warm accent */
+    --text: #20242e;
+    --text-soft: #4a5161;
+  }
+
+  *{ box-sizing: border-box; }
+  html, body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01", "cv11";
+    padding: 28px 0 60px;
+  }
+
+  .page{
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: var(--paper);
+    box-shadow: 0 2px 4px rgba(20,33,61,.04), 0 18px 50px rgba(20,33,61,.12);
+    padding: 10mm 12mm 10mm;
+    position: relative;
+    color: var(--text);
+    font-size: 8.4pt;
+    line-height: 1.36;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---------- Header ---------- */
+  .header{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 8mm;
+    align-items: end;
+    padding-bottom: 5mm;
+    border-bottom: 1px solid var(--rule);
+  }
+  .photo-slot{
+    width: 28mm;
+    height: 36mm;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    align-self: end;
+    flex-shrink: 0;
+  }
+  .photo-slot img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-slot-legacy-icon{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #d4d6dc;
+    margin-bottom: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  .photo-slot .icon::before{
+    content: "";
+    position: absolute;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #fbfaf7;
+    top: 4px; left: 50%;
+    transform: translateX(-50%);
+  }
+  .photo-slot .icon::after{
+    content: "";
+    position: absolute;
+    width: 14px; height: 9px;
+    border-radius: 7px 7px 0 0;
+    background: #fbfaf7;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+  }
+  .name{
+    font-weight: 800;
+    font-size: 26pt;
+    letter-spacing: -0.02em;
+    color: var(--ink-2);
+    line-height: 0.95;
+    margin: 0;
+  }
+  .name .last{ color: var(--accent); }
+  .role{
+    margin-top: 5px;
+    font-size: 9pt;
+    color: var(--text-soft);
+    font-weight: 500;
+    letter-spacing: 0.005em;
+  }
+  .role .pipe{ color: var(--line); margin: 0 6px; }
+
+  .contact{
+    font-size: 7.6pt;
+    color: var(--text-soft);
+    text-align: right;
+    line-height: 1.5;
+  }
+  .contact a{ color: inherit; text-decoration: none; }
+  .contact .label{
+    display: inline-block;
+    width: 14px;
+    color: var(--muted);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 6.6pt;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-right: 5px;
+  }
+  .contact .row{ white-space: nowrap; }
+  .contact .row + .row{ margin-top: 1px; }
+
+  /* ---------- Profile band ---------- */
+  .profile{
+    margin: 4mm 0 3mm;
+    display: grid;
+    grid-template-columns: 26mm 1fr;
+    gap: 7mm;
+    align-items: start;
+  }
+  .section-label{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 6.8pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .section-label .num{
+    color: var(--accent);
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  .profile p{
+    margin: 0;
+    font-size: 8.6pt;
+    line-height: 1.42;
+    color: var(--text);
+    text-wrap: pretty;
+  }
+  .profile .lead{
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+
+  /* ---------- Body grid: meta | content ---------- */
+  .body{
+    margin-top: 2mm;
+    display: grid;
+    grid-template-columns: 26mm 1fr;
+    gap: 7mm;
+  }
+
+  section.block{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 26mm 1fr;
+    gap: 7mm;
+    padding-top: 3mm;
+    margin-top: 2.5mm;
+    border-top: 1px solid var(--rule);
+  }
+  section.block:first-of-type{ border-top: 0; padding-top: 0; margin-top: 0; }
+  section.block > div:last-child{ min-width: 0; }
+
+  .block-head .h{
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--ink-2);
+    letter-spacing: -0.005em;
+    margin: 2px 0 0;
+    line-height: 1.1;
+  }
+  .block-head .sub{
+    margin-top: 3px;
+    font-size: 6.8pt;
+    color: var(--muted);
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: 0.04em;
+  }
+
+  /* ---------- Timeline content ---------- */
+  .timeline{
+    position: relative;
+    padding-left: 13px;
+  }
+  .timeline::before{
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    bottom: 3px;
+    width: 1px;
+    background: var(--line);
+  }
+  .entry{ position: relative; padding-bottom: 1.7mm; }
+  .entry:last-child{ padding-bottom: 0; }
+  .entry::before{
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 1.4px solid var(--accent);
+  }
+  .entry.solid::before{ background: var(--accent); }
+
+  .entry-head{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: baseline;
+  }
+  .entry-title{
+    font-size: 8.8pt;
+    font-weight: 600;
+    color: var(--ink-2);
+    margin: 0;
+    line-height: 1.22;
+  }
+  .entry-meta{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 6.8pt;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .entry-org{
+    font-size: 7.8pt;
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 1px;
+  }
+  .entry-org .loc{
+    color: var(--muted);
+    font-weight: 400;
+  }
+  .entry ul{
+    margin: 2px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .entry li{
+    position: relative;
+    padding-left: 10px;
+    font-size: 7.7pt;
+    line-height: 1.32;
+    color: var(--text-soft);
+    margin-top: 0.5px;
+  }
+  .entry li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 1px;
+    background: var(--line);
+  }
+
+  /* ---------- Two-column inner (skills / languages) ---------- */
+  .two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5mm 8mm;
+  }
+
+  .skill-row{
+    display: grid;
+    grid-template-columns: 32mm 1fr;
+    gap: 5mm;
+    padding: 1.2mm 0;
+    border-top: 1px dashed var(--rule);
+    min-width: 0;
+  }
+  .skill-row:first-child{ border-top: 0; padding-top: 0; }
+  .skill-row .key{
+    font-size: 7.4pt;
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  .skill-row .val{
+    font-size: 7.4pt;
+    color: var(--text-soft);
+    line-height: 1.3;
+    min-width: 0;
+  }
+  .skill-row .val .sep{ color: var(--line); margin: 0 5px; }
+
+  /* Languages */
+  .langs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5mm;
+  }
+  .lang{
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1.2mm 2mm;
+    background: #fbfaf7;
+  }
+  .lang .l-name{
+    font-size: 8.4pt;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .lang .l-level{
+    margin-top: 1px;
+    font-size: 6.2pt;
+    line-height: 1.2;
+    color: var(--muted);
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: 0.02em;
+  }
+  .lang .l-level.compact{
+    font-size: 5.4pt;
+    line-height: 7.44pt;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  .lang .bar{
+    margin-top: 2px;
+    height: 2px;
+    width: 100%;
+    background: var(--rule);
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .lang .bar i{
+    position: absolute; left: 0; top: 0; bottom: 0;
+    background: var(--accent);
+  }
+
+  /* Projects -- compact "evidence blocks" */
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm 6mm;
+  }
+  .pj{
+    border-left: 2px solid var(--accent);
+    padding: 0 0 0 6px;
+  }
+  .pj .pj-head{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+    align-items: baseline;
+  }
+  .pj .pj-title{
+    font-size: 8.2pt;
+    font-weight: 600;
+    color: var(--ink-2);
+    line-height: 1.18;
+    min-width: 0;
+  }
+  .pj .pj-meta{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 6.4pt;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .pj .pj-body{
+    margin-top: 1.5px;
+    font-size: 7.5pt;
+    color: var(--text-soft);
+    line-height: 1.32;
+  }
+  .pj .tags{
+    margin-top: 2px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 6.2pt;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .pj .tags span + span::before{
+    content: "·"; margin: 0 5px; color: var(--line);
+  }
+
+  /* tag chip */
+  .chip{
+    display: inline-block;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 6.2pt;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 1px 5px;
+    border-radius: 2px;
+    vertical-align: 2px;
+    margin-left: 5px;
+    font-weight: 500;
+  }
+
+  /* Footer */
+  .foot{
+    margin-top: auto;
+    padding-top: 2.5mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 6.2pt;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .foot .sig{ color: var(--ink-2); font-weight: 600; }
+
+  /* ---------- Print ---------- */
+  @page{ size: A4; margin: 0; }
+  @media print{
+    body{ background: #fff; padding: 0; }
+    .page{
+      box-shadow: none;
+      margin: 0;
+      width: 210mm;
+      min-height: 297mm;
+    }
+  }
+</style>
+</head>
+<body style="">
+
+<main class="page" data-screen-label="01 Lebenslauf">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div>
+      <h1 class="name">Hadi <span class="last">Oulabi</span></h1>
+      <div class="role">
+</div>
+    </div>
+    <div class="contact">
+      <div class="row"><span class="label">Loc</span>Mötzingen, 71159 Baden-Württemberg</div>
+      <div class="row"><span class="label">Tel</span>+49 1579 2309022</div>
+      <div class="row"><span class="label" style="width: 22px;">Mail</span>hadi@oulabi.com</div>
+      <div class="row"><span class="label">LI</span>linkedin.com/in/hadi-oulabi-43443a317</div>
+      <div class="row"><span class="label">Web</span>hadioulabi.github.io/hadisportfolio</div>
+    </div>
+    <div class="photo-slot" aria-label="Bewerbungsfoto">
+      <img src="assets/hadi.jpg" alt="Hadi Oulabi" />
+    </div>
+  </header>
+
+  <!-- ===== PROFILE ===== -->
+  <div class="profile">
+    <div>
+      <div class="section-label">
+</div>
+    </div>
+    <div>
+      <p>
+</p>
+    </div>
+  </div>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="block">
+    <div class="block-head">
+      <div class="section-label"><span class="num">01</span>Erfahrung</div>
+      <div class="h">
+</div>
+      <div class="sub">
+</div>
+    </div>
+    <div class="timeline">
+
+      <div class="entry solid">
+        <div class="entry-head">
+          <h3 class="entry-title">
+            Werkstudent Business Operations
+            <span class="chip">aktuell</span>
+          </h3>
+          <div class="entry-meta">07.2022 — laufend</div>
+        </div>
+        <div class="entry-org">Outatex GmbH <span class="loc">· Mötzingen · Mitarbeit ab 07.2022, Werkstudent seit 09.2025</span></div>
+        <ul>
+          <li>Eigenständige Exportabwicklung</li>
+          <li>Begleitung einer individuellen ERP-Einführung</li>
+          <li>Einrichtung und Nutzung einer neuen Finanzbuchhaltungssoftware für Eingangs-/Ausgangsrechnungen</li>
+          <li>Entwicklung interner WebApps für Dokumente, Social-Media-Posts und ABD-Prozesse mit KI-Unterstützung</li>
+          <li>Messevorbereitung Techtextil Frankfurt 2026 und NASTEX Syrien</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Ehrenamtliches Spenden-Management</h3>
+          <div class="entry-meta">03.2025 — laufend</div>
+        </div>
+        <div class="entry-org">Ihssan gemeinnützige GmbH <span class="loc">· Ahsin Spendenorganisation</span></div>
+        <ul>
+          <li>Büroarbeiten sowie Vorbereitung, Durchführung und Nachbereitung sozialer Projekte und Veranstaltungen</li>
+          <li>Unterstützung in Öffentlichkeits- und PR-Arbeit sowie strukturierter Spendenkoordination</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Verkäufer mit Kassiertätigkeit</h3>
+          <div class="entry-meta">02.2025 — 06.2025</div>
+        </div>
+        <div class="entry-org">Lidl Vertriebs-GmbH &amp; Co. KG <span class="loc">· Gäufelden</span></div>
+        <ul>
+          <li>Kassenbedienung inklusive Abrechnung, Warenverräumung und Lagerorganisation</li>
+          <li>Kundenberatung und Pflege der Verkaufsfläche</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">BOGY-Praktikum, Architektur</h3>
+          <div class="entry-meta">04.2022</div>
+        </div>
+        <div class="entry-org">Fichtner Bauconsulting GmbH</div>
+        <ul>
+          <li>Einwöchiges Schulpraktikum mit Einblicken in gestalterische und planerische Arbeitsprozesse</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="block">
+    <div class="block-head">
+      <div class="section-label"><span class="num">02</span>Ausbildung</div>
+      <div class="h">
+</div>
+      <div class="sub">
+</div>
+    </div>
+    <div class="timeline">
+
+      <div class="entry solid">
+        <div class="entry-head">
+          <h3 class="entry-title">Bachelor of Arts, Fashion Management</h3>
+          <div class="entry-meta">2024 — 07.2027 (vsl.)</div>
+        </div>
+        <div class="entry-org">LDT Texoversum <span class="loc">· Nagold · Ø 2,0</span></div>
+        <ul>
+          <li>BWL mit Schwerpunkt Fashion &amp; Textile Management</li>
+          <li>Marketing, Einkauf, Produktentwicklung, Warenkunde, Supply Chain</li>
+          <li>Branchennahe Module, Projekte und Exkursionen in der Mode- und Textilwirtschaft</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Allgemeine Hochschulreife</h3>
+          <div class="entry-meta">2016 — 07.2024</div>
+        </div>
+        <div class="entry-org">Otto-Hahn-Gymnasium <span class="loc">· Nagold · Ø 3,1</span></div>
+        <ul>
+          <li>Seminarfacharbeit im Kurs Filmanalyse mit der Note „gut"</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title">Grundschuljahr Ausland</h3>
+          <div class="entry-meta">2015 — 2016</div>
+        </div>
+        <div class="entry-org">Nefertari Deutsche Internationale Schule <span class="loc">· Kairo</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="block">
+    <div class="block-head">
+      <div class="section-label"><span class="num">03</span>Projekte</div>
+      <div class="h">
+</div>
+      <div class="sub">
+</div>
+    </div>
+    <div>
+      <div class="projects">
+
+        <div class="pj">
+          <div class="pj-head">
+            <div class="pj-title">KI-gestützte Prozessautomatisierung</div>
+            <div class="pj-meta">ab 04.2026</div>
+          </div>
+          <div class="pj-body">
+            Drei interne WebApps: Dokumenten-Generator mit Word-Export,
+            Social-Media-Generator mit CI-Bezug und ABD-Software als Alternative zu IAAP.
+          </div>
+          <div class="tags">
+            <span>HTML/CSS/JS</span><span>TypeScript</span><span>Python</span><span>PWA</span><span>Netlify</span>
+          </div>
+        </div>
+
+        <div class="pj">
+          <div class="pj-head">
+            <div class="pj-title">ERP-Einführung &amp; intl. Onboarding</div>
+            <div class="pj-meta">Q1–Q2 2025 →</div>
+          </div>
+          <div class="pj-body">
+            Begleitung eines individuell entwickelten ERP vom Aufbau bis zur produktiven Nutzung.
+            Mehrsprachiges Onboarding von 4–6 Mitarbeitenden.
+          </div>
+          <div class="tags">
+            <span>Testing</span><span>Datenpflege</span><span>Schulung</span>
+          </div>
+        </div>
+
+        <div class="pj">
+          <div class="pj-head">
+            <div class="pj-title">Exportabwicklung A–Z</div>
+            <div class="pj-meta">Mitte 2025 →</div>
+          </div>
+          <div class="pj-body">
+            Eigenständige Abwicklung: Abholung, Spedition, Ursprungszeugnis, ABD,
+            Sendungsvorbereitung. Fokus auf Großsendungen und regulierte Dokumentation.
+          </div>
+          <div class="tags">
+            <span>IAAP</span><span>CargoX</span><span>Zoll</span><span>eUZ</span>
+          </div>
+        </div>
+
+        <div class="pj">
+          <div class="pj-head">
+            <div class="pj-title">Odoo-Einführung &amp; Buchhaltung</div>
+            <div class="pj-meta">ab 02.2026</div>
+          </div>
+          <div class="pj-body">
+            Einrichtung und Konfiguration von Odoo, operative Bearbeitung von
+            Eingangs-/Ausgangsrechnungen und Aufarbeitung älterer Fälle.
+          </div>
+          <div class="tags">
+            <span>Odoo</span><span>Buchhaltung</span><span>Onboarding</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="block">
+    <div class="block-head">
+      <div class="section-label"><span class="num">04</span>Kompetenzen</div>
+      <div class="h">
+</div>
+      <div class="sub">
+</div>
+    </div>
+    <div>
+      <div class="skill-row">
+        <div class="key">Operations &amp; Export</div>
+        <div class="val">Exportabwicklung<span class="sep">·</span>Spediteurskoordination<span class="sep">·</span>CargoX<span class="sep">·</span>Ursprungszeugnisse<span class="sep">·</span>ABD / IAAP<span class="sep">·</span>Warenannahme &amp; Versand<span class="sep">·</span>Logistik<span class="sep">·</span>Messevorbereitung</div>
+      </div>
+      <div class="skill-row">
+        <div class="key">Systeme, Daten &amp; Buchhaltung</div>
+        <div class="val">ERP-Einführung<span class="sep">·</span><wbr>Odoo Konfiguration<span class="sep">·</span><wbr>Datenpflege<span class="sep">·</span><wbr>Systemtesting<span class="sep">·</span><wbr>Fehlerdokumentation<span class="sep">·</span><wbr>Onboarding<span class="sep">·</span><wbr>Eingangs-/Ausgangsrechnungen</div>
+      </div>
+      <div class="skill-row">
+        <div class="key">Web &amp; Automation</div>
+        <div class="val">HTML / CSS / JS<span class="sep">·</span>TypeScript<span class="sep">·</span>Python<span class="sep">·</span>PWA<span class="sep">·</span>Word-Export<span class="sep">·</span>Frontend-Prototyping<span class="sep">·</span>GitHub<span class="sep">·</span>Netlify</div>
+      </div>
+      <div class="skill-row">
+        <div class="key">KI-gestützt</div>
+        <div class="val">Prompting<span class="sep">·</span>KI-gestützte Entwicklung<span class="sep">·</span>Tool-Konzeption<span class="sep">·</span>Recherche<span class="sep">·</span>Debugging<span class="sep">·</span>Prozessanalyse<span class="sep">·</span>Claude / ChatGPT / Codex</div>
+      </div>
+      <div class="skill-row">
+        <div class="key">Tools &amp; Weiteres</div>
+        <div class="val">MS Office<span class="sep">·</span>Excel<span class="sep">·</span>Canva<span class="sep">·</span>Odoo<span class="sep">·</span>Jira<span class="sep">·</span>Perplexity<span class="sep">·</span>Führerschein Klasse B197</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LANGUAGES ===== -->
+  <section class="block" style="text-align: left">
+    <div class="block-head">
+      <div class="section-label"><span class="num">05</span>Sprachen</div>
+      <div class="h">
+</div>
+      <div class="sub">
+</div>
+    </div>
+    <div>
+      <div class="langs">
+        <div class="lang">
+          <div class="l-name">Deutsch</div>
+          <div class="l-level">muttersprachlich</div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </div>
+        <div class="lang">
+          <div class="l-name">Arabisch</div>
+          <div class="l-level compact">fließend in Wort und Schrift</div>
+          <div class="bar"><i style="width:95%"></i></div>
+        </div>
+        <div class="lang">
+          <div class="l-name">Englisch</div>
+          <div class="l-level">verhandlungssicher (C1)</div>
+          <div class="bar"><i style="width:88%"></i></div>
+        </div>
+        <div class="lang">
+          <div class="l-name">Französisch</div>
+          <div class="l-level">Grundkenntnisse</div>
+          <div class="bar"><i style="width:45%"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+</body></html>
