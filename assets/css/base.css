@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Sticky header offset for anchor links */
 section[id] {
   scroll-margin-top: 0;
 }
@@ -16,15 +15,16 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 15.5px;
+  line-height: 1.5;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
 }
 
-body::selection {
-  background: rgba(29, 79, 160, 0.2);
+::selection {
+  background: rgba(46, 84, 168, 0.18);
 }
 
 a {
@@ -36,50 +36,48 @@ img {
   max-width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
+h1, h2, h3, h4, p {
   margin-top: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.12;
+h1, h2, h3, h4 {
+  line-height: 1.15;
   letter-spacing: -0.015em;
+  color: var(--color-strong);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  font-weight: 800;
   letter-spacing: -0.025em;
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-4);
 }
 
 h2 {
-  font-size: 2rem;
-  letter-spacing: -0.02em;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   margin-bottom: var(--space-4);
 }
 
 h3 {
-  font-size: 1.25rem;
-  letter-spacing: -0.01em;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.005em;
   margin-bottom: var(--space-3);
 }
 
 p {
   margin-bottom: var(--space-4);
+  text-wrap: pretty;
 }
 
 ul {
-  padding-left: 1.2rem;
+  padding-left: 1.1rem;
 }
 
 li + li {
-  margin-top: var(--space-2);
+  margin-top: var(--space-1);
 }
 
 .skip-link {
@@ -88,7 +86,7 @@ li + li {
   top: -100px;
   z-index: 100;
   padding: var(--space-2) var(--space-3);
-  background: var(--color-text);
+  background: var(--color-strong);
   color: var(--color-surface);
   border-radius: var(--radius-small);
   text-decoration: none;
@@ -104,20 +102,20 @@ li + li {
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.65rem;
+    font-size: 1.3rem;
   }
 }
 
-/* ── Section entrance animations ────────────── */
+/* ── Section entrance animations — subtle ──── */
 
 .section-animate {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
+  transform: translateY(10px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 .section-animate.is-visible {
@@ -126,15 +124,15 @@ li + li {
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(16px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: none; }
 }
 
 .hero-copy > * {
   opacity: 0;
-  animation: fadeUp 0.6s ease forwards;
+  animation: fadeUp 0.45s ease forwards;
 }
 
-.hero-copy > *:nth-child(1) { animation-delay: 0.15s; }
-.hero-copy > *:nth-child(2) { animation-delay: 0.3s; }
-.hero-copy > *:nth-child(3) { animation-delay: 0.45s; }
+.hero-copy > *:nth-child(1) { animation-delay: 0.08s; }
+.hero-copy > *:nth-child(2) { animation-delay: 0.18s; }
+.hero-copy > *:nth-child(3) { animation-delay: 0.28s; }

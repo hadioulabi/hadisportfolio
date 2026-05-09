@@ -22,9 +22,8 @@
 
     const copy = ui.el("div", "profile-card-copy");
     copy.append(ui.el("h2", "", site.profile.name));
-    if (site.profile.cardSubtitle) {
-      copy.append(ui.el("p", "", site.profile.cardSubtitle));
-    }
+    copy.append(ui.el("p", "profile-headline", "Fashion Management Student"));
+    copy.append(ui.el("p", "company-ref", "Werkstudent bei Outatex GmbH"));
 
     mount.append(portrait, copy);
   }
@@ -49,23 +48,19 @@
     });
 
     if (site.profile.languages?.length) {
-      const languages = ui.el("article", "fact-item");
-      languages.append(ui.el("span", "", "Sprachen"));
-
+      const langBlock = ui.el("div", "lang-grid");
       site.profile.languages.forEach((item) => {
-        const row = ui.el("div");
-        const label = ui.el("strong", "", `${item.name}: ${item.level}`);
-        const meter = ui.el("meter");
-        meter.min = 0;
-        meter.max = 100;
-        meter.value = item.bar;
-        meter.textContent = `${item.bar}%`;
-        meter.setAttribute("aria-label", `${item.name} ${item.level}`);
-        row.append(label, meter);
-        languages.append(row);
+        const card = ui.el("div", "lang-card");
+        card.append(ui.el("div", "lang-name", item.name));
+        card.append(ui.el("div", "lang-level", item.level));
+        const bar = ui.el("div", "lang-bar");
+        const fill = ui.el("div", "lang-fill");
+        fill.style.width = item.bar + "%";
+        bar.append(fill);
+        card.append(bar);
+        langBlock.append(card);
       });
-
-      mount.append(languages);
+      mount.append(langBlock);
     }
   }
 

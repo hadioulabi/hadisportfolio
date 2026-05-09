@@ -1,57 +1,57 @@
 <svg viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
-  <rect width="760" height="280" fill="#f6f8fb"/>
+  <rect width="760" height="280" fill="#f6f8fb"></rect>
 
-  <!-- Title -->
+  
   <text x="380" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em">ERP-EINFÜHRUNG · ZEITLINIE</text>
 
-  <!-- Timeline base line -->
-  <line x1="60" y1="110" x2="700" y2="110" stroke="#d3dae8" stroke-width="2"/>
+  
+  <line x1="60" y1="110" x2="700" y2="110" stroke="#d3dae8" stroke-width="2"></line>
 
-  <!-- Phase 1: Aufbau -->
-  <circle cx="100" cy="110" r="10" fill="#1d4fa0"/>
+  
+  <circle cx="100" cy="110" r="10" fill="#1d4fa0"></circle>
   <text x="100" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Q1 2025</text>
-  <rect x="40" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"/>
+  <rect x="40" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <text x="100" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Aufbau</text>
   <text x="100" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">Anforderungen</text>
   <text x="100" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">Programmierung</text>
   <text x="100" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">Grundfunktionen</text>
 
-  <!-- Phase 2: Testing -->
-  <circle cx="250" cy="110" r="10" fill="#1d4fa0"/>
+  
+  <circle cx="250" cy="110" r="10" fill="#1d4fa0"></circle>
   <text x="250" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Q2 2025</text>
-  <rect x="190" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"/>
+  <rect x="190" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <text x="250" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Testing</text>
   <text x="250" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">Fehler dokumentiert</text>
   <text x="250" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">Korrekturen</text>
   <text x="250" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">Iterationen</text>
 
-  <!-- Phase 3: Datenpflege -->
-  <circle cx="400" cy="110" r="10" fill="#1d4fa0"/>
+  
+  <circle cx="400" cy="110" r="10" fill="#1d4fa0"></circle>
   <text x="400" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Mitte 2025</text>
-  <rect x="340" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"/>
+  <rect x="340" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <text x="400" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Datenpflege</text>
   <text x="400" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">Stammdaten</text>
   <text x="400" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">Bewegungsdaten</text>
   <text x="400" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">Datenqualität</text>
 
-  <!-- Phase 4: Schulung -->
-  <circle cx="550" cy="110" r="10" fill="#1d4fa0"/>
+  
+  <circle cx="550" cy="110" r="10" fill="#1d4fa0"></circle>
   <text x="550" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Rollout</text>
-  <rect x="490" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"/>
+  <rect x="490" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <text x="550" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Schulung</text>
   <text x="550" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">DE · AR · EN</text>
   <text x="550" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">DE / SY / EG</text>
   <text x="550" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">4–6 Nutzer</text>
 
-  <!-- Phase 5: Betrieb -->
-  <circle cx="700" cy="110" r="10" fill="#0c1e48"/>
+  
+  <circle cx="700" cy="110" r="10" fill="#0c1e48"></circle>
   <text x="700" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#0c1e48">laufend</text>
-  <rect x="640" y="130" width="120" height="72" rx="6" fill="#0c1e48"/>
+  <rect x="640" y="130" width="120" height="72" rx="6" fill="#0c1e48"></rect>
   <text x="700" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Betrieb</text>
   <text x="700" y="170" text-anchor="middle" font-size="10.5" fill="#edf2fa">produktiv genutzt</text>
   <text x="700" y="185" text-anchor="middle" font-size="10.5" fill="#edf2fa">laufende Betreuung</text>
   <text x="700" y="200" text-anchor="middle" font-size="10.5" fill="#edf2fa">international</text>
 
-  <!-- Caption -->
+  
   <text x="380" y="248" text-anchor="middle" font-size="10.5" fill="#58677a">Anonymisierte Darstellung · Länder und Mitarbeitende wurden abstrahiert</text>
 </svg>
