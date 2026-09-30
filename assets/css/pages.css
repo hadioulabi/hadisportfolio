@@ -190,20 +190,25 @@
   display: block;
 }
 
-/* Arabic: mirror the diagram so it reads right-to-left, then flip the
-   labels back so the text itself stays the right way round. */
+/* The diagrams keep their left-to-right layout in every language; only the
+   labels are translated. Mirroring them relied on transform-box: fill-box,
+   which Safari does not apply to SVG text, so the labels vanished there. */
 [dir="rtl"] .evidence-visual {
   direction: ltr;
 }
 
-[dir="rtl"] .evidence-visual svg {
-  transform: scaleX(-1);
-}
+/* On narrow screens the diagram would shrink until the labels are unreadable,
+   so keep it at a legible size and let it scroll sideways instead. */
+@media (max-width: 720px) {
+  .evidence-visual {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
-[dir="rtl"] .evidence-visual svg text {
-  transform-box: fill-box;
-  transform-origin: center;
-  transform: scaleX(-1);
+  .evidence-visual img,
+  .evidence-visual svg {
+    min-width: 660px;
+  }
 }
 
 .evidence-caption {

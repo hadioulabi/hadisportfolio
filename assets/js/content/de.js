@@ -21,7 +21,7 @@ window.PORTFOLIO_CONTENT.de = {
     },
     hero: {
       greeting: "Hey, ich bin Hadi.",
-      lead: "Fashion-Management-Student mit praktischer Erfahrung in Business Operations, ERP-Systemen, Export, Buchhaltung, Messevorbereitung und KI-gestützter Automatisierung.",
+      lead: "Fashion-Management-Student und Business Development in der Textilbranche.",
       navLabel: "Navigation",
       btnProfile: "Profil ansehen",
       btnCases: "Cases ansehen"

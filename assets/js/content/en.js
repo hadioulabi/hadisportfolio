@@ -21,7 +21,7 @@ window.PORTFOLIO_CONTENT.en = {
     },
     hero: {
       greeting: "Hey, I'm Hadi.",
-      lead: "Fashion management student with hands-on experience in business operations, ERP systems, export, accounting, trade fair preparation and AI-supported automation.",
+      lead: "Fashion management student and business development in the textile industry.",
       navLabel: "Navigation",
       btnProfile: "View profile",
       btnCases: "View cases"
