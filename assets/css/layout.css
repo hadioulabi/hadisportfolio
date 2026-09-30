@@ -145,6 +145,10 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.case-grid.lead {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 /* ── Process layout ──────────────────────────── */
 
 .process-layout {

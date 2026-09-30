@@ -460,6 +460,19 @@
   min-height: auto;
 }
 
+.case-card.lead {
+  padding: var(--space-5) var(--space-5) var(--space-5) var(--space-6);
+}
+
+.case-card.lead h3 {
+  font-size: 1.08rem;
+}
+
+.case-card.lead p {
+  font-size: 0.9rem;
+  max-width: 68ch;
+}
+
 .case-card h3 {
   font-size: 0.95rem;
   font-weight: 600;

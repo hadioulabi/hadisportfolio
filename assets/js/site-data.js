@@ -13,14 +13,14 @@ window.PORTFOLIO_SITE = {
     headline: "Fashion Management, Business Operations und KI-Automatisierung",
     companyLogoPath: "outatex.jpg",
     introParagraphs: [
-      "Ich studiere Fashion Management am Texoversum LDT in Nagold und arbeite auf meinen Bachelor of Arts hin. Mein Ziel ist es, mir Schritt fuer Schritt eine Laufbahn in der Fashion- und Textilbranche aufzubauen. Dabei verbinde ich Neugier, Verlaesslichkeit und praktische Erfahrung mit der Bereitschaft, neue Aufgaben engagiert und optimistisch anzugehen.",
-      "Besonders interessieren mich die Stellen, an denen Produkte, Prozesse und Menschen zusammenkommen: im operativen Tagesgeschaeft, in der Zusammenarbeit mit anderen Abteilungen, in digitalen Systemen und in Projekten, die Ablaeufe klarer oder effizienter machen. Durch meine Arbeit bei Outatex konnte ich frueh Verantwortung uebernehmen und lernen, wie wichtig strukturierte Kommunikation, saubere Daten und ein gutes Verstaendnis fuer Unternehmensprozesse sind.",
-      "Ich sehe mich als jemand, der gerne dazulernt, Aufgaben gruendlich angeht und praktische Loesungen sucht. Mode und Textilien interessieren mich nicht nur als Produkte, sondern auch als Branche mit vielen beweglichen Teilen: Einkauf, Logistik, Vertrieb, Systeme, Menschen und internationale Zusammenarbeit."
+      "Fashion-Management-Student mit vier Jahren Praxis in der Textilbranche. Mich interessieren die Stellen, an denen Produkte, Prozesse und Menschen zusammenkommen: Export und Logistik, digitale Systeme, Buchhaltung und Projekte, die Abläufe klarer machen.",
+      "Bei Outatex konnte ich früh Verantwortung übernehmen, von der Exportabwicklung über eine ERP-Einführung bis zu eigenen internen WebApps. Seit September 2026 sammle ich bei Groz-Beckert Erfahrung im Innovationsmanagement."
     ],
     facts: [
-      { label: "Studium", value: "Fashion Management, LDT Texoversum Nagold, Abschluss vsl. 07.2027" },
-      { label: "Rolle", value: "Praktikant Innovationsmanagement seit 09.2026, zuvor Werkstudent Business Operations" },
-      { label: "Unternehmen", value: "Groz-Beckert KG (TEZ), zuvor Outatex GmbH, internationale Textilbranche" },
+      { label: "Studium", value: "Bachelor of Arts, Fashion Management · LDT Texoversum Nagold · BWL mit Schwerpunkt Fashion & Textile Management · Abschluss vsl. 07.2027" },
+      { label: "Rolle", value: "Praktikum Innovationsmanagement · Groz-Beckert KG, Technologie- und Entwicklungszentrum · seit 09.2026" },
+      { label: "Erfahrung", value: "07.2022 - 08.2026 Outatex GmbH: Export, ERP-Einführung, Buchhaltung, Messe, interne WebApps" },
+      { label: "Schwerpunkte", value: "Operative Prozesse · Systeme & Daten · KI-gestützte Automatisierung" },
       { label: "Standort", value: "Mötzingen, Baden-Württemberg, Deutschland" },
       { label: "Geboren", value: "15.12.2006" }
     ],
@@ -504,7 +504,7 @@ window.PORTFOLIO_SITE = {
     },
     {
       id: "storescore",
-      priority: "support",
+      priority: "lead",
       status: "in Entwicklung",
       slug: "fashion-store-score.html",
       title: "Fashion Store Score: Retail-Analytics-Konzept für datenbasierte Verkaufsflächen",

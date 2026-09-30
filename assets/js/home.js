@@ -129,7 +129,8 @@
   }
 
   function renderCard(item) {
-    const card = ui.el("a", `case-card ${item.priority === "support" ? "compact" : ""}`);
+    const variants = { support: "compact", lead: "lead" };
+    const card = ui.el("a", `case-card ${variants[item.priority] || ""}`);
     card.href = ui.pathTo(`cases/${item.slug}`);
 
     card.append(ui.el("h3", "", item.title));
@@ -143,12 +144,15 @@
   }
 
   function renderCases() {
+    const leadMount = document.getElementById("leadCases");
     const flagshipMount = document.getElementById("flagshipCases");
     const supportMount = document.getElementById("supportCases");
     if (!flagshipMount || !supportMount) return;
 
+    const mounts = { lead: leadMount || flagshipMount, flagship: flagshipMount };
+
     ui.cases.forEach((item) => {
-      const target = item.priority === "flagship" ? flagshipMount : supportMount;
+      const target = mounts[item.priority] || supportMount;
       target.append(renderCard(item));
     });
   }
