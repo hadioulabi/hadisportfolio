@@ -19,8 +19,8 @@ window.PORTFOLIO_SITE = {
     ],
     facts: [
       { label: "Studium", value: "Fashion Management, LDT Texoversum Nagold, Abschluss vsl. 07.2027" },
-      { label: "Rolle", value: "Mitarbeit seit 07.2022, Werkstudent seit 09.2025" },
-      { label: "Unternehmen", value: "Outatex GmbH, internationale Textilbranche" },
+      { label: "Rolle", value: "Praktikant Innovationsmanagement seit 09.2026, zuvor Werkstudent Business Operations" },
+      { label: "Unternehmen", value: "Groz-Beckert KG (TEZ), zuvor Outatex GmbH, internationale Textilbranche" },
       { label: "Standort", value: "Mötzingen, Baden-Württemberg, Deutschland" },
       { label: "Geboren", value: "15.12.2006" }
     ],
@@ -31,8 +31,8 @@ window.PORTFOLIO_SITE = {
       { name: "Französisch", level: "Grundkenntnisse", bar: 45 }
     ],
     quickStats: [
-      { value: "07/2022", label: "Outatex seit" },
-      { value: "09/2025", label: "Werkstudent seit" },
+      { value: "09/2026", label: "Groz-Beckert TEZ seit" },
+      { value: "2022-2026", label: "Outatex" },
       { value: "DE/AR/EN/FR", label: "Sprachen" }
     ]
   },
@@ -48,9 +48,18 @@ window.PORTFOLIO_SITE = {
   },
   timeline: [
     {
-      period: "07.2022 - laufend",
+      period: "09.2026 - laufend",
+      title: "Praktikum Innovationsmanagement · Groz-Beckert KG",
+      text: "Technologie- und Entwicklungszentrum (TEZ).",
+      items: [
+        "Einblick in die Sparten des TEZ und deren Zusammenspiel",
+        "Einblick in die Prozesse hinter Innovationsmanagement und Unternehmensentwicklung"
+      ]
+    },
+    {
+      period: "07.2022 - 08.2026",
       title: "Werkstudent Business Operations · Outatex GmbH",
-      text: "Mitarbeit ab 07.2022, Werkstudent seit 09.2025.",
+      text: "Mitarbeit ab 07.2022, Werkstudent von 09.2025 bis 08.2026.",
       items: [
         "Eigenständige Exportabwicklung",
         "Begleitung einer individuellen ERP-Einführung",
@@ -85,10 +94,12 @@ window.PORTFOLIO_SITE = {
     {
       period: "2024 - 07.2027 vsl.",
       title: "Bachelor of Arts, Fashion Management · LDT Texoversum",
+      text: "Nagold · Ø 1,9.",
       items: [
         "BWL mit Schwerpunkt Fashion & Textile Management",
         "Marketing, Einkauf, Produktentwicklung, Warenkunde, Supply Chain",
-        "Branchennahe Module, Projekte und Exkursionen in der Mode- und Textilwirtschaft"
+        "Branchennahe Module, Projekte und Exkursionen in der Mode- und Textilwirtschaft",
+        "Semesterarbeit zu sozio-politischem Brand Activism in der Modebranche, Vergleichsanalyse Patagonia/Nike zur Rolle von Authentizität, Note 1,0"
       ]
     },
     {
@@ -489,6 +500,68 @@ window.PORTFOLIO_SITE = {
         { type: "Timeline", title: "Messeprojekte im Überblick", image: "assets/images/cases/messe-timeline.svg", caption: "Techtextil Frankfurt (besucht) und NASTEX Syrien (Juli 2026 geplant).", text: "Zeigt Vorbereitung und Ablauf beider Messeprojekte." },
         { type: "Material", title: "Flyer / Infomaterial", text: "Freigegebene oder neutralisierte Beispiele für die Messekommunikation – nach Freigabe." },
         { type: "Update", title: "Nach-Messe-Reflexion", text: "Wird nach Juli 2026 mit tatsächlichen Eindrücken und Erkenntnissen ergänzt." }
+      ]
+    },
+    {
+      id: "storescore",
+      priority: "support",
+      status: "in Entwicklung",
+      slug: "fashion-store-score.html",
+      title: "Fashion Store Score: Retail-Analytics-Konzept für datenbasierte Verkaufsflächen",
+      shortTitle: "Fashion Store Score",
+      eyebrow: "Case 06 · Konzeptarbeit",
+      subtitle: "Store-Layout, Produktplatzierung und Abverkauf als Grundlage für Merchandising-Entscheidungen.",
+      period: "ab Februar 2026",
+      area: "Retail Analytics / Visual Merchandising / Konzeptentwicklung",
+      role: "Konzeption im Dreierteam, Analyselogik, Weiterentwicklung",
+      tools: "Excel, Recherche, Konzeptmodelle",
+      summary: "Gemeinsam mit zwei Kommilitonen entwickle ich ein Retail-Analytics-Konzept, das die Verkaufsfläche im Modehandel messbar macht. Store-Layout, Produktplatzierung und Abverkauf werden zusammen betrachtet, um Merchandising-Entscheidungen auf Daten statt auf Bauchgefühl zu stützen.",
+      problem: "Entscheidungen über Flächen, Platzierung und Präsentation werden im Modehandel oft aus Erfahrung und Gewohnheit getroffen. Der Zusammenhang zwischen Layout, Platzierung und tatsächlichem Abverkauf bleibt dabei unscharf und ist im Nachhinein schwer zu begründen.",
+      approach: "Wir zerlegen die Verkaufsfläche in bewertbare Bestandteile, verknüpfen sie mit Abverkaufsdaten und fassen das Ergebnis in einem nachvollziehbaren Score zusammen. Wichtig ist uns, dass die Logik im Alltag anwendbar bleibt und nicht nur theoretisch funktioniert.",
+      result: "Es existiert ein ausgearbeitetes Konzept mit definierter Bewertungslogik und Struktur. Die Arbeit läuft weiter, mit dem Ziel, daraus ein marktreifes Werkzeug zu entwickeln.",
+      impact: "Der Case zeigt konzeptionelles Arbeiten im Team und die Verbindung von Fashion-Retail-Verständnis mit datenbasierter Analyse – als Ergänzung zu den operativen und systemnahen Cases.",
+      tags: ["Retail Analytics", "Visual Merchandising", "Teamprojekt"],
+      sections: [
+        {
+          title: "Ausgangslage",
+          body: [
+            "Die Verkaufsfläche ist im Modehandel eine der teuersten Ressourcen. Gleichzeitig wird selten systematisch erfasst, welche Fläche welchen Beitrag leistet und woran das liegt.",
+            "Aus dieser Lücke heraus ist die Idee entstanden, Layout, Platzierung und Abverkauf nicht getrennt, sondern als zusammenhängendes Bild zu betrachten."
+          ]
+        },
+        {
+          title: "Meine Rolle",
+          body: [
+            "Das Konzept entsteht im Dreierteam. Ich bringe vor allem die Verbindung zwischen Prozessverständnis und Analyselogik ein: Welche Größen sind überhaupt erfassbar, wie lassen sie sich sinnvoll gewichten und wo wird eine Kennzahl zur Scheingenauigkeit.",
+            "Diese Denkweise kenne ich aus den operativen Cases: Erst verstehen, wie ein Ablauf real funktioniert, dann eine Struktur darüberlegen."
+          ]
+        },
+        {
+          title: "Konzeptlogik",
+          body: [
+            "Die Verkaufsfläche wird in bewertbare Bereiche zerlegt. Für jeden Bereich werden Merkmale wie Lage, Sichtbarkeit und Art der Präsentation erfasst und anschließend mit dem Abverkauf in Beziehung gesetzt.",
+            "Aus dieser Verknüpfung entsteht ein Score, der Flächen vergleichbar macht und damit als Argumentationsgrundlage für Merchandising-Entscheidungen dienen kann."
+          ]
+        },
+        {
+          title: "Stand und Weiterentwicklung",
+          body: [
+            "Das Konzept ist ausgearbeitet und wird weiter geschärft. Im Fokus stehen die Validierung der Bewertungslogik und die Frage, wie sich das Modell mit vertretbarem Aufwand im Alltag erheben lässt.",
+            "Mittelfristiges Ziel ist die Marktreife: ein Werkzeug, das ohne großen Datenapparat einsetzbar ist."
+          ]
+        },
+        {
+          title: "Reflexion",
+          body: [
+            "Der interessanteste Teil ist die Abwägung zwischen Genauigkeit und Anwendbarkeit. Ein Modell, das alles erfassen will, wird im Handel nicht gepflegt und verliert damit seinen Wert.",
+            "Gleichzeitig zeigt das Projekt, wie stark Studieninhalte und operative Praxis zusammenspielen: Visual Merchandising wird deutlich greifbarer, wenn man die Prozesse dahinter kennt."
+          ]
+        }
+      ],
+      evidence: [
+        { type: "Konzept", title: "Bewertungslogik im Überblick", image: "assets/images/cases/store-score-konzept.svg", caption: "Von Flächenmerkmalen und Abverkaufsdaten zum Score – schematische, anonymisierte Darstellung.", text: "Zeigt, wie Layout, Platzierung und Abverkauf zu einer vergleichbaren Kennzahl zusammengeführt werden." },
+        { type: "Modell", title: "Scoring-Struktur", text: "Abstrakte Darstellung der Bewertungsebenen ohne konkrete Unternehmensdaten." },
+        { type: "Ausblick", title: "Weg zur Marktreife", text: "Wird ergänzt, sobald Validierung und Erprobung weiter fortgeschritten sind." }
       ]
     }
   ]

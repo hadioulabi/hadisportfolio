@@ -54,7 +54,7 @@
     const grid = el("div", "container footer-grid");
     const copy = el("div");
     const strong = el("strong", "", site.profile?.name || "Hadi Oulabi");
-    const text = el("p", "", "Fashion Management · Business Operations · Outatex GmbH");
+    const text = el("p", "", "Fashion Management · Business Operations · Innovationsmanagement");
     copy.append(strong, text);
 
     grid.append(copy);

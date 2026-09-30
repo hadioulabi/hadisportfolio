@@ -1,6 +1,6 @@
 # Digitaler Lebenslauf und Portfolio-Website
 
-Statische Portfolio-Website fuer Hadi Oulabi mit Profil, Erfahrung, Kompetenzen, Kontakt und fuenf Case-Seiten zu Business Operations, ERP, Export, Buchhaltung, Messe und KI-gestuetzter Automatisierung.
+Statische Portfolio-Website fuer Hadi Oulabi mit Profil, Erfahrung, Kompetenzen, Kontakt und sechs Case-Seiten zu Business Operations, ERP, Export, Buchhaltung, Messe, Retail Analytics und KI-gestuetzter Automatisierung.
 
 Die Seite ist als GitHub-Pages-ready Projekt aufgebaut: kein Backend, kein CMS, zentrale Datenpflege in JavaScript, schlanke HTML-Huellen fuer Startseite und Case-Seiten.
 
@@ -21,6 +21,7 @@ cases/
   exportabwicklung.html
   odoo-buchhaltung.html
   messe.html
+  fashion-store-score.html
 assets/
   css/
     tokens.css
@@ -38,8 +39,8 @@ assets/
     profile/
 lebenslauf/
   Lebenslauf Hadi Oulabi.html
+  Lebenslauf Hadi Oulabi.pdf
   assets/hadi.jpg
-  export/Lebenslauf Hadi Oulabi.pdf
 outatex.jpg
 ```
 
@@ -80,6 +81,9 @@ Die Website zeigt Arbeit aus folgenden Bereichen:
 5. **Messevorbereitung**  
    Vorbereitung von Techtextil Frankfurt 2026 und NASTEX Syrien 2026 mit Materialien, Standplanung und Koordination.
 
+6. **Fashion Store Score**  
+   Retail-Analytics-Konzept im Dreierteam zur datenbasierten Bewertung von Verkaufsflaechen im Modehandel.
+
 ## Pflegeprinzip
 
 Neue Inhalte sollten nach drei Formaten einsortiert werden:
@@ -104,6 +108,8 @@ Entscheidungsregel:
 - Techtextil: Outcomes, Kontakte und Erkenntnisse nachtragen.
 - NASTEX: nach Juli 2026 vollstaendig aktualisieren.
 - Odoo: Ausloeser, geschulte Personen und Startprobleme genauer festhalten.
+- Store Score: Validierung der Bewertungslogik und Erhebungsaufwand dokumentieren.
+- Groz-Beckert: Praktikum im TEZ nach ersten Wochen inhaltlich schaerfen.
 
 ## Sensibilitaet
 

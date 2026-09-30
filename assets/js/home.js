@@ -23,7 +23,7 @@
     const copy = ui.el("div", "profile-card-copy");
     copy.append(ui.el("h2", "", site.profile.name));
     copy.append(ui.el("p", "profile-headline", "Fashion Management Student"));
-    copy.append(ui.el("p", "company-ref", "Werkstudent bei Outatex GmbH"));
+    copy.append(ui.el("p", "company-ref", "Praktikant Innovationsmanagement bei Groz-Beckert KG"));
 
     mount.append(portrait, copy);
   }

@@ -1,0 +1,13 @@
+# Arbeits- und Debug-Artefakte aus der Lebenslauf-Erstellung
+lebenslauf/diagnostics/
+lebenslauf/screenshots/
+lebenslauf/uploads/
+lebenslauf/export/
+lebenslauf/debug.png
+lebenslauf/*-print.html
+lebenslauf/* (*).html
+lebenslauf/assets/* (*).jpg
+
+# Systemdateien
+.DS_Store
+Thumbs.db
