@@ -1,28 +1,18 @@
 (function () {
   const ui = window.PortfolioUI;
   const caseId = document.body.dataset.case;
-  const data = ui.caseById(caseId);
   const mount = document.querySelector("[data-case-render-root]");
-
-  if (!mount || !data) return;
-
-  document.title = `${data.shortTitle} | Portfolio`;
+  if (!mount) return;
 
   function paragraph(text) {
     return ui.el("p", "", text);
   }
 
-  function renderMeta(label, value) {
-    const card = ui.el("article", "meta-card");
-    card.append(ui.el("span", "", label));
-    card.append(ui.el("p", "", value));
-    return card;
-  }
-
-  function renderHero() {
+  function renderHero(data, labels) {
     const section = ui.el("section", "case-hero");
     const container = ui.el("div", "container");
-    const back = ui.el("a", "breadcrumb", "Zurück zur Übersicht");
+
+    const back = ui.el("a", "breadcrumb", labels.back);
     back.href = ui.pathTo("index.html#cases");
 
     const grid = ui.el("div", "case-hero-grid");
@@ -30,11 +20,14 @@
     copy.append(ui.el("h1", "", data.title));
 
     const summary = ui.el("aside", "case-summary");
-    summary.append(ui.el("strong", "", "Kurzfassung"));
+    summary.append(ui.el("strong", "", labels.summary));
     summary.append(paragraph(data.summary));
 
     const meta = ui.el("div", "meta-grid");
-    meta.append(renderMeta("Zeitraum", data.period));
+    const card = ui.el("article", "meta-card");
+    card.append(ui.el("span", "", labels.period));
+    card.append(ui.el("p", "", data.period));
+    meta.append(card);
     summary.append(meta);
 
     grid.append(copy, summary);
@@ -43,17 +36,18 @@
     return section;
   }
 
-  function renderNarrative() {
+  function renderNarrative(data, labels) {
     const section = ui.el("section", "case-section");
     const container = ui.el("div", "container");
     const grid = ui.el("div", "narrative-grid");
 
     [
-      ["Problem", data.problem],
-      ["Vorgehen", data.approach],
-      ["Ergebnis", data.result],
-      ["Wirkung", data.impact]
+      [labels.problem, data.problem],
+      [labels.approach, data.approach],
+      [labels.result, data.result],
+      [labels.impact, data.impact]
     ].forEach(([title, text]) => {
+      if (!text) return;
       const card = ui.el("article", "detail-card");
       card.append(ui.el("h3", "", title));
       card.append(paragraph(text));
@@ -65,13 +59,15 @@
     return section;
   }
 
-  function renderSections() {
+  function renderSections(data, labels) {
+    if (!data.sections || !data.sections.length) return null;
+
     const section = ui.el("section", "case-section band-section");
     const container = ui.el("div", "container");
 
     const heading = ui.el("div", "section-heading");
-    heading.append(ui.el("p", "eyebrow", "Ablauf"));
-    heading.append(ui.el("h2", "", "Vorgehen im Detail"));
+    heading.append(ui.el("p", "eyebrow", labels.processEyebrow));
+    heading.append(ui.el("h2", "", labels.processHeading));
 
     const grid = ui.el("div", "sections-grid");
     data.sections.forEach((item) => {
@@ -86,27 +82,34 @@
     return section;
   }
 
-  function renderEvidence() {
-    const firstWithImage = data.evidence.find((e) => e.image);
-    if (!firstWithImage) return null;
+  function renderEvidence(data) {
+    if (!data.image) return null;
 
     const section = ui.el("section", "case-section");
     const container = ui.el("div", "container");
-    const imgWrap = ui.el("div", "evidence-visual");
+    const wrap = ui.el("div", "evidence-visual");
     const img = document.createElement("img");
-    img.src = ui.pathTo(firstWithImage.image);
-    img.alt = firstWithImage.title;
+    img.src = ui.pathTo(data.image);
+    img.alt = data.imageAlt || data.shortTitle;
     img.loading = "lazy";
-    imgWrap.append(img);
-    container.append(imgWrap);
+    wrap.append(img);
+    container.append(wrap);
     section.append(container);
     return section;
   }
 
-  mount.append(
-    renderHero(),
-    renderNarrative(),
-    renderSections(),
-    ...[renderEvidence()].filter(Boolean)
-  );
+  ui.onRender(function () {
+    const data = ui.caseById(caseId);
+    ui.clear(mount);
+    if (!data) return;
+
+    const labels = ui.site.ui.caseLabels;
+    document.title = `${data.shortTitle} | ${ui.site.meta.title}`;
+
+    mount.append(
+      renderHero(data, labels),
+      renderNarrative(data, labels),
+      ...[renderSections(data, labels), renderEvidence(data)].filter(Boolean)
+    );
+  });
 })();

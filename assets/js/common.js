@@ -1,7 +1,42 @@
 (function () {
-  const site = window.PORTFOLIO_SITE;
+  const STORAGE_KEY = "portfolio-lang";
+  const DEFAULT_LANG = "en";
+  const ORDER = ["en", "de", "ar"];
+
   const root = document.body.dataset.root || ".";
   const page = document.body.dataset.page || "";
+  const content = window.PORTFOLIO_CONTENT || {};
+
+  const listeners = [];
+  let current = null;
+
+  function available() {
+    return ORDER.filter((code) => content[code]);
+  }
+
+  function readStored() {
+    try {
+      return window.localStorage.getItem(STORAGE_KEY);
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function writeStored(code) {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, code);
+    } catch (err) {
+      /* storage blocked – the choice simply does not persist */
+    }
+  }
+
+  function initialLang() {
+    const fromUrl = new URLSearchParams(window.location.search).get("lang");
+    if (fromUrl && content[fromUrl]) return fromUrl;
+    const stored = readStored();
+    if (stored && content[stored]) return stored;
+    return content[DEFAULT_LANG] ? DEFAULT_LANG : available()[0];
+  }
 
   function pathTo(href) {
     if (href.startsWith("http")) return href;
@@ -15,69 +50,122 @@
     return node;
   }
 
-  function renderHeader() {
-    const mount = document.querySelector("[data-site-header]");
-    if (!mount) return;
+  function clear(node) {
+    if (node) node.replaceChildren();
+  }
 
-    const header = el("header", "site-header");
-    const nav = el("nav", "container nav-shell");
-    nav.setAttribute("aria-label", "Hauptnavigation");
+  function lookup(path) {
+    return path.split(".").reduce((acc, key) => (acc == null ? acc : acc[key]), content[current]);
+  }
 
-    const brand = el("a", "brand");
-    brand.href = pathTo("index.html");
-    const label = el("span", "", site.profile?.name || "Hadi Oulabi");
-    brand.append(label);
+  function t(path, fallback) {
+    const value = lookup(path);
+    return typeof value === "string" ? value : (fallback || "");
+  }
 
-    const links = el("div", "nav-links");
-    site.nav.forEach((item) => {
-      const isActive = item.match === page || (page === "case" && item.match === "cases");
-      const link = el("a", isActive ? "is-active" : "", item.label);
-      // On homepage, convert "index.html#section" to just "#section" to avoid reload
-      if (page === "home" && item.href.includes("#")) {
-        link.href = "#" + item.href.split("#")[1];
-      } else {
-        link.href = pathTo(item.href);
-      }
-      links.append(link);
+  function statusChipClass(statusKey) {
+    const known = ["active", "dev", "planned", "done", "pending"];
+    return known.indexOf(statusKey) >= 0
+      ? `chip status-chip chip--${statusKey}`
+      : "chip status-chip";
+  }
+
+  /* ── Static text marked up with data-i18n ─────── */
+
+  function applyStaticText() {
+    document.querySelectorAll("[data-i18n]").forEach((node) => {
+      const value = lookup(node.dataset.i18n);
+      if (typeof value === "string") node.textContent = value;
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+      const value = lookup(node.dataset.i18nAria);
+      if (typeof value === "string") node.setAttribute("aria-label", value);
+    });
+  }
+
+  function applyDocumentMeta() {
+    const meta = content[current].meta;
+    document.documentElement.lang = meta.lang;
+    document.documentElement.dir = meta.dir;
+    if (page === "home") {
+      document.title = meta.title;
+      const description = document.querySelector('meta[name="description"]');
+      if (description) description.setAttribute("content", meta.description);
+    }
+  }
+
+  /* ── Language switcher ────────────────────────── */
+
+  function renderLangBar() {
+    const existing = document.querySelector(".lang-switch-bar");
+    if (existing) existing.remove();
+
+    const codes = available();
+    if (codes.length < 2) return;
+
+    const bar = el("div", "lang-switch-bar");
+    const group = el("div", "lang-switch");
+    group.setAttribute("role", "group");
+    group.setAttribute("aria-label", t("ui.langLabel", "Language"));
+
+    codes.forEach((code) => {
+      const meta = content[code].meta;
+      const button = el("button", code === current ? "is-active" : "", meta.short);
+      button.type = "button";
+      button.lang = meta.lang;
+      button.title = meta.label;
+      button.setAttribute("aria-label", meta.label);
+      if (code === current) button.setAttribute("aria-current", "true");
+      button.addEventListener("click", () => setLang(code));
+      group.append(button);
     });
 
-    nav.append(brand, links);
-    header.append(nav);
-    mount.replaceWith(header);
+    bar.append(group);
+    document.body.prepend(bar);
   }
 
-  function renderFooter() {
-    const mount = document.querySelector("[data-site-footer]");
-    if (!mount) return;
+  /* ── Public API ───────────────────────────────── */
 
-    const footer = el("footer", "site-footer");
-    const grid = el("div", "container footer-grid");
-    const copy = el("div");
-    const strong = el("strong", "", site.profile?.name || "Hadi Oulabi");
-    const text = el("p", "", "Fashion Management · Business Operations · Innovationsmanagement");
-    copy.append(strong, text);
-
-    grid.append(copy);
-    footer.append(grid);
-    mount.replaceWith(footer);
+  function apply() {
+    applyDocumentMeta();
+    applyStaticText();
+    renderLangBar();
+    listeners.forEach((fn) => fn());
   }
 
-  function statusChipClass(status) {
-    if (status === "aktiv") return "chip status-chip chip--active";
-    if (status === "in Entwicklung") return "chip status-chip chip--dev";
-    if (status && status.toLowerCase().includes("geplant")) return "chip status-chip chip--planned";
-    if (status && (status.toLowerCase().includes("update") || status.toLowerCase().includes("juli"))) return "chip status-chip chip--planned";
-    return "chip status-chip";
+  function setLang(code) {
+    if (!content[code] || code === current) return;
+    current = code;
+    writeStored(code);
+    apply();
   }
+
+  current = initialLang();
 
   window.PortfolioUI = {
     el,
+    clear,
     pathTo,
     statusChipClass,
-    cases: site.cases,
+    t,
+    get lang() {
+      return current;
+    },
+    get site() {
+      return content[current];
+    },
+    get cases() {
+      return content[current].cases;
+    },
     caseById(id) {
-      return site.cases.find((item) => item.id === id);
+      return content[current].cases.find((item) => item.id === id);
+    },
+    setLang,
+    onRender(fn) {
+      listeners.push(fn);
+      fn();
     }
   };
 
+  apply();
 })();

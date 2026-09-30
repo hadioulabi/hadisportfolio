@@ -1,25 +1,74 @@
-window.PORTFOLIO_SITE = {
-  nav: [
-    { label: "Start", href: "index.html", match: "home" },
-    { label: "Profil", href: "index.html#profil", match: "profil" },
-    { label: "Erfahrung", href: "index.html#erfahrung", match: "erfahrung" },
-    { label: "Kompetenzen", href: "index.html#kompetenzen", match: "kompetenzen" },
-    { label: "Cases", href: "index.html#cases", match: "cases" },
-    { label: "Kontakt", href: "index.html#kontakt", match: "kontakt" }
-  ],
+window.PORTFOLIO_CONTENT = window.PORTFOLIO_CONTENT || {};
+window.PORTFOLIO_CONTENT.de = {
+  meta: {
+    lang: "de",
+    dir: "ltr",
+    label: "Deutsch",
+    short: "DE",
+    title: "Hadi Oulabi",
+    description: "Hadi Oulabi – Fashion Management, Business Operations, Innovationsmanagement und KI-Automatisierung."
+  },
+  ui: {
+    skipLink: "Zum Inhalt springen",
+    langLabel: "Sprache",
+    nav: {
+      home: "Start",
+      profil: "Profil",
+      erfahrung: "Erfahrung",
+      kompetenzen: "Kompetenzen",
+      cases: "Cases",
+      kontakt: "Kontakt"
+    },
+    hero: {
+      greeting: "Hey, ich bin Hadi.",
+      lead: "Fashion-Management-Student mit praktischer Erfahrung in Business Operations, ERP-Systemen, Export, Buchhaltung, Messevorbereitung und KI-gestützter Automatisierung.",
+      navLabel: "Navigation",
+      btnProfile: "Profil ansehen",
+      btnCases: "Cases ansehen"
+    },
+    sections: {
+      profilEyebrow: "Profil",
+      profilHeading: "Aus der Textilbranche, mit Blick für Prozesse, Menschen und Fashion.",
+      erfahrungEyebrow: "Erfahrung",
+      erfahrungHeading: "Was ich bisher gelernt, gemacht und aufgebaut habe.",
+      kompetenzenEyebrow: "Kompetenzen",
+      kompetenzenHeading: "Was ich praktisch anwende und weiter ausbaue.",
+      casesEyebrow: "Cases",
+      casesHeading: "Einblicke in Projekte aus meinem Arbeitsalltag.",
+      kontaktEyebrow: "Kontakt",
+      kontaktHeading: "Interesse an einem Gespräch oder mehr Details zu meiner Person? Per E-Mail oder LinkedIn gerne melden."
+    },
+    profileCard: {
+      role: "Fashion Management Student",
+      company: "Praktikant Innovationsmanagement bei Groz-Beckert KG"
+    },
+    shortProfile: "Kurzprofil",
+    caseLabels: {
+      back: "Zurück zur Übersicht",
+      view: "Ansehen →",
+      soon: "Case folgt",
+      summary: "Kurzfassung",
+      period: "Zeitraum",
+      problem: "Problem",
+      approach: "Vorgehen",
+      result: "Ergebnis",
+      impact: "Wirkung",
+      processEyebrow: "Ablauf",
+      processHeading: "Vorgehen im Detail"
+    },
+    footer: "Fashion Management · Business Operations · Innovationsmanagement"
+  },
   profile: {
     name: "Hadi Oulabi",
     initials: "HA",
-    headline: "Fashion Management, Business Operations und KI-Automatisierung",
-    companyLogoPath: "outatex.jpg",
     introParagraphs: [
       "Fashion-Management-Student mit vier Jahren Praxis in der Textilbranche. Mich interessieren die Stellen, an denen Produkte, Prozesse und Menschen zusammenkommen: Export und Logistik, digitale Systeme, Buchhaltung und Projekte, die Abläufe klarer machen.",
-      "Bei Outatex konnte ich früh Verantwortung übernehmen, von der Exportabwicklung über eine ERP-Einführung bis zu eigenen internen WebApps. Seit September 2026 sammle ich bei Groz-Beckert Erfahrung im Innovationsmanagement."
+      "Im internationalen Familienbetrieb arbeite ich über mehrere Bereiche hinweg und konnte früh Verantwortung übernehmen. Seit September 2026 sammle ich im Technologie- und Entwicklungszentrum von Groz-Beckert Erfahrung im Innovationsmanagement."
     ],
     facts: [
-      { label: "Studium", value: "Bachelor of Arts, Fashion Management · LDT Texoversum Nagold · BWL mit Schwerpunkt Fashion & Textile Management · Abschluss vsl. 07.2027" },
-      { label: "Rolle", value: "Praktikum Innovationsmanagement · Groz-Beckert KG, Technologie- und Entwicklungszentrum · seit 09.2026" },
-      { label: "Erfahrung", value: "07.2022 - 08.2026 Outatex GmbH: Export, ERP-Einführung, Buchhaltung, Messe, interne WebApps" },
+      { label: "Studium", value: "Bachelor of Arts, Fashion Management · TEXOVERSUM LDT Nagold · BWL mit Schwerpunkt Fashion & Textile Management · 10.2024 bis vsl. 07.2027" },
+      { label: "Rolle", value: "Praktikum Innovationsmanagement · Groz-Beckert KG, Technologie- und Entwicklungszentrum, Albstadt · seit 09.2026" },
+      { label: "Erfahrung", value: "Seit 07.2022 Outatex GmbH: Export, ERP-Einführung, Buchhaltung, Messe, interne WebApps" },
       { label: "Schwerpunkte", value: "Operative Prozesse · Systeme & Daten · KI-gestützte Automatisierung" },
       { label: "Standort", value: "Mötzingen, Baden-Württemberg, Deutschland" },
       { label: "Geboren", value: "15.12.2006" }
@@ -29,11 +78,6 @@ window.PORTFOLIO_SITE = {
       { name: "Arabisch", level: "fließend in Wort und Schrift", bar: 95 },
       { name: "Englisch", level: "verhandlungssicher (C1)", bar: 88 },
       { name: "Französisch", level: "Grundkenntnisse", bar: 45 }
-    ],
-    quickStats: [
-      { value: "09/2026", label: "Groz-Beckert TEZ seit" },
-      { value: "2022-2026", label: "Outatex" },
-      { value: "DE/AR/EN/FR", label: "Sprachen" }
     ]
   },
   contact: {
@@ -50,29 +94,35 @@ window.PORTFOLIO_SITE = {
     {
       period: "09.2026 - laufend",
       title: "Praktikum Innovationsmanagement · Groz-Beckert KG",
-      text: "Technologie- und Entwicklungszentrum (TEZ).",
+      text: "Technologie- und Entwicklungszentrum (TEZ), Albstadt.",
       items: [
         "Einblick in die Sparten des TEZ und deren Zusammenspiel",
-        "Einblick in die Prozesse hinter Innovationsmanagement und Unternehmensentwicklung"
+        "Einblick in die Prozesse hinter Innovationsmanagement und Unternehmensentwicklung",
+        "Geschäftsmodell-Weiterentwicklung und der Weg von der Idee zur Lösung",
+        "Betriebliches Ideenmanagement, Business Design Sprints und Kundenforschung"
       ]
     },
     {
-      period: "07.2022 - 08.2026",
-      title: "Werkstudent Business Operations · Outatex GmbH",
-      text: "Mitarbeit ab 07.2022, Werkstudent von 09.2025 bis 08.2026.",
+      period: "07.2022 - laufend",
+      title: "Business Operations & Process Development · Outatex GmbH",
+      text: "Mötzingen · Mitarbeit ab 07.2022, Werkstudent seit 09.2025.",
       items: [
+        "Mitarbeit im internationalen Familienbetrieb über mehrere Bereiche hinweg",
         "Eigenständige Exportabwicklung",
         "Begleitung einer individuellen ERP-Einführung",
         "Einrichtung und Nutzung einer neuen Finanzbuchhaltungssoftware für Eingangs-/Ausgangsrechnungen",
         "Entwicklung interner WebApps für Dokumente, Social-Media-Posts und ABD-Prozesse mit KI-Unterstützung",
-        "Messevorbereitung Techtextil Frankfurt 2026 und NASTEX Syrien"
+        "Marketing-Organisation, Messevorbereitung und Vertriebsentwicklung"
       ]
     },
     {
       period: "03.2025 - laufend",
-      title: "Ehrenamtliches Spenden-Management · Ihssan gemeinnützige GmbH / Ahsin Spendenorganisation",
+      title: "Fundraising-Manager · Ihssan gemeinnützige GmbH",
+      text: "Ahsin Spendenorganisation · Katastrophenhilfe und humanitäre Hilfe.",
       items: [
-        "Büroarbeiten sowie Vorbereitung, Durchführung und Nachbereitung sozialer Projekte und Veranstaltungen",
+        "Planung, Umsetzung und Steuerung von Spendenkampagnen",
+        "Pflege von Spenderbeziehungen und Akquise von Mitteln für Kinder, Waisen und Familien in Not",
+        "Unterstützung lokaler Nothilfe, nachhaltigen Wiederaufbaus und der Finanzierung von Schulen",
         "Unterstützung in Öffentlichkeits- und PR-Arbeit sowie strukturierter Spendenkoordination"
       ]
     },
@@ -92,26 +142,28 @@ window.PORTFOLIO_SITE = {
       ]
     },
     {
-      period: "2024 - 07.2027 vsl.",
-      title: "Bachelor of Arts, Fashion Management · LDT Texoversum",
+      period: "10.2024 - 07.2027 vsl.",
+      title: "Bachelor of Arts, Fashion Management · TEXOVERSUM LDT Nagold",
       text: "Nagold · Ø 1,9.",
       items: [
         "BWL mit Schwerpunkt Fashion & Textile Management",
         "Marketing, Einkauf, Produktentwicklung, Warenkunde, Supply Chain",
         "Branchennahe Module, Projekte und Exkursionen in der Mode- und Textilwirtschaft",
-        "Semesterarbeit zu sozio-politischem Brand Activism in der Modebranche, Vergleichsanalyse Patagonia/Nike zur Rolle von Authentizität, Note 1,0"
+        "Semesterarbeit zur Wirkung gesellschaftspolitischen Brand Activism in der Modebranche: Vergleichsanalyse von Patagonia und Nike zur Rolle von Authentizität, Note 1,0"
       ]
     },
     {
-      period: "2016 - 07.2024",
-      title: "Allgemeine Hochschulreife · Otto-Hahn-Gymnasium",
+      period: "09.2016 - 07.2024",
+      title: "Abitur · Otto-Hahn-Gymnasium Nagold",
+      text: "Allgemeine Hochschulreife.",
       items: [
-        "Seminarfacharbeit im Kurs Filmanalyse mit der Note gut"
+        "Seminarkurs mit wissenschaftlicher Arbeit: Filmanalyse der Folge „Ozymandias\" aus der Serie Breaking Bad"
       ]
     },
     {
       period: "2015 - 2016",
-      title: "Grundschuljahr Ausland · Nefertari Deutsche Internationale Schule"
+      title: "Grundschuljahr Ausland · Nefertari Deutsche Internationale Schule",
+      text: "Kairo."
     }
   ],
   skillGroups: [
@@ -136,61 +188,79 @@ window.PORTFOLIO_SITE = {
       skills: ["MS Office", "Excel", "Canva", "Odoo", "Jira", "Perplexity", "Führerschein Klasse B197"]
     }
   ],
-  competencies: [
-    {
-      title: "Operative Prozesse",
-      text: "Exportabwicklung, Buchhaltung, Messevorbereitung und strukturierte Dokumentation aus echtem Unternehmensalltag.",
-      items: ["Export", "Buchhaltung", "Messe"]
-    },
-    {
-      title: "Systeme & Daten",
-      text: "ERP-Einführung, Odoo-Konfiguration, Datenpflege, Testing und mehrsprachige Nutzerbetreuung.",
-      items: ["ERP", "Odoo", "Onboarding"]
-    },
-    {
-      title: "Digitale Automatisierung",
-      text: "Interne WebApps, KI-gestützte Entwicklung, Dokumentenexport und Vereinfachung wiederkehrender Aufgaben.",
-      items: ["WebApps", "KI", "Prozesslogik"]
-    }
-  ],
-  methods: [
-    {
-      title: "Prozess aus dem Alltag verstehen",
-      text: "Keine Automatisierung aus der Luft: Erst wird sichtbar gemacht, was wirklich langsam, fehleranfällig oder unklar ist."
-    },
-    {
-      title: "Systemisch statt isoliert denken",
-      text: "Tools, Daten, Nutzer, Sprache und operative Abläufe werden zusammen betrachtet."
-    },
-    {
-      title: "Kleine Lösungen nutzbar machen",
-      text: "Der Wert entsteht nicht durch große Begriffe, sondern durch WebApps, Checklisten, Datenpflege und saubere Übergaben."
-    },
-    {
-      title: "Belege und Datenschutz trennen",
-      text: "Öffentlich gezeigt werden Prozesslogik, Rolle und anonymisierte Artefakte. Interne Daten bleiben intern."
-    }
-  ],
   cases: [
+    {
+      id: "storescore",
+      priority: "lead",
+      statusKey: "dev",
+      status: "in Entwicklung",
+      slug: "fashion-store-score.html",
+      title: "Fashion Store Score: Retail-Analytics-Konzept für datenbasierte Verkaufsflächen",
+      shortTitle: "Fashion Store Score",
+      subtitle: "Store-Layout, Produktplatzierung und Abverkauf als Grundlage für Merchandising-Entscheidungen.",
+      period: "ab Februar 2026",
+      summary: "Gemeinsam mit zwei Kommilitonen entwickle ich ein Retail-Analytics-Konzept, das die Verkaufsfläche im Modehandel messbar macht. Store-Layout, Produktplatzierung und Abverkauf werden zusammen betrachtet, um Merchandising-Entscheidungen auf Daten statt auf Bauchgefühl zu stützen.",
+      problem: "Entscheidungen über Flächen, Platzierung und Präsentation werden im Modehandel oft aus Erfahrung und Gewohnheit getroffen. Der Zusammenhang zwischen Layout, Platzierung und tatsächlichem Abverkauf bleibt dabei unscharf und ist im Nachhinein schwer zu begründen.",
+      approach: "Wir zerlegen die Verkaufsfläche in bewertbare Bestandteile, verknüpfen sie mit Abverkaufsdaten und fassen das Ergebnis in einem nachvollziehbaren Score zusammen. Wichtig ist uns, dass die Logik im Alltag anwendbar bleibt und nicht nur theoretisch funktioniert.",
+      result: "Es existiert ein ausgearbeitetes Konzept mit definierter Bewertungslogik und Struktur. Die Arbeit läuft weiter, mit dem Ziel, daraus ein marktreifes Werkzeug zu entwickeln.",
+      impact: "Der Case zeigt konzeptionelles Arbeiten im Team und die Verbindung von Fashion-Retail-Verständnis mit datenbasierter Analyse – als Ergänzung zu den operativen und systemnahen Cases.",
+      image: "assets/images/cases/store-score-konzept.svg",
+      imageAlt: "Bewertungslogik im Überblick",
+      sections: [
+        {
+          title: "Ausgangslage",
+          body: [
+            "Die Verkaufsfläche ist im Modehandel eine der teuersten Ressourcen. Gleichzeitig wird selten systematisch erfasst, welche Fläche welchen Beitrag leistet und woran das liegt.",
+            "Aus dieser Lücke heraus ist die Idee entstanden, Layout, Platzierung und Abverkauf nicht getrennt, sondern als zusammenhängendes Bild zu betrachten."
+          ]
+        },
+        {
+          title: "Meine Rolle",
+          body: [
+            "Das Konzept entsteht im Dreierteam. Ich bringe vor allem die Verbindung zwischen Prozessverständnis und Analyselogik ein: Welche Größen sind überhaupt erfassbar, wie lassen sie sich sinnvoll gewichten und wo wird eine Kennzahl zur Scheingenauigkeit.",
+            "Diese Denkweise kenne ich aus den operativen Cases: Erst verstehen, wie ein Ablauf real funktioniert, dann eine Struktur darüberlegen."
+          ]
+        },
+        {
+          title: "Konzeptlogik",
+          body: [
+            "Die Verkaufsfläche wird in bewertbare Bereiche zerlegt. Für jeden Bereich werden Merkmale wie Lage, Sichtbarkeit und Art der Präsentation erfasst und anschließend mit dem Abverkauf in Beziehung gesetzt.",
+            "Aus dieser Verknüpfung entsteht ein Score, der Flächen vergleichbar macht und damit als Argumentationsgrundlage für Merchandising-Entscheidungen dienen kann."
+          ]
+        },
+        {
+          title: "Stand und Weiterentwicklung",
+          body: [
+            "Das Konzept ist ausgearbeitet und wird weiter geschärft. Im Fokus stehen die Validierung der Bewertungslogik und die Frage, wie sich das Modell mit vertretbarem Aufwand im Alltag erheben lässt.",
+            "Mittelfristiges Ziel ist die Marktreife: ein Werkzeug, das ohne großen Datenapparat einsetzbar ist."
+          ]
+        },
+        {
+          title: "Reflexion",
+          body: [
+            "Der interessanteste Teil ist die Abwägung zwischen Genauigkeit und Anwendbarkeit. Ein Modell, das alles erfassen will, wird im Handel nicht gepflegt und verliert damit seinen Wert.",
+            "Gleichzeitig zeigt das Projekt, wie stark Studieninhalte und operative Praxis zusammenspielen: Visual Merchandising wird deutlich greifbarer, wenn man die Prozesse dahinter kennt."
+          ]
+        }
+      ]
+    },
     {
       id: "ki",
       priority: "flagship",
+      statusKey: "dev",
       status: "in Entwicklung",
       slug: "ki-prozessautomatisierung.html",
       title: "Von operativen Reibungspunkten zu internen WebApps",
       shortTitle: "KI-Prozessautomatisierung",
-      eyebrow: "Case 01 · Flagship",
       subtitle: "Drei interne WebApps für Dokumentenerstellung, Social-Media-Posts und ABD-Prozesse.",
       period: "ab April 2026",
-      area: "KI / Automatisierung / Business Operations",
-      role: "Konzeption, Entwicklung, Testing, Iteration",
-      tools: "Claude, ChatGPT, Claude Code, Codex, Perplexity, HTML, CSS, JavaScript, TypeScript, Python, PWA, Netlify, GitHub",
       summary: "Ich habe drei interne WebApps entwickelt, um wiederkehrende Unternehmensprozesse schneller, konsistenter und nutzerfreundlicher zu machen: einen Dokumenten-Generator, einen Social-Media-Post-Generator und eine eigene ABD-Software als Alternative bzw. Ergänzung zur offiziellen IAAP-Oberfläche.",
       problem: "Dokumente wurden manuell kopiert, Social-Media-Inhalte uneinheitlich erstellt und die IAAP-Oberfläche war im praktischen Exportprozess unübersichtlich. Die Abläufe waren wiederholend, inkonsistent und durch manuelle Eingaben fehleranfällig.",
       approach: "Ich zerlegte die Prozesse in Eingaben, Verarbeitung und Output, definierte Felder und Nutzerlogik und setzte daraus schlanke WebApps mit KI-Unterstützung um. KI war Entwicklungswerkzeug; Prozessverständnis, Struktur und praktische Entscheidungen lagen bei mir.",
       result: "Es entstanden drei funktionsfähige interne Werkzeuge: Dokumenten-Generator mit Word-Export, Social-Media-Generator mit CI-Bezug und ABD-Software mit besserer Nutzerführung und gespeicherten Firmendaten.",
       impact: "Die Tools standardisieren wiederkehrende Arbeit, reduzieren manuelle Nacharbeit, verbessern Konsistenz und schaffen besonders im ABD-Bereich eine Grundlage für spätere Automatisierung.",
-      tags: ["KI", "WebApps", "Automation"],
+      image: "assets/images/cases/ki-toolchain.svg",
+      imageAlt: "KI-gestützte Entwicklungskette",
       sections: [
         {
           title: "Ausgangslage",
@@ -233,33 +303,25 @@ window.PORTFOLIO_SITE = {
             "KI-gestützte Entwicklung ist nur dann wertvoll, wenn der zugrunde liegende Prozess verstanden ist. Ohne Prozessverständnis entsteht nur Code; mit Prozessverständnis entsteht ein nutzbares Werkzeug."
           ]
         }
-      ],
-      evidence: [
-        { type: "Toolchain", title: "KI-gestützte Entwicklungskette", image: "assets/images/cases/ki-toolchain.svg", caption: "Vom operativen Reibungspunkt zur internen WebApp – anonymisierte Prozessübersicht.", text: "Zeigt den Weg von drei operativen Problemen zu drei internen Werkzeugen." },
-        { type: "Screenshot", title: "ABD-Software mit Dummy-Daten", text: "Zeigt das konkrete Interface, die bessere Nutzerführung und den Unterschied zur IAAP-Reibung." },
-        { type: "Output", title: "Dokumenten-Generator", text: "Anonymisierter Word-Export oder Beispieloutput mit Dummy-Daten." },
-        { type: "Beispiel", title: "Social-Media-Post", text: "Neutralisierter Beispielpost mit CI-Farben, Thema und Plattformformat." }
       ]
     },
     {
       id: "erp",
       priority: "flagship",
+      statusKey: "active",
       status: "aktiv",
       slug: "erp-einfuehrung.html",
       title: "Individuelle ERP-Einführung mit Datenpflege, Testing und mehrsprachigem Onboarding",
       shortTitle: "ERP-Einführung",
-      eyebrow: "Case 02 · Flagship",
       subtitle: "Von individueller Entwicklung bis produktiver Nutzung mit Datenpflege, Tests und internationaler Schulung.",
       period: "Q1-Q2 2025, danach laufend",
-      area: "ERP / Systeme / Daten / internationales Onboarding",
-      role: "Anforderungen, Testing, Datenpflege, Schulung, laufende Betreuung",
-      tools: "Individuelles ERP, Jira, GitHub, Excel",
       summary: "Ich habe die Einführung eines individuell entwickelten ERP-Systems von der Anforderungs- und Testphase bis zur produktiven Nutzung begleitet. Meine Rolle lag zwischen Unternehmen, externem Programmierer und späteren Nutzern.",
       problem: "Vor der Einführung gab es kein funktionierendes ERP-System, das Lagerbestände, Warenbewegungen und Warenwirtschaft zentral und verlässlich abbildete. Gleichzeitig mussten Daten, Entwicklung und Nutzer in mehreren Ländern zusammengebracht werden.",
       approach: "Ich spiegelte Anforderungen aus dem Unternehmensalltag an den Programmierer zurück, testete Funktionen, dokumentierte Fehler, pflegte Stamm- und Bewegungsdaten ein und schulte Mitarbeitende auf Deutsch, Arabisch und Englisch.",
       result: "Das ERP-System wurde produktiv eingeführt, mit relevanten Daten gefüllt, von Mitarbeitenden in mehreren Ländern genutzt und wird weiterhin betreut.",
       impact: "Das Unternehmen erhielt eine zentralere Datenbasis, bessere Übersicht über Warenbewegungen und ein einheitlicheres System für internationale Nutzer.",
-      tags: ["ERP", "Testing", "Onboarding"],
+      image: "assets/images/cases/erp-timeline.svg",
+      imageAlt: "Einführungsphasen",
       sections: [
         {
           title: "Ausgangslage",
@@ -303,33 +365,87 @@ window.PORTFOLIO_SITE = {
             "Die internationale und mehrsprachige Dimension hat gezeigt, wie wichtig verständliche Kommunikation für Systemeinführung ist."
           ]
         }
-      ],
-      evidence: [
-        { type: "Timeline", title: "Einführungsphasen", image: "assets/images/cases/erp-timeline.svg", caption: "Von Aufbau und Testing über Datenpflege und Schulung bis zum laufenden Betrieb – anonymisierte Darstellung.", text: "Zeigt Projektphasen von Aufbau über Rollout bis Maintenance." },
-        { type: "Testbeleg", title: "Anonymisiertes Fehlerlog", text: "Belegt Testing, Fehlerkommunikation und Rückmeldung an den Programmierer." },
-        { type: "Datenstruktur", title: "Stamm- und Bewegungsdaten", text: "Macht sichtbar, dass das System mit Unternehmensrealität gefüllt wurde." },
-        { type: "Onboarding", title: "Mehrsprachiger Schulungsablauf", text: "Zeigt die Einführung von Nutzern in Deutschland, Syrien und Ägypten." }
+      ]
+    },
+    {
+      id: "brandactivism",
+      priority: "support",
+      statusKey: "done",
+      status: "abgeschlossen · 1,0",
+      slug: "brand-activism.html",
+      title: "Gesellschaftspolitischer Brand Activism in der Modebranche",
+      shortTitle: "Semesterarbeit Brand Activism",
+      subtitle: "Vergleichende visuelle Fallanalyse von Patagonia und Nike zur Rolle von Authentizität.",
+      period: "Semesterarbeit im Bachelor, TEXOVERSUM LDT Nagold",
+      summary: "In meiner Semesterarbeit habe ich untersucht, wie gesellschaftspolitisch-aktivistische Markeninszenierung in der Modebranche auf Markenwahrnehmung und Konsumverhalten wirkt. Die Arbeit verbindet eine Literaturarbeit mit einer qualitativen visuellen Fallanalyse und wurde mit der Note 1,0 bewertet.",
+      problem: "Modemarken beziehen zunehmend öffentlich Stellung zu gesellschaftspolitischen Themen und tragen diese Haltung überwiegend visuell, über Bilder statt über Text. Unklar ist, unter welchen Bedingungen eine solche Inszenierung die Markenwahrnehmung stärkt und wann sie in Skepsis und Ablehnung kippt.",
+      approach: "Methodisch verbindet die Arbeit eine Literaturarbeit mit einer qualitativen visuellen Fallanalyse. Auf Basis der visuellen Grammatik von Kress und van Leeuwen sowie der Methodik von Gillian Rose werden zwei kontrastierende Fälle nach identischen Kriterien untersucht: Patagonia als Beispiel langfristig konsistenter Haltung und Nike als Beispiel polarisierender Positionierung.",
+      result: "Die Wirkung aktivistischer Markenkommunikation ist nicht gleichförmig, sondern an Bedingungen gebunden. Über die Richtung entscheiden vor allem zwei Faktoren, die der einzelnen Kampagne vorausliegen: der Konfliktgrad des Themas und die wahrgenommene Deckung zwischen kommunizierter Haltung und Unternehmenspraxis.",
+      impact: "Aus der Analyse leiten sich drei Kriterien glaubwürdiger aktivistischer Markenkommunikation ab: strukturelle Deckung der Haltung im Unternehmen, eine zur Botschaft passende visuelle Form und die bewusste Bereitschaft, Polarisierung einzuplanen.",
+      image: "assets/images/cases/brand-activism-analyse.svg",
+      imageAlt: "Untersuchungsdesign der Semesterarbeit",
+      sections: [
+        {
+          title: "Forschungsfrage",
+          body: [
+            "Die Arbeit fragt, wie gesellschaftspolitisch-aktivistische Markeninszenierung in der Modebranche auf Markenwahrnehmung und Konsumverhalten wirkt.",
+            "Der Fokus liegt dabei bewusst nicht auf dem Ob, sondern auf den Wirkungsbedingungen: nicht ob Marken Haltung zeigen sollen, sondern wann daraus Glaubwürdigkeit entsteht und wann Ablehnung."
+          ]
+        },
+        {
+          title: "Methodik",
+          body: [
+            "Die Untersuchung kombiniert eine Literaturarbeit mit einer qualitativen visuellen Fallanalyse. Als analytischer Rahmen dienen die visuelle Grammatik von Kress und van Leeuwen sowie die Methodik von Gillian Rose.",
+            "Zwei kontrastierende Fälle werden nach identischen Kriterien untersucht: Patagonia steht für langfristig konsistente Haltung, Nike für polarisierende Positionierung."
+          ]
+        },
+        {
+          title: "Eigene Erhebung",
+          body: [
+            "Ergänzt wird die Analyse durch einen eigenen Erhebungsanteil: eine reale Auswertung von 129 öffentlichen Kampagnen-Kommentaren.",
+            "Hinzu kommt eine explorative, transparent deklarierte Persona-Vorstudie. Die methodischen Grenzen dieses Teils werden in der Arbeit offengelegt statt kaschiert."
+          ]
+        },
+        {
+          title: "Zentrales Ergebnis",
+          body: [
+            "Die Wirkung aktivistischer Markenkommunikation ist nicht gleichförmig, sondern an Bedingungen gebunden. Entscheidend sind der Konfliktgrad des Themas und die wahrgenommene Deckung zwischen kommunizierter Haltung und Unternehmenspraxis.",
+            "Fehlt diese Deckung, gerät die Kommunikation in den Verdacht des „Woke Washing\" und wirkt negativer, als hätte die Marke geschwiegen."
+          ]
+        },
+        {
+          title: "Rolle der visuellen Form",
+          body: [
+            "Auffällig ist, dass beide Marken ein nahezu identisches visuelles Repertoire nutzen, aber gegensätzliche Reaktionen auslösen.",
+            "Die visuelle Form verstärkt eine Reaktion, verursacht sie aber nicht. Sie ist Verstärker, nicht Auslöser."
+          ]
+        },
+        {
+          title: "Bedeutung für die Praxis",
+          body: [
+            "Für die Praxis der Modebranche leitet die Arbeit drei Kriterien glaubwürdiger aktivistischer Markenkommunikation ab: die strukturelle Deckung der Haltung im Unternehmen, eine zur Botschaft passende visuelle Form und die bewusste Bereitschaft, Polarisierung einzuplanen.",
+            "Kurzgefasst: Haltung wirkt nur, wenn Thema, Praxis und visuelle Form zusammenpassen."
+          ]
+        }
       ]
     },
     {
       id: "export",
       priority: "support",
+      statusKey: "active",
       status: "aktiv",
       slug: "exportabwicklung.html",
       title: "Eigenständige Exportabwicklung von Spedition bis Zoll",
       shortTitle: "Exportabwicklung A-Z",
-      eyebrow: "Case 03 · Operative Praxis",
       subtitle: "Vollständige Exportprozesse mit Spedition, Ursprungszeugnis, ABD, Verpackung und Dokumentation.",
       period: "ab Mitte 2025, mit Vorerfahrung davor",
-      area: "Export / Logistik / Zoll / Dokumentation",
-      role: "Eigenständige operative Exportabwicklung",
-      tools: "CargoX, IAAP, Excel, später eigene ABD-Software",
       summary: "Ich habe vollständige Exportsendungen eigenständig abgewickelt: Abholung buchen, Spediteur koordinieren, Ursprungszeugnisse erstellen, ABD über IAAP beantragen, Sendungen vorbereiten und Vorgänge dokumentieren.",
       problem: "Export ist kein linearer Einzelvorgang. Sendungsdetails, Spedition, Dokumente, Zollanmeldung, Verpackung und Dokumentation greifen ineinander. Ein Fehler an einer Stelle kann den gesamten Ablauf verzögern.",
       approach: "Ich übernahm den Ablauf von der Aufnahme der Sendungsdetails über Speditionskoordination und Dokumentenerstellung bis zur physischen Vorbereitung und Excel-Dokumentation.",
       result: "Eine moderate Anzahl an Großsendungen wurde eigenständig und strukturiert abgewickelt. Gleichzeitig entstand ein praktisches Verständnis für Zoll- und Exportabläufe.",
       impact: "Der Case zeigt Sorgfalt in regulierten Prozessen und bildet die operative Grundlage für die spätere ABD-Software.",
-      tags: ["Export", "Zoll", "Logistik"],
+      image: "assets/images/cases/export-prozess.svg",
+      imageAlt: "Exportablauf A–Z",
       sections: [
         {
           title: "Ausgangslage",
@@ -356,7 +472,7 @@ window.PORTFOLIO_SITE = {
           title: "Verbindung zur Automatisierung",
           body: [
             "Die wiederholte Arbeit mit IAAP führte direkt zur Erkenntnis, dass der ABD-Prozess besser strukturiert und nutzerfreundlicher gestaltet werden kann.",
-            "Damit ist dieser Case ein wichtiges Fundament für Case 01: Die spätere ABD-Software entstand aus echter Exportpraxis."
+            "Damit ist dieser Case ein wichtiges Fundament für die interne ABD-Software: Sie entstand aus echter Exportpraxis."
           ]
         },
         {
@@ -366,32 +482,25 @@ window.PORTFOLIO_SITE = {
             "Der wichtigste Lerneffekt war, dass operative Praxis technische Verbesserungsideen deutlich schärfer macht."
           ]
         }
-      ],
-      evidence: [
-        { type: "Prozess", title: "Exportablauf A–Z", image: "assets/images/cases/export-prozess.svg", caption: "Anonymisierter Prozessablauf – von Sendungsdetails über Spedition und Zoll bis zur Dokumentation.", text: "Zeigt den vollständigen Ablauf und die Verbindung zur ABD-Software." },
-        { type: "Checkliste", title: "Export-Checkliste", text: "Belegt strukturierte Arbeitsweise ohne sensible Sendungsdaten." },
-        { type: "Matrix", title: "Dokumentenmatrix", text: "Ordnet Ursprungszeugnis, ABD, Spedition und Excel-Dokumentation ein." }
       ]
     },
     {
       id: "odoo",
       priority: "support",
+      statusKey: "active",
       status: "aktiv",
       slug: "odoo-buchhaltung.html",
       title: "Odoo-Einführung und operative Buchhaltung im laufenden Betrieb",
       shortTitle: "Odoo & Buchhaltung",
-      eyebrow: "Case 05 · Finance Operations",
       subtitle: "Einrichtung von Odoo, Mitarbeitereinweisung und operative Rechnungsbearbeitung.",
       period: "ab Februar 2026",
-      area: "Buchhaltung / Odoo / Finance Operations",
-      role: "Einrichtung, Konfiguration, Einarbeitung, Mitarbeitereinweisung, operative Buchhaltung",
-      tools: "Odoo, Excel",
       summary: "Ich habe mich in die Buchhaltung eingearbeitet, Odoo als neue Buchhaltungssoftware eingerichtet und parallel laufende Aufgaben wie Eingangsrechnungen, Ausgangsrechnungen und Altfälle übernommen.",
       problem: "Die Buchhaltung lief ohne einheitliches strukturiertes Softwaresystem. Rechnungsprozesse mussten konsistenter erfasst und ältere Fälle nachvollziehbar aufgearbeitet werden.",
       approach: "Ich arbeitete mich parallel in Odoo und die Buchhaltungslogik ein, richtete Grundfunktionen ein, wies Mitarbeitende ein und übernahm operative Rechnungsbearbeitung.",
       result: "Odoo ist produktiv eingeführt und wird für Buchhaltungsprozesse genutzt. Grundlegende Rechnungsaufgaben können eigenständig bearbeitet werden.",
       impact: "Der Case zeigt kaufmännisches Grundverständnis, Softwareeinführung im laufenden Betrieb und die Fähigkeit, Ordnung in bestehende Prozesse zu bringen.",
-      tags: ["Odoo", "Buchhaltung", "Systeme"],
+      image: "assets/images/cases/odoo-prozess.svg",
+      imageAlt: "Rechnungsabläufe",
       sections: [
         {
           title: "Ausgangslage",
@@ -428,32 +537,25 @@ window.PORTFOLIO_SITE = {
             "Softwareeinführung im laufenden Betrieb braucht Geduld: Ein Tool muss in reale Abläufe passen und Schritt für Schritt genutzt werden können."
           ]
         }
-      ],
-      evidence: [
-        { type: "Prozess", title: "Rechnungsabläufe", image: "assets/images/cases/odoo-prozess.svg", caption: "Anonymisierter Ablauf für Eingangs- und Ausgangsrechnungen in Odoo – keine echten Daten.", text: "Zeigt Prüfung, Erfassung, Ablage und Dokumentation als abstrakten Ablauf." },
-        { type: "System", title: "Odoo mit Demo-Daten", text: "Zeigt Einrichtung und Nutzung, ohne Kundendaten oder Beträge offenzulegen." },
-        { type: "Aufarbeitung", title: "Altfälle vorher / nachher", text: "Abstrakte Darstellung, wie unvollständige Dokumentation strukturierter wurde." }
       ]
     },
     {
       id: "messe",
       priority: "support",
+      statusKey: "planned",
       status: "Update Juli 2026",
       slug: "messe.html",
       title: "Internationale Messevorbereitung für Techtextil und NASTEX",
       shortTitle: "Messevorbereitung",
-      eyebrow: "Case 04 · Projektarbeit",
       subtitle: "Flyer, Standplanung, Visitenkarten, Social Media und internationale Abstimmung.",
       period: "2026, NASTEX-Teilnahme im Juli geplant",
-      area: "Marketing / Messe / internationale Koordination",
-      role: "Vorbereitung, Materialerstellung, Koordination, Techtextil-Teilnahme",
-      tools: "Canva, Kommunikationstools",
       summary: "Ich habe zwei Messebeteiligungen vorbereitet: die Techtextil 2026 in Frankfurt und die NASTEX 2026 in Syrien. Der Case zeigt Projektkoordination, Materialerstellung und internationale Messevorbereitung.",
       problem: "Messevorbereitung besteht aus vielen parallelen Aufgaben: Informationen bündeln, Materialien erstellen, Standplanung, Abstimmung mit Beteiligten und ein einheitlicher Außenauftritt.",
       approach: "Ich erstellte Flyer, organisierte Visitenkarten, bereitete Social-Media-Beiträge und Infomaterialien vor, entwickelte einen Standplan und koordinierte mit Beteiligten vor Ort.",
       result: "Die Techtextil wurde vorbereitet und besucht. Die NASTEX ist weitgehend vorbereitet bzw. in der finalen Vorbereitungsphase; die Teilnahme vor Ort ist für Juli 2026 geplant.",
       impact: "Der Case zeigt internationale Koordination und Projektarbeit. Die stärkere Wirkungsebene entsteht nach der NASTEX mit echten Vor-Ort-Erfahrungen, Materialien, Erkenntnissen und Folgeaktionen.",
-      tags: ["Messe", "Marketing", "International"],
+      image: "assets/images/cases/messe-timeline.svg",
+      imageAlt: "Messeprojekte im Überblick",
       sections: [
         {
           title: "Ausgangslage",
@@ -495,74 +597,78 @@ window.PORTFOLIO_SITE = {
             "Die Teilnahme vor Ort ist für Juli 2026 geplant. Danach wird dieser Case mit tatsächlichen Aufgaben vor Ort, eingesetzten Materialien, Eindrücken und Erkenntnissen von der Messe aktualisiert."
           ]
         }
-      ],
-      evidence: [
-        { type: "Timeline", title: "Messeprojekte im Überblick", image: "assets/images/cases/messe-timeline.svg", caption: "Techtextil Frankfurt (besucht) und NASTEX Syrien (Juli 2026 geplant).", text: "Zeigt Vorbereitung und Ablauf beider Messeprojekte." },
-        { type: "Material", title: "Flyer / Infomaterial", text: "Freigegebene oder neutralisierte Beispiele für die Messekommunikation – nach Freigabe." },
-        { type: "Update", title: "Nach-Messe-Reflexion", text: "Wird nach Juli 2026 mit tatsächlichen Eindrücken und Erkenntnissen ergänzt." }
       ]
     },
     {
-      id: "storescore",
-      priority: "lead",
-      status: "in Entwicklung",
-      slug: "fashion-store-score.html",
-      title: "Fashion Store Score: Retail-Analytics-Konzept für datenbasierte Verkaufsflächen",
-      shortTitle: "Fashion Store Score",
-      eyebrow: "Case 06 · Konzeptarbeit",
-      subtitle: "Store-Layout, Produktplatzierung und Abverkauf als Grundlage für Merchandising-Entscheidungen.",
-      period: "ab Februar 2026",
-      area: "Retail Analytics / Visual Merchandising / Konzeptentwicklung",
-      role: "Konzeption im Dreierteam, Analyselogik, Weiterentwicklung",
-      tools: "Excel, Recherche, Konzeptmodelle",
-      summary: "Gemeinsam mit zwei Kommilitonen entwickle ich ein Retail-Analytics-Konzept, das die Verkaufsfläche im Modehandel messbar macht. Store-Layout, Produktplatzierung und Abverkauf werden zusammen betrachtet, um Merchandising-Entscheidungen auf Daten statt auf Bauchgefühl zu stützen.",
-      problem: "Entscheidungen über Flächen, Platzierung und Präsentation werden im Modehandel oft aus Erfahrung und Gewohnheit getroffen. Der Zusammenhang zwischen Layout, Platzierung und tatsächlichem Abverkauf bleibt dabei unscharf und ist im Nachhinein schwer zu begründen.",
-      approach: "Wir zerlegen die Verkaufsfläche in bewertbare Bestandteile, verknüpfen sie mit Abverkaufsdaten und fassen das Ergebnis in einem nachvollziehbaren Score zusammen. Wichtig ist uns, dass die Logik im Alltag anwendbar bleibt und nicht nur theoretisch funktioniert.",
-      result: "Es existiert ein ausgearbeitetes Konzept mit definierter Bewertungslogik und Struktur. Die Arbeit läuft weiter, mit dem Ziel, daraus ein marktreifes Werkzeug zu entwickeln.",
-      impact: "Der Case zeigt konzeptionelles Arbeiten im Team und die Verbindung von Fashion-Retail-Verständnis mit datenbasierter Analyse – als Ergänzung zu den operativen und systemnahen Cases.",
-      tags: ["Retail Analytics", "Visual Merchandising", "Teamprojekt"],
+      id: "egystitchtex",
+      priority: "support",
+      statusKey: "done",
+      status: "abgeschlossen",
+      slug: "egy-stitch-tex.html",
+      title: "Messeauftritt Egy Stitch & Tex Cairo 2026",
+      shortTitle: "Egy Stitch & Tex Cairo",
+      subtitle: "Einladungsmanagement, Kundenkommunikation, Messematerialien und Nachbereitung im CRM.",
+      period: "2026, Kairo",
+      summary: "Für die Egy Stitch & Tex in Kairo habe ich den Messeauftritt operativ begleitet: Einladungen an Kunden, laufende Kundenkommunikation im Vorfeld, Visitenkarten und Flyer, die Planung vor Ort und die anschließende Nachbereitung der Kontakte im CRM.",
+      problem: "Ein Messeauftritt entscheidet sich nicht nur auf dem Stand. Wer nicht vorher eingeladen wird, kommt nicht; und wer nicht nachbereitet wird, bleibt ein flüchtiger Kontakt. Einladung, Kommunikation, Material und Nachfassen müssen als ein Ablauf gedacht werden.",
+      approach: "Ich habe den Ablauf entlang der Zeitachse aufgesetzt: Einladungen und Kundenkommunikation im Vorfeld, Visitenkarten und Flyer als Material, Planung für die Tage vor Ort und ein strukturiertes Follow-up, das die Kontakte im CRM festhält.",
+      result: "Der Messeauftritt wurde vorbereitet, begleitet und nachbereitet. Die Kontakte aus Kairo sind im CRM erfasst, statt auf Visitenkartenstapeln liegen zu bleiben.",
+      impact: "Der Case zeigt den vollständigen Messezyklus aus operativer Sicht und die Verbindung von Marketing- und Vertriebsarbeit mit sauberer Datenpflege.",
+      image: "assets/images/cases/messe-zyklus.svg",
+      imageAlt: "Messezyklus von der Einladung bis zum CRM",
       sections: [
         {
           title: "Ausgangslage",
           body: [
-            "Die Verkaufsfläche ist im Modehandel eine der teuersten Ressourcen. Gleichzeitig wird selten systematisch erfasst, welche Fläche welchen Beitrag leistet und woran das liegt.",
-            "Aus dieser Lücke heraus ist die Idee entstanden, Layout, Platzierung und Abverkauf nicht getrennt, sondern als zusammenhängendes Bild zu betrachten."
+            "Die Egy Stitch & Tex in Kairo ist ein relevanter Branchentreffpunkt für den ägyptischen und regionalen Textilmarkt.",
+            "Anders als bei einer reinen Standbetreuung lag der Schwerpunkt hier darauf, den Messeauftritt von der Einladung bis zur Nachbereitung als durchgehenden Ablauf zu organisieren."
           ]
         },
         {
           title: "Meine Rolle",
           body: [
-            "Das Konzept entsteht im Dreierteam. Ich bringe vor allem die Verbindung zwischen Prozessverständnis und Analyselogik ein: Welche Größen sind überhaupt erfassbar, wie lassen sie sich sinnvoll gewichten und wo wird eine Kennzahl zur Scheingenauigkeit.",
-            "Diese Denkweise kenne ich aus den operativen Cases: Erst verstehen, wie ein Ablauf real funktioniert, dann eine Struktur darüberlegen."
+            "Ich habe die operative Vorbereitung und Nachbereitung übernommen: Einladungsmanagement, Kundenkommunikation, Messematerialien, Planung und Follow-up.",
+            "Die Rolle verbindet damit Marketing, Vertrieb und Datenpflege in einem Ablauf."
           ]
         },
         {
-          title: "Konzeptlogik",
+          title: "Vorbereitung und Einladung",
           body: [
-            "Die Verkaufsfläche wird in bewertbare Bereiche zerlegt. Für jeden Bereich werden Merkmale wie Lage, Sichtbarkeit und Art der Präsentation erfasst und anschließend mit dem Abverkauf in Beziehung gesetzt.",
-            "Aus dieser Verknüpfung entsteht ein Score, der Flächen vergleichbar macht und damit als Argumentationsgrundlage für Merchandising-Entscheidungen dienen kann."
+            "Im Vorfeld wurden Kunden gezielt zur Messe eingeladen und die Kommunikation bis zum Messetermin begleitet.",
+            "Parallel entstanden die Materialien für den Auftritt: Visitenkarten und Flyer als Grundlage für Gespräche am Stand."
           ]
         },
         {
-          title: "Stand und Weiterentwicklung",
+          title: "Planung vor Ort",
           body: [
-            "Das Konzept ist ausgearbeitet und wird weiter geschärft. Im Fokus stehen die Validierung der Bewertungslogik und die Frage, wie sich das Modell mit vertretbarem Aufwand im Alltag erheben lässt.",
-            "Mittelfristiges Ziel ist die Marktreife: ein Werkzeug, das ohne großen Datenapparat einsetzbar ist."
+            "Für die Messetage wurde geplant, welche Gespräche anstehen, welche Unterlagen gebraucht werden und wie der Ablauf am Stand aussieht."
+          ]
+        },
+        {
+          title: "Nachbereitung und CRM",
+          body: [
+            "Nach der Messe wurden die Kontakte nachgefasst und strukturiert im CRM erfasst.",
+            "Damit bleiben Gespräche, Interessen und nächste Schritte nachvollziehbar, statt nach der Messe zu verpuffen."
           ]
         },
         {
           title: "Reflexion",
           body: [
-            "Der interessanteste Teil ist die Abwägung zwischen Genauigkeit und Anwendbarkeit. Ein Modell, das alles erfassen will, wird im Handel nicht gepflegt und verliert damit seinen Wert.",
-            "Gleichzeitig zeigt das Projekt, wie stark Studieninhalte und operative Praxis zusammenspielen: Visual Merchandising wird deutlich greifbarer, wenn man die Prozesse dahinter kennt."
+            "Der Wert einer Messe entsteht zu einem großen Teil vorher und nachher. Die Einladung entscheidet über die Gespräche, das Follow-up über das Ergebnis.",
+            "Dieser Case ist deshalb der direkte Anschluss an die Arbeit an CRM und Controlling."
           ]
         }
-      ],
-      evidence: [
-        { type: "Konzept", title: "Bewertungslogik im Überblick", image: "assets/images/cases/store-score-konzept.svg", caption: "Von Flächenmerkmalen und Abverkaufsdaten zum Score – schematische, anonymisierte Darstellung.", text: "Zeigt, wie Layout, Platzierung und Abverkauf zu einer vergleichbaren Kennzahl zusammengeführt werden." },
-        { type: "Modell", title: "Scoring-Struktur", text: "Abstrakte Darstellung der Bewertungsebenen ohne konkrete Unternehmensdaten." },
-        { type: "Ausblick", title: "Weg zur Marktreife", text: "Wird ergänzt, sobald Validierung und Erprobung weiter fortgeschritten sind." }
       ]
+    },
+    {
+      id: "crmcontrolling",
+      priority: "support",
+      statusKey: "pending",
+      status: "in Vorbereitung",
+      pending: true,
+      title: "CRM und Controlling: Prozessinnovation bei Outatex",
+      shortTitle: "CRM & Controlling",
+      subtitle: "Aufbau von CRM- und Controlling-Prozessen im Familienbetrieb. Inhalte folgen."
     }
   ]
 };

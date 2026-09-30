@@ -1,6 +1,6 @@
 # Digitaler Lebenslauf und Portfolio-Website
 
-Statische Portfolio-Website fuer Hadi Oulabi mit Profil, Erfahrung, Kompetenzen, Kontakt und sechs Case-Seiten zu Business Operations, ERP, Export, Buchhaltung, Messe, Retail Analytics und KI-gestuetzter Automatisierung.
+Statische, dreisprachige Portfolio-Website fuer Hadi Oulabi (Englisch, Deutsch, Arabisch) mit Profil, Erfahrung, Kompetenzen, Kontakt und neun Cases zu Business Operations, ERP, Export, Buchhaltung, Messen, Retail Analytics, Markenforschung und KI-gestuetzter Automatisierung.
 
 Die Seite ist als GitHub-Pages-ready Projekt aufgebaut: kein Backend, kein CMS, zentrale Datenpflege in JavaScript, schlanke HTML-Huellen fuer Startseite und Case-Seiten.
 
@@ -10,18 +10,23 @@ Die Seite ist als GitHub-Pages-ready Projekt aufgebaut: kein Backend, kein CMS, 
 - Profil, Timeline, Kompetenzen, Sprachen, Kontakt und Cases sind inhaltlich bereinigt.
 - Alle sichtbaren Website-Seiten sollen gestalterisch im gleichen Stil weiterentwickelt werden.
 - Design-Referenz ist der Lebenslauf in `lebenslauf/Lebenslauf Hadi Oulabi.html`.
+- Die Seite startet standardmaessig auf Englisch. Der Sprachumschalter oben rechts wechselt zu Deutsch und Arabisch.
+- Arabisch wird als RTL-Layout ausgeliefert; die Sprachwahl wird im Browser gemerkt.
+- Der Lebenslauf unter `lebenslauf/` bleibt bewusst nur auf Deutsch.
 
 ## Struktur
 
 ```text
 index.html
 cases/
+  fashion-store-score.html
   ki-prozessautomatisierung.html
   erp-einfuehrung.html
+  brand-activism.html
   exportabwicklung.html
   odoo-buchhaltung.html
   messe.html
-  fashion-store-score.html
+  egy-stitch-tex.html
 assets/
   css/
     tokens.css
@@ -30,7 +35,10 @@ assets/
     components.css
     pages.css
   js/
-    site-data.js
+    content/
+      en.js
+      de.js
+      ar.js
     common.js
     home.js
     case-page.js
@@ -46,11 +54,14 @@ outatex.jpg
 
 ## Content-Modell
 
-- `assets/js/site-data.js` ist die zentrale Inhaltsquelle.
-- Profil, Kontakt, Timeline, Kompetenzgruppen, Sprachen und Case-Daten liegen dort gebuendelt.
-- `assets/js/home.js` rendert die Startseite.
-- `assets/js/case-page.js` rendert die Case-Detailseiten.
-- `cases/*.html` sind bewusst schlanke HTML-Huellen.
+- `assets/js/content/<sprache>.js` ist die zentrale Inhaltsquelle, je eine Datei pro Sprache.
+- Jede Datei enthaelt denselben Aufbau: `meta`, `ui`, `profile`, `contact`, `timeline`, `skillGroups`, `cases`.
+- Neue Inhalte muessen in allen drei Dateien gepflegt werden, sonst faellt die Sprache auf leere Felder zurueck.
+- `assets/js/common.js` waehlt die Sprache, setzt `lang`/`dir`, baut den Sprachumschalter und rendert bei jedem Wechsel neu.
+- Statische Texte im HTML tragen `data-i18n="pfad.zum.text"` und werden daraus gefuellt.
+- `assets/js/home.js` rendert die Startseite, `assets/js/case-page.js` die Case-Detailseiten.
+- `cases/*.html` sind bewusst schlanke HTML-Huellen; `data-case` verweist auf die Case-ID.
+- Ein Case ohne `slug` und mit `pending: true` wird als Platzhalterkarte ohne Unterseite angezeigt.
 - Styling ist modular getrennt in Tokens, Basis, Layout, Komponenten und Seitentypen.
 
 ## Portfolio-Fokus
@@ -84,6 +95,15 @@ Die Website zeigt Arbeit aus folgenden Bereichen:
 6. **Fashion Store Score**  
    Retail-Analytics-Konzept im Dreierteam zur datenbasierten Bewertung von Verkaufsflaechen im Modehandel.
 
+7. **Semesterarbeit Brand Activism**  
+   Vergleichende visuelle Fallanalyse von Patagonia und Nike zur Rolle von Authentizitaet, Note 1,0.
+
+8. **Egy Stitch & Tex Kairo 2026**  
+   Messezyklus von Einladung und Kundenkommunikation ueber Material und Messetage bis zur Nachbereitung im CRM.
+
+9. **CRM & Controlling**  
+   Prozessinnovation bei Outatex. Platzhalter, Inhalte und Unterseite folgen.
+
 ## Pflegeprinzip
 
 Neue Inhalte sollten nach drei Formaten einsortiert werden:
@@ -110,6 +130,10 @@ Entscheidungsregel:
 - Odoo: Ausloeser, geschulte Personen und Startprobleme genauer festhalten.
 - Store Score: Validierung der Bewertungslogik und Erhebungsaufwand dokumentieren.
 - Groz-Beckert: Praktikum im TEZ nach ersten Wochen inhaltlich schaerfen.
+- CRM & Controlling: Inhalte erarbeiten und Case-Unterseite anlegen.
+- Egy Stitch & Tex: konkretes Datum, Ergebnisse und Kontaktzahlen nachtragen.
+- Semesterarbeit: genauen Zeitraum der Arbeit ergaenzen.
+- Case-Grafiken liegen bisher nur auf Deutsch vor und gelten fuer alle drei Sprachen.
 
 ## Sensibilitaet
 
