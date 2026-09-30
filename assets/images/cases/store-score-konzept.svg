@@ -1,35 +1,35 @@
 <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
   <rect width="760" height="300" fill="#f6f8fb"></rect>
 
-  <text x="380" y="30" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em">FASHION STORE SCORE · BEWERTUNGSLOGIK</text>
+  <text x="380" y="30" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em" data-t="0">FASHION STORE SCORE · BEWERTUNGSLOGIK</text>
 
-  <text x="130" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#1d4fa0" letter-spacing="0.04em">FLÄCHE &amp; PLATZIERUNG</text>
+  <text x="130" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#1d4fa0" letter-spacing="0.04em" data-t="1">FLÄCHE &amp; PLATZIERUNG</text>
 
   <rect x="30" y="64" width="200" height="40" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="130" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Lage &amp; Zone</text>
-  <text x="130" y="96" text-anchor="middle" font-size="10.5" fill="#58677a">Laufweg, Frequenz</text>
+  <text x="130" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="2">Lage &amp; Zone</text>
+  <text x="130" y="96" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="3">Laufweg, Frequenz</text>
 
   <rect x="30" y="112" width="200" height="40" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="130" y="129" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Sichtbarkeit</text>
-  <text x="130" y="144" text-anchor="middle" font-size="10.5" fill="#58677a">Blickachse, Höhe</text>
+  <text x="130" y="129" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="4">Sichtbarkeit</text>
+  <text x="130" y="144" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="5">Blickachse, Höhe</text>
 
   <rect x="30" y="160" width="200" height="40" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="130" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Präsentation</text>
-  <text x="130" y="192" text-anchor="middle" font-size="10.5" fill="#58677a">Aufbau, Dichte</text>
+  <text x="130" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="6">Präsentation</text>
+  <text x="130" y="192" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="7">Aufbau, Dichte</text>
 
-  <text x="630" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#2662b8" letter-spacing="0.04em">ABVERKAUF</text>
+  <text x="630" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#2662b8" letter-spacing="0.04em" data-t="8">ABVERKAUF</text>
 
   <rect x="530" y="64" width="200" height="40" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="630" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Umsatz je Fläche</text>
-  <text x="630" y="96" text-anchor="middle" font-size="10.5" fill="#58677a">Periodenvergleich</text>
+  <text x="630" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="9">Umsatz je Fläche</text>
+  <text x="630" y="96" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="10">Periodenvergleich</text>
 
   <rect x="530" y="112" width="200" height="40" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="630" y="129" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Abverkaufsquote</text>
-  <text x="630" y="144" text-anchor="middle" font-size="10.5" fill="#58677a">Bestand zu Verkauf</text>
+  <text x="630" y="129" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="11">Abverkaufsquote</text>
+  <text x="630" y="144" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="12">Bestand zu Verkauf</text>
 
   <rect x="530" y="160" width="200" height="40" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="630" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Warengruppe</text>
-  <text x="630" y="192" text-anchor="middle" font-size="10.5" fill="#58677a">Kategorie, Saison</text>
+  <text x="630" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="13">Warengruppe</text>
+  <text x="630" y="192" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="14">Kategorie, Saison</text>
 
   <line x1="230" y1="84" x2="284" y2="128" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ss)"></line>
   <line x1="230" y1="132" x2="284" y2="140" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ss)"></line>
@@ -40,16 +40,16 @@
   <line x1="530" y1="180" x2="476" y2="152" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ss)"></line>
 
   <rect x="290" y="110" width="180" height="64" rx="8" fill="#edf2fa" stroke="#1d4fa0" stroke-width="1.5"></rect>
-  <text x="380" y="134" text-anchor="middle" font-size="12" font-weight="800" fill="#0c1e48" letter-spacing="0.04em">STORE SCORE</text>
-  <text x="380" y="151" text-anchor="middle" font-size="10.5" fill="#1d4fa0">gewichtete Verknüpfung</text>
-  <text x="380" y="166" text-anchor="middle" font-size="10.5" fill="#1d4fa0">Flächen vergleichbar machen</text>
+  <text x="380" y="134" text-anchor="middle" font-size="12" font-weight="800" fill="#0c1e48" letter-spacing="0.04em" data-t="15">STORE SCORE</text>
+  <text x="380" y="151" text-anchor="middle" font-size="10.5" fill="#1d4fa0" data-t="16">gewichtete Verknüpfung</text>
+  <text x="380" y="166" text-anchor="middle" font-size="10.5" fill="#1d4fa0" data-t="17">Flächen vergleichbar machen</text>
 
   <line x1="380" y1="174" x2="380" y2="242" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ss)"></line>
 
   <rect x="240" y="246" width="280" height="24" rx="6" fill="#0c1e48"></rect>
-  <text x="380" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff">Merchandising-Entscheidung mit Begründung</text>
+  <text x="380" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" data-t="18">Merchandising-Entscheidung mit Begründung</text>
 
-  <text x="380" y="288" text-anchor="middle" font-size="10" fill="#58677a">Schematische Darstellung · keine realen Unternehmensdaten</text>
+  <text x="380" y="288" text-anchor="middle" font-size="10" fill="#58677a" data-t="19">Schematische Darstellung · keine realen Unternehmensdaten</text>
 
   <defs>
     <marker id="ss" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">

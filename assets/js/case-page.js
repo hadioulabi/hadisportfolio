@@ -82,17 +82,78 @@
     return section;
   }
 
+  const svgCache = {};
+
+  function svgKey(path) {
+    return path.split("/").pop().replace(/\.svg$/, "");
+  }
+
+  function localise(svg, key) {
+    const labels = (ui.site.svgText || {})[key];
+    if (!labels) return;
+    svg.querySelectorAll("[data-t]").forEach((node) => {
+      const text = labels[Number(node.dataset.t)];
+      if (typeof text === "string") node.textContent = text;
+    });
+    const arabic = ui.site.meta.lang === "ar";
+    svg.setAttribute(
+      "font-family",
+      arabic
+        ? '"Noto Sans Arabic", Inter, ui-sans-serif, system-ui, sans-serif'
+        : 'Inter, ui-sans-serif, system-ui, sans-serif'
+    );
+  }
+
+  function fallbackImage(wrap, data) {
+    const img = document.createElement("img");
+    img.src = ui.pathTo(data.image);
+    img.alt = data.imageAlt || data.shortTitle;
+    img.loading = "lazy";
+    wrap.replaceChildren(img);
+  }
+
+  function mountDiagram(wrap, data) {
+    const key = svgKey(data.image);
+    const url = ui.pathTo(data.image);
+
+    function draw(source) {
+      const parsed = new DOMParser().parseFromString(source, "image/svg+xml");
+      const svg = parsed.documentElement;
+      if (!svg || svg.nodeName.toLowerCase() !== "svg") {
+        fallbackImage(wrap, data);
+        return;
+      }
+      svg.setAttribute("role", "img");
+      const title = data.imageAlt || data.shortTitle;
+      if (title) svg.setAttribute("aria-label", title);
+      localise(svg, key);
+      wrap.replaceChildren(document.importNode(svg, true));
+    }
+
+    if (svgCache[url]) {
+      draw(svgCache[url]);
+      return;
+    }
+
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.text();
+      })
+      .then((source) => {
+        svgCache[url] = source;
+        draw(source);
+      })
+      .catch(() => fallbackImage(wrap, data));
+  }
+
   function renderEvidence(data) {
     if (!data.image) return null;
 
     const section = ui.el("section", "case-section");
     const container = ui.el("div", "container");
     const wrap = ui.el("div", "evidence-visual");
-    const img = document.createElement("img");
-    img.src = ui.pathTo(data.image);
-    img.alt = data.imageAlt || data.shortTitle;
-    img.loading = "lazy";
-    wrap.append(img);
+    mountDiagram(wrap, data);
     container.append(wrap);
     section.append(container);
     return section;

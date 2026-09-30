@@ -122,6 +122,10 @@
 
     bar.append(group);
     document.body.prepend(bar);
+
+    const markStuck = () => bar.classList.toggle("is-stuck", window.scrollY > 4);
+    window.addEventListener("scroll", markStuck, { passive: true });
+    markStuck();
   }
 
   /* ── Public API ───────────────────────────────── */

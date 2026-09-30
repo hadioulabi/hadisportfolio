@@ -10,8 +10,9 @@ Die Seite ist als GitHub-Pages-ready Projekt aufgebaut: kein Backend, kein CMS, 
 - Profil, Timeline, Kompetenzen, Sprachen, Kontakt und Cases sind inhaltlich bereinigt.
 - Alle sichtbaren Website-Seiten sollen gestalterisch im gleichen Stil weiterentwickelt werden.
 - Design-Referenz ist der Lebenslauf in `lebenslauf/Lebenslauf Hadi Oulabi.html`.
-- Die Seite startet standardmaessig auf Englisch. Der Sprachumschalter oben rechts wechselt zu Deutsch und Arabisch.
+- Die Seite startet standardmaessig auf Englisch. Der Sprachumschalter sitzt als schmale, mitscrollende Leiste oben rechts und wechselt zu Deutsch und Arabisch.
 - Arabisch wird als RTL-Layout ausgeliefert; die Sprachwahl wird im Browser gemerkt.
+- Im Arabischen werden die Case-Grafiken gespiegelt, damit sie von rechts nach links gelesen werden; die Beschriftungen werden zurueckgedreht.
 - Der Lebenslauf unter `lebenslauf/` bleibt bewusst nur auf Deutsch.
 
 ## Struktur
@@ -61,6 +62,10 @@ outatex.jpg
 - Statische Texte im HTML tragen `data-i18n="pfad.zum.text"` und werden daraus gefuellt.
 - `assets/js/home.js` rendert die Startseite, `assets/js/case-page.js` die Case-Detailseiten.
 - `cases/*.html` sind bewusst schlanke HTML-Huellen; `data-case` verweist auf die Case-ID.
+- Case-Grafiken werden inline geladen statt als `img`, damit ihre Beschriftungen uebersetzbar sind.
+- Jedes `<text>` in `assets/images/cases/*.svg` traegt ein `data-t="<index>"`.
+- Die Beschriftungen liegen unter `svgText["<dateiname-ohne-endung>"]` als Liste in derselben Reihenfolge.
+- Wer eine Grafik aendert, muss die Indizes in allen drei Sprachdateien mitziehen.
 - Ein Case ohne `slug` und mit `pending: true` wird als Platzhalterkarte ohne Unterseite angezeigt.
 - Styling ist modular getrennt in Tokens, Basis, Layout, Komponenten und Seitentypen.
 
@@ -133,7 +138,6 @@ Entscheidungsregel:
 - CRM & Controlling: Inhalte erarbeiten und Case-Unterseite anlegen.
 - Egy Stitch & Tex: konkretes Datum, Ergebnisse und Kontaktzahlen nachtragen.
 - Semesterarbeit: genauen Zeitraum der Arbeit ergaenzen.
-- Case-Grafiken liegen bisher nur auf Deutsch vor und gelten fuer alle drei Sprachen.
 
 ## Sensibilitaet
 

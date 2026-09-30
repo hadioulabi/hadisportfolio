@@ -2,15 +2,15 @@
   <rect width="760" height="260" fill="#f6f8fb"></rect>
 
   
-  <text x="380" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em">EXPORTABWICKLUNG · PROZESSABLAUF</text>
+  <text x="380" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em" data-t="0">EXPORTABWICKLUNG · PROZESSABLAUF</text>
 
   
   <rect x="20" y="60" width="108" height="100" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <rect x="20" y="60" width="108" height="8" rx="3" fill="#1d4fa0"></rect>
-  <text x="74" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e">Sendungs-</text>
-  <text x="74" y="109" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e">details</text>
-  <text x="74" y="128" text-anchor="middle" font-size="10" fill="#58677a">Menge, Gewicht</text>
-  <text x="74" y="142" text-anchor="middle" font-size="10" fill="#58677a">Zielland, Ware</text>
+  <text x="74" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e" data-t="1">Sendungs-</text>
+  <text x="74" y="109" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e" data-t="2">details</text>
+  <text x="74" y="128" text-anchor="middle" font-size="10" fill="#58677a" data-t="3">Menge, Gewicht</text>
+  <text x="74" y="142" text-anchor="middle" font-size="10" fill="#58677a" data-t="4">Zielland, Ware</text>
 
   
   <line x1="130" y1="110" x2="148" y2="110" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#a2)"></line>
@@ -18,10 +18,10 @@
   
   <rect x="150" y="60" width="108" height="100" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <rect x="150" y="60" width="108" height="8" rx="3" fill="#1d4fa0"></rect>
-  <text x="204" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e">Speditions-</text>
-  <text x="204" y="109" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e">koordination</text>
-  <text x="204" y="128" text-anchor="middle" font-size="10" fill="#58677a">Abholung buchen</text>
-  <text x="204" y="142" text-anchor="middle" font-size="10" fill="#58677a">CargoX</text>
+  <text x="204" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e" data-t="5">Speditions-</text>
+  <text x="204" y="109" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e" data-t="6">koordination</text>
+  <text x="204" y="128" text-anchor="middle" font-size="10" fill="#58677a" data-t="7">Abholung buchen</text>
+  <text x="204" y="142" text-anchor="middle" font-size="10" fill="#58677a" data-t="8">CargoX</text>
 
   
   <line x1="260" y1="110" x2="278" y2="110" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#a2)"></line>
@@ -29,9 +29,9 @@
   
   <rect x="280" y="60" width="108" height="100" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <rect x="280" y="60" width="108" height="8" rx="3" fill="#1d4fa0"></rect>
-  <text x="334" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e">Dokumente</text>
-  <text x="334" y="128" text-anchor="middle" font-size="10" fill="#58677a">Ursprungszeugnis</text>
-  <text x="334" y="142" text-anchor="middle" font-size="10" fill="#58677a">Begleitpapiere</text>
+  <text x="334" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e" data-t="9">Dokumente</text>
+  <text x="334" y="128" text-anchor="middle" font-size="10" fill="#58677a" data-t="10">Ursprungszeugnis</text>
+  <text x="334" y="142" text-anchor="middle" font-size="10" fill="#58677a" data-t="11">Begleitpapiere</text>
 
   
   <line x1="390" y1="110" x2="408" y2="110" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#a2)"></line>
@@ -39,11 +39,11 @@
   
   <rect x="410" y="52" width="116" height="116" rx="6" fill="#edf2fa" stroke="#1d4fa0" stroke-width="2"></rect>
   <rect x="410" y="52" width="116" height="8" rx="3" fill="#1d4fa0"></rect>
-  <text x="468" y="85" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e">ABD via IAAP</text>
-  <text x="468" y="103" text-anchor="middle" font-size="10" fill="#58677a">Zollanmeldung</text>
-  <text x="468" y="117" text-anchor="middle" font-size="10" fill="#58677a">→ eigene Software</text>
-  <text x="468" y="131" text-anchor="middle" font-size="10" fill="#1d4fa0" font-weight="700">in Entwicklung</text>
-  <text x="468" y="153" text-anchor="middle" font-size="9" fill="#58677a">(ABD-Software)</text>
+  <text x="468" y="85" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e" data-t="12">ABD via IAAP</text>
+  <text x="468" y="103" text-anchor="middle" font-size="10" fill="#58677a" data-t="13">Zollanmeldung</text>
+  <text x="468" y="117" text-anchor="middle" font-size="10" fill="#58677a" data-t="14">→ eigene Software</text>
+  <text x="468" y="131" text-anchor="middle" font-size="10" fill="#1d4fa0" font-weight="700" data-t="15">in Entwicklung</text>
+  <text x="468" y="153" text-anchor="middle" font-size="9" fill="#58677a" data-t="16">(ABD-Software)</text>
 
   
   <line x1="528" y1="110" x2="546" y2="110" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#a2)"></line>
@@ -51,23 +51,23 @@
   
   <rect x="548" y="60" width="100" height="100" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
   <rect x="548" y="60" width="100" height="8" rx="3" fill="#1d4fa0"></rect>
-  <text x="598" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e">Verpackung</text>
-  <text x="598" y="128" text-anchor="middle" font-size="10" fill="#58677a">Großsendungen</text>
-  <text x="598" y="142" text-anchor="middle" font-size="10" fill="#58677a">physisch vorbereiten</text>
+  <text x="598" y="94" text-anchor="middle" font-size="11" font-weight="800" fill="#17202e" data-t="17">Verpackung</text>
+  <text x="598" y="128" text-anchor="middle" font-size="10" fill="#58677a" data-t="18">Großsendungen</text>
+  <text x="598" y="142" text-anchor="middle" font-size="10" fill="#58677a" data-t="19">physisch vorbereiten</text>
 
   
   <line x1="650" y1="110" x2="668" y2="110" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#a2)"></line>
 
   
   <rect x="670" y="60" width="76" height="100" rx="6" fill="#0c1e48"></rect>
-  <text x="708" y="99" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Doku-</text>
-  <text x="708" y="114" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">mentation</text>
-  <text x="708" y="134" text-anchor="middle" font-size="10" fill="#edf2fa">Excel-Liste</text>
-  <text x="708" y="148" text-anchor="middle" font-size="10" fill="#edf2fa">Ablage</text>
+  <text x="708" y="99" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" data-t="20">Doku-</text>
+  <text x="708" y="114" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" data-t="21">mentation</text>
+  <text x="708" y="134" text-anchor="middle" font-size="10" fill="#edf2fa" data-t="22">Excel-Liste</text>
+  <text x="708" y="148" text-anchor="middle" font-size="10" fill="#edf2fa" data-t="23">Ablage</text>
 
   
-  <text x="380" y="196" text-anchor="middle" font-size="10.5" fill="#58677a">Anonymisierter Prozessablauf · Keine echten Kunden- oder Sendungsdaten</text>
-  <text x="380" y="212" text-anchor="middle" font-size="10" fill="#1d4fa0">Die ABD-Arbeit in Schritt 4 führte direkt zur Entwicklung der eigenen ABD-Software (Case 01)</text>
+  <text x="380" y="196" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="24">Anonymisierter Prozessablauf · Keine echten Kunden- oder Sendungsdaten</text>
+  <text x="380" y="212" text-anchor="middle" font-size="10" fill="#1d4fa0" data-t="25">Die ABD-Arbeit in Schritt 4 führte direkt zur Entwicklung der eigenen ABD-Software (Case 01)</text>
 
   <defs>
     <marker id="a2" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto">

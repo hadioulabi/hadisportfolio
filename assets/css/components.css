@@ -865,11 +865,48 @@
 /* ── Language switcher ───────────────────────── */
 
 .lang-switch-bar {
-  width: min(var(--container), 100% - 2rem);
-  margin: 0 auto;
-  padding-top: var(--space-4);
+  position: sticky;
+  top: 0;
+  z-index: 60;
   display: flex;
+  justify-content: center;
+  padding: var(--space-2) 0;
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  border-bottom: 1px solid transparent;
+  transition: border-color 120ms ease;
+}
+
+@supports (backdrop-filter: blur(6px)) {
+  .lang-switch-bar {
+    backdrop-filter: blur(6px);
+  }
+}
+
+@supports not (color-mix(in srgb, red 50%, transparent)) {
+  .lang-switch-bar {
+    background: var(--color-bg);
+  }
+}
+
+.lang-switch-bar.is-stuck {
+  border-bottom-color: var(--color-rule);
+}
+
+.lang-switch-bar > .lang-switch {
+  width: min(var(--container), 100% - 2rem);
   justify-content: flex-end;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.lang-switch-bar > .lang-switch > button {
+  border: 1px solid var(--color-rule);
+  background: var(--color-surface);
+}
+
+.lang-switch-bar > .lang-switch > button + button {
+  margin-inline-start: 2px;
 }
 
 .lang-switch {

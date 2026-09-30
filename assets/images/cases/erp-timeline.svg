@@ -2,56 +2,56 @@
   <rect width="760" height="280" fill="#f6f8fb"></rect>
 
   
-  <text x="380" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em">ERP-EINFÜHRUNG · ZEITLINIE</text>
+  <text x="380" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em" data-t="0">ERP-EINFÜHRUNG · ZEITLINIE</text>
 
   
   <line x1="60" y1="110" x2="700" y2="110" stroke="#d3dae8" stroke-width="2"></line>
 
   
   <circle cx="100" cy="110" r="10" fill="#1d4fa0"></circle>
-  <text x="100" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Q1 2025</text>
+  <text x="100" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0" data-t="1">Q1 2025</text>
   <rect x="40" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="100" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Aufbau</text>
-  <text x="100" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">Anforderungen</text>
-  <text x="100" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">Programmierung</text>
-  <text x="100" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">Grundfunktionen</text>
+  <text x="100" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e" data-t="2">Aufbau</text>
+  <text x="100" y="170" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="3">Anforderungen</text>
+  <text x="100" y="185" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="4">Programmierung</text>
+  <text x="100" y="200" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="5">Grundfunktionen</text>
 
   
   <circle cx="250" cy="110" r="10" fill="#1d4fa0"></circle>
-  <text x="250" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Q2 2025</text>
+  <text x="250" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0" data-t="6">Q2 2025</text>
   <rect x="190" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="250" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Testing</text>
-  <text x="250" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">Fehler dokumentiert</text>
-  <text x="250" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">Korrekturen</text>
-  <text x="250" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">Iterationen</text>
+  <text x="250" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e" data-t="7">Testing</text>
+  <text x="250" y="170" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="8">Fehler dokumentiert</text>
+  <text x="250" y="185" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="9">Korrekturen</text>
+  <text x="250" y="200" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="10">Iterationen</text>
 
   
   <circle cx="400" cy="110" r="10" fill="#1d4fa0"></circle>
-  <text x="400" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Mitte 2025</text>
+  <text x="400" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0" data-t="11">Mitte 2025</text>
   <rect x="340" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="400" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Datenpflege</text>
-  <text x="400" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">Stammdaten</text>
-  <text x="400" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">Bewegungsdaten</text>
-  <text x="400" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">Datenqualität</text>
+  <text x="400" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e" data-t="12">Datenpflege</text>
+  <text x="400" y="170" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="13">Stammdaten</text>
+  <text x="400" y="185" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="14">Bewegungsdaten</text>
+  <text x="400" y="200" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="15">Datenqualität</text>
 
   
   <circle cx="550" cy="110" r="10" fill="#1d4fa0"></circle>
-  <text x="550" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0">Rollout</text>
+  <text x="550" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#1d4fa0" data-t="16">Rollout</text>
   <rect x="490" y="130" width="120" height="72" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="550" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e">Schulung</text>
-  <text x="550" y="170" text-anchor="middle" font-size="10.5" fill="#58677a">DE · AR · EN</text>
-  <text x="550" y="185" text-anchor="middle" font-size="10.5" fill="#58677a">DE / SY / EG</text>
-  <text x="550" y="200" text-anchor="middle" font-size="10.5" fill="#58677a">4–6 Nutzer</text>
+  <text x="550" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#17202e" data-t="17">Schulung</text>
+  <text x="550" y="170" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="18">DE · AR · EN</text>
+  <text x="550" y="185" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="19">DE / SY / EG</text>
+  <text x="550" y="200" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="20">4–6 Nutzer</text>
 
   
   <circle cx="700" cy="110" r="10" fill="#0c1e48"></circle>
-  <text x="700" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#0c1e48">laufend</text>
+  <text x="700" y="90" text-anchor="middle" font-size="10.5" font-weight="800" fill="#0c1e48" data-t="21">laufend</text>
   <rect x="640" y="130" width="120" height="72" rx="6" fill="#0c1e48"></rect>
-  <text x="700" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Betrieb</text>
-  <text x="700" y="170" text-anchor="middle" font-size="10.5" fill="#edf2fa">produktiv genutzt</text>
-  <text x="700" y="185" text-anchor="middle" font-size="10.5" fill="#edf2fa">laufende Betreuung</text>
-  <text x="700" y="200" text-anchor="middle" font-size="10.5" fill="#edf2fa">international</text>
+  <text x="700" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff" data-t="22">Betrieb</text>
+  <text x="700" y="170" text-anchor="middle" font-size="10.5" fill="#edf2fa" data-t="23">produktiv genutzt</text>
+  <text x="700" y="185" text-anchor="middle" font-size="10.5" fill="#edf2fa" data-t="24">laufende Betreuung</text>
+  <text x="700" y="200" text-anchor="middle" font-size="10.5" fill="#edf2fa" data-t="25">international</text>
 
   
-  <text x="380" y="248" text-anchor="middle" font-size="10.5" fill="#58677a">Anonymisierte Darstellung · Länder und Mitarbeitende wurden abstrahiert</text>
+  <text x="380" y="248" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="26">Anonymisierte Darstellung · Länder und Mitarbeitende wurden abstrahiert</text>
 </svg>

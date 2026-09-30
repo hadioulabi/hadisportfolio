@@ -183,9 +183,27 @@
   border: 1px solid var(--color-rule);
 }
 
-.evidence-visual img {
+.evidence-visual img,
+.evidence-visual svg {
   width: 100%;
+  height: auto;
   display: block;
+}
+
+/* Arabic: mirror the diagram so it reads right-to-left, then flip the
+   labels back so the text itself stays the right way round. */
+[dir="rtl"] .evidence-visual {
+  direction: ltr;
+}
+
+[dir="rtl"] .evidence-visual svg {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .evidence-visual svg text {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scaleX(-1);
 }
 
 .evidence-caption {

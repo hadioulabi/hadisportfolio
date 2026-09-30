@@ -8,6 +8,11 @@ lebenslauf/*-print.html
 lebenslauf/* (*).html
 lebenslauf/assets/* (*).jpg
 
+# Werkzeuge
+node_modules/
+package.json
+package-lock.json
+
 # Systemdateien
 .DS_Store
 Thumbs.db

@@ -1,58 +1,58 @@
 <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
   <rect width="760" height="300" fill="#f6f8fb"></rect>
 
-  <text x="380" y="30" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em">BRAND ACTIVISM · UNTERSUCHUNGSDESIGN</text>
+  <text x="380" y="30" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em" data-t="0">BRAND ACTIVISM · UNTERSUCHUNGSDESIGN</text>
 
-  <text x="118" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#1d4fa0" letter-spacing="0.04em">ZWEI FÄLLE</text>
+  <text x="118" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#1d4fa0" letter-spacing="0.04em" data-t="1">ZWEI FÄLLE</text>
 
   <rect x="30" y="64" width="176" height="46" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="118" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Patagonia</text>
-  <text x="118" y="98" text-anchor="middle" font-size="10.5" fill="#58677a">konsistente Haltung</text>
+  <text x="118" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="2">Patagonia</text>
+  <text x="118" y="98" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="3">konsistente Haltung</text>
 
   <rect x="30" y="122" width="176" height="46" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="118" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e">Nike</text>
-  <text x="118" y="156" text-anchor="middle" font-size="10.5" fill="#58677a">polarisierende Position</text>
+  <text x="118" y="140" text-anchor="middle" font-size="11" font-weight="700" fill="#17202e" data-t="4">Nike</text>
+  <text x="118" y="156" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="5">polarisierende Position</text>
 
   <line x1="206" y1="87" x2="286" y2="108" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ba)"></line>
   <line x1="206" y1="145" x2="286" y2="124" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ba)"></line>
 
-  <text x="380" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#0c1e48" letter-spacing="0.04em">IDENTISCHE KRITERIEN</text>
+  <text x="380" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#0c1e48" letter-spacing="0.04em" data-t="6">IDENTISCHE KRITERIEN</text>
 
   <rect x="292" y="86" width="176" height="60" rx="8" fill="#edf2fa" stroke="#1d4fa0" stroke-width="1.5"></rect>
-  <text x="380" y="106" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0c1e48">Visuelle Grammatik</text>
-  <text x="380" y="121" text-anchor="middle" font-size="10" fill="#1d4fa0">Kress &amp; van Leeuwen</text>
-  <text x="380" y="136" text-anchor="middle" font-size="10" fill="#1d4fa0">Methodik Gillian Rose</text>
+  <text x="380" y="106" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0c1e48" data-t="7">Visuelle Grammatik</text>
+  <text x="380" y="121" text-anchor="middle" font-size="10" fill="#1d4fa0" data-t="8">Kress &amp; van Leeuwen</text>
+  <text x="380" y="136" text-anchor="middle" font-size="10" fill="#1d4fa0" data-t="9">Methodik Gillian Rose</text>
 
   <rect x="292" y="156" width="176" height="34" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="380" y="171" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17202e">Eigene Erhebung</text>
-  <text x="380" y="184" text-anchor="middle" font-size="10" fill="#58677a">129 Kampagnen-Kommentare</text>
+  <text x="380" y="171" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17202e" data-t="10">Eigene Erhebung</text>
+  <text x="380" y="184" text-anchor="middle" font-size="10" fill="#58677a" data-t="11">129 Kampagnen-Kommentare</text>
 
   <line x1="468" y1="116" x2="548" y2="96" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ba)"></line>
   <line x1="468" y1="126" x2="548" y2="146" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ba)"></line>
 
-  <text x="642" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#2662b8" letter-spacing="0.04em">ZWEI FAKTOREN</text>
+  <text x="642" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#2662b8" letter-spacing="0.04em" data-t="12">ZWEI FAKTOREN</text>
 
   <rect x="554" y="74" width="176" height="46" rx="6" fill="#ffffff" stroke="#2662b8" stroke-width="1.5"></rect>
-  <text x="642" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#0c1e48">Konfliktgrad</text>
-  <text x="642" y="108" text-anchor="middle" font-size="10.5" fill="#58677a">des Themas</text>
+  <text x="642" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#0c1e48" data-t="13">Konfliktgrad</text>
+  <text x="642" y="108" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="14">des Themas</text>
 
   <rect x="554" y="128" width="176" height="46" rx="6" fill="#ffffff" stroke="#2662b8" stroke-width="1.5"></rect>
-  <text x="642" y="146" text-anchor="middle" font-size="11" font-weight="700" fill="#0c1e48">Deckung</text>
-  <text x="642" y="162" text-anchor="middle" font-size="10.5" fill="#58677a">Haltung ↔ Praxis</text>
+  <text x="642" y="146" text-anchor="middle" font-size="11" font-weight="700" fill="#0c1e48" data-t="15">Deckung</text>
+  <text x="642" y="162" text-anchor="middle" font-size="10.5" fill="#58677a" data-t="16">Haltung ↔ Praxis</text>
 
   <line x1="642" y1="174" x2="642" y2="206" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ba)"></line>
   <line x1="118" y1="168" x2="118" y2="206" stroke="#d3dae8" stroke-width="1.5" stroke-dasharray="4,3"></line>
 
   <rect x="30" y="210" width="330" height="40" rx="6" fill="#ffffff" stroke="#d3dae8" stroke-width="1.5"></rect>
-  <text x="195" y="227" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17202e">Deckung vorhanden → Glaubwürdigkeit</text>
-  <text x="195" y="242" text-anchor="middle" font-size="10" fill="#58677a">visuelle Form verstärkt die Wirkung</text>
+  <text x="195" y="227" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17202e" data-t="17">Deckung vorhanden → Glaubwürdigkeit</text>
+  <text x="195" y="242" text-anchor="middle" font-size="10" fill="#58677a" data-t="18">visuelle Form verstärkt die Wirkung</text>
 
   <rect x="400" y="210" width="330" height="40" rx="6" fill="#ffffff" stroke="#b84b3a" stroke-width="1.5"></rect>
-  <text x="565" y="227" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17202e">Deckung fehlt → Verdacht auf Woke Washing</text>
-  <text x="565" y="242" text-anchor="middle" font-size="10" fill="#b84b3a">wirkt negativer als Schweigen</text>
+  <text x="565" y="227" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17202e" data-t="19">Deckung fehlt → Verdacht auf Woke Washing</text>
+  <text x="565" y="242" text-anchor="middle" font-size="10" fill="#b84b3a" data-t="20">wirkt negativer als Schweigen</text>
 
   <rect x="30" y="262" width="700" height="16" rx="4" fill="#0c1e48"></rect>
-  <text x="380" y="274" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">Haltung wirkt nur, wenn Thema, Praxis und visuelle Form zusammenpassen</text>
+  <text x="380" y="274" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff" data-t="21">Haltung wirkt nur, wenn Thema, Praxis und visuelle Form zusammenpassen</text>
 
   <defs>
     <marker id="ba" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
