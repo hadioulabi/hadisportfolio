@@ -40,11 +40,11 @@
 
   
   <rect x="40" y="256" width="180" height="48" rx="6" fill="#0c1e48"></rect>
-  <text x="130" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff" data-t="10">Dokument-Generator</text>
+  <text x="130" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff" data-t="10">Dokumentenerstellung</text>
   <text x="130" y="292" text-anchor="middle" font-size="10.5" fill="#edf2fa" data-t="11">Word-Export, strukturiert</text>
 
   <rect x="290" y="256" width="180" height="48" rx="6" fill="#0c1e48"></rect>
-  <text x="380" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff" data-t="12">Social-Media-Generator</text>
+  <text x="380" y="275" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff" data-t="12">Social-Media-Posts</text>
   <text x="380" y="292" text-anchor="middle" font-size="10.5" fill="#edf2fa" data-t="13">CI-konform, FB &amp; Instagram</text>
 
   <rect x="540" y="256" width="180" height="48" rx="6" fill="#1d4fa0"></rect>

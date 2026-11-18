@@ -15,7 +15,6 @@ window.PORTFOLIO_CONTENT.de = {
       home: "Start",
       profil: "Profil",
       erfahrung: "Erfahrung",
-      kompetenzen: "Kompetenzen",
       cases: "Cases",
       kontakt: "Kontakt"
     },
@@ -31,8 +30,6 @@ window.PORTFOLIO_CONTENT.de = {
       profilHeading: "Aus der Textilbranche, mit Blick für Prozesse, Menschen und Fashion.",
       erfahrungEyebrow: "Erfahrung",
       erfahrungHeading: "Was ich bisher gelernt, gemacht und aufgebaut habe.",
-      kompetenzenEyebrow: "Kompetenzen",
-      kompetenzenHeading: "Was ich praktisch anwende und weiter ausbaue.",
       casesEyebrow: "Cases",
       casesHeading: "Einblicke in Projekte aus meinem Arbeitsalltag.",
       kontaktEyebrow: "Kontakt",
@@ -54,6 +51,7 @@ window.PORTFOLIO_CONTENT.de = {
       result: "Ergebnis",
       impact: "Wirkung",
       processEyebrow: "Ablauf",
+      swipeHint: "Grafik zur Seite wischen →",
       processHeading: "Vorgehen im Detail"
     },
     footer: "Fashion Management · Business Operations · Innovationsmanagement"
@@ -66,18 +64,18 @@ window.PORTFOLIO_CONTENT.de = {
       "Im internationalen Familienbetrieb arbeite ich über mehrere Bereiche hinweg und konnte früh Verantwortung übernehmen. Seit September 2026 sammle ich im Technologie- und Entwicklungszentrum von Groz-Beckert Erfahrung im Innovationsmanagement."
     ],
     facts: [
-      { label: "Studium", value: "Bachelor of Arts, Fashion Management · TEXOVERSUM LDT Nagold · BWL mit Schwerpunkt Fashion & Textile Management · 10.2024 bis vsl. 07.2027" },
+      { label: "Studium", value: "Bachelor of Arts, Fashion Management · TEXOVERSUM LDT Nagold · BWL mit Schwerpunkt Fashion & Textile Management · 10.2024 bis vsl. 07.2027 · Textilbetriebswirt (BTE) seit 07.2026" },
       { label: "Rolle", value: "Praktikum Innovationsmanagement · Groz-Beckert KG, Technologie- und Entwicklungszentrum, Albstadt · seit 09.2026" },
-      { label: "Erfahrung", value: "Seit 07.2022 Outatex GmbH: Export, ERP-Einführung, Buchhaltung, Messe, interne WebApps" },
+      { label: "Erfahrung", value: "Seit 07.2022 Outatex GmbH: Logistikprozesse & Export, ERP-Einführung, Buchhaltung, CRM, Messen, interne WebApps" },
       { label: "Schwerpunkte", value: "Operative Prozesse · Systeme & Daten · KI-gestützte Automatisierung" },
       { label: "Standort", value: "Mötzingen, Baden-Württemberg, Deutschland" },
       { label: "Geboren", value: "15.12.2006" }
     ],
     languages: [
-      { name: "Deutsch", level: "muttersprachlich", bar: 100 },
-      { name: "Arabisch", level: "fließend in Wort und Schrift", bar: 95 },
-      { name: "Englisch", level: "verhandlungssicher (C1)", bar: 88 },
-      { name: "Französisch", level: "Grundkenntnisse", bar: 45 }
+      { name: "Deutsch", level: "Muttersprache" },
+      { name: "Arabisch", level: "Fließend in Wort und Schrift" },
+      { name: "Englisch", level: "Verhandlungssicher (C1)" },
+      { name: "Französisch", level: "Grundkenntnisse" }
     ]
   },
   contact: {
@@ -98,26 +96,37 @@ window.PORTFOLIO_CONTENT.de = {
       items: [
         "Einblick in die Sparten des TEZ und deren Zusammenspiel",
         "Einblick in die Prozesse hinter Innovationsmanagement und Unternehmensentwicklung",
-        "Geschäftsmodell-Weiterentwicklung und der Weg von der Idee zur Lösung",
-        "Betriebliches Ideenmanagement, Business Design Sprints und Kundenforschung"
+        "Mitarbeit an neuen Geschäftsmodellen: Ideenmanagement, Business Design Sprints, Kundenforschung"
       ]
     },
     {
       period: "07.2022 - laufend",
-      title: "Business Operations & Process Development · Outatex GmbH",
-      text: "Mötzingen · Mitarbeit ab 07.2022, Werkstudent seit 09.2025.",
+      title: "Werkstudent Business Operations · Outatex GmbH",
+      text: "Mötzingen · Mitarbeit ab 07.2022, Werkstudent ab 09.2025.",
       items: [
-        "Mitarbeit im internationalen Familienbetrieb über mehrere Bereiche hinweg",
-        "Eigenständige Exportabwicklung",
+        "Eigenständige Abwicklung von Logistikprozessen & Export",
         "Begleitung einer individuellen ERP-Einführung",
         "Einrichtung und Nutzung einer neuen Finanzbuchhaltungssoftware für Eingangs-/Ausgangsrechnungen",
+        "Konzeption und Umsetzung eines CRM für den Ersatzteilvertrieb an Strickereien in Ägypten",
         "Entwicklung interner WebApps für Dokumente, Social-Media-Posts und ABD-Prozesse mit KI-Unterstützung",
-        "Marketing-Organisation, Messevorbereitung und Vertriebsentwicklung"
+        "Messevorbereitung 2026 inkl. Canva-Materialien: Techtextil Frankfurt, NASTEX Syrien, Egypt Stitch & Tex Kairo",
+        "Einarbeitung neuer Mitarbeitender, Mitarbeit an Marketing-Organisation und Vertriebsentwicklung"
+      ]
+    },
+    {
+      period: "2026 - laufend",
+      title: "texmex · gemeinsames Vorhaben",
+      text: "Mit zwei Kommilitonen vom Texoversum, Fokus auf inhabergeführte Handelsbetriebe.",
+      items: [
+        "Projekte: Retail-Check, wirKeitum, weitere sind in Vorbereitung",
+        "Retail-Check: digitales Tool, das Verkaufsflächen im Modehandel bewertet und mit dem Abverkauf abgleicht, aktuell in der Pilotphase",
+        "wirKeitum: Web-App zur Keitumer Genusswoche auf Sylt unterstützt, mit Programm, Karte, Merkliste und eigenen Seiten für 28 Aussteller",
+        "Mit Betrieben klären, was im Alltag Zeit und Geld kostet, und ob Kaufen oder Selbermachen eines Tools sinnvoller ist"
       ]
     },
     {
       period: "03.2025 - laufend",
-      title: "Fundraising-Manager · Ihssan gemeinnützige GmbH",
+      title: "Ehrenamtliches Spenden-Management · Ihssan gemeinnützige GmbH",
       text: "Ahsin Spendenorganisation · Katastrophenhilfe und humanitäre Hilfe.",
       items: [
         "Planung, Umsetzung und Steuerung von Spendenkampagnen",
@@ -148,8 +157,8 @@ window.PORTFOLIO_CONTENT.de = {
       items: [
         "BWL mit Schwerpunkt Fashion & Textile Management",
         "Marketing, Einkauf, Produktentwicklung, Warenkunde, Supply Chain",
-        "Branchennahe Module, Projekte und Exkursionen in der Mode- und Textilwirtschaft",
-        "Semesterarbeit zur Wirkung gesellschaftspolitischen Brand Activism in der Modebranche: Vergleichsanalyse von Patagonia und Nike zur Rolle von Authentizität, Note 1,0"
+        "Branchennahe Module, Projekte und Exkursionen in der Mode- und Textilwirtschaft (u. a. Hugo Boss, Inditex)",
+        "Abschluss Textilbetriebswirt (BTE) 07.2026, Abschlussarbeit zu gesellschaftspolitischem Brand Activism in der Modebranche: Vergleichsanalyse von Patagonia und Nike zur Rolle von Authentizität, Note 1,0"
       ]
     },
     {
@@ -164,28 +173,6 @@ window.PORTFOLIO_CONTENT.de = {
       period: "2015 - 2016",
       title: "Grundschuljahr Ausland · Nefertari Deutsche Internationale Schule",
       text: "Kairo."
-    }
-  ],
-  skillGroups: [
-    {
-      title: "Operations & Export",
-      skills: ["Exportabwicklung", "Spediteurskoordination", "CargoX", "Ursprungszeugnisse", "ABD / IAAP", "Warenannahme & Versand", "Logistik", "Messevorbereitung"]
-    },
-    {
-      title: "Systeme, Daten & Buchhaltung",
-      skills: ["ERP-Einführung", "Odoo Konfiguration", "Datenpflege", "Systemtesting", "Fehlerdokumentation", "Onboarding", "Eingangs-/Ausgangsrechnungen"]
-    },
-    {
-      title: "Web & Automation",
-      skills: ["HTML / CSS / JS", "TypeScript", "Python", "PWA", "Word-Export", "Frontend-Prototyping", "GitHub", "Netlify"]
-    },
-    {
-      title: "KI-gestützt",
-      skills: ["Prompting", "KI-gestützte Entwicklung", "Tool-Konzeption", "Recherche", "Debugging", "Prozessanalyse", "Claude / ChatGPT / Codex"]
-    },
-    {
-      title: "Tools & Weiteres",
-      skills: ["MS Office", "Excel", "Canva", "Odoo", "Jira", "Perplexity", "Führerschein Klasse B197"]
     }
   ],
   svgText: {
@@ -281,16 +268,16 @@ window.PORTFOLIO_CONTENT.de = {
       "unübersichtliche Eingabe",
       "INTERNE WEBAPPS",
       "HTML · CSS · JavaScript · Python · KI-gestützte Entwicklung",
-      "Dokument-Generator",
+      "Dokumentenerstellung",
       "Word-Export, strukturiert",
-      "Social-Media-Generator",
+      "Social-Media-Posts",
       "CI-konform, FB & Instagram",
       "ABD-Software",
       "bessere Führung, Stammdaten"
     ],
     "messe-timeline": [
       "MESSEPROJEKTE · ÜBERBLICK",
-      "2026",
+      "April 2026",
       "Techtextil",
       "Frankfurt · International",
       "Flyer, Visitenkarten",
@@ -300,15 +287,15 @@ window.PORTFOLIO_CONTENT.de = {
       "aus Deutschland",
       "Juli 2026",
       "NASTEX",
-      "Syrien · International",
+      "Damaskus · International",
       "Flyer, Standplan",
       "Koordination DE ↔ SY",
-      "→ geplant",
+      "✓ vorbereitet",
       "abgeschlossen",
-      "geplant · Update folgt nach Juli 2026"
+      "vorbereitet aus Deutschland"
     ],
     "messe-zyklus": [
-      "MESSEZYKLUS · EGY STITCH & TEX KAIRO",
+      "MESSEZYKLUS · EGYPT STITCH & TEX KAIRO",
       "VORHER",
       "VOR ORT",
       "NACHHER",
@@ -348,7 +335,7 @@ window.PORTFOLIO_CONTENT.de = {
       "Ablage & Dokumentation"
     ],
     "store-score-konzept": [
-      "FASHION STORE SCORE · BEWERTUNGSLOGIK",
+      "RETAIL-CHECK · BEWERTUNGSLOGIK",
       "FLÄCHE & PLATZIERUNG",
       "Lage & Zone",
       "Laufweg, Frequenz",
@@ -363,29 +350,53 @@ window.PORTFOLIO_CONTENT.de = {
       "Bestand zu Verkauf",
       "Warengruppe",
       "Kategorie, Saison",
-      "STORE SCORE",
+      "SCORE",
       "gewichtete Verknüpfung",
       "Flächen vergleichbar machen",
-      "Merchandising-Entscheidung mit Begründung",
+      "Handlungsempfehlung mit Begründung",
       "Schematische Darstellung · keine realen Unternehmensdaten"
+    ],
+    "crm-ersatzteilvertrieb": [
+      "CRM · ERSATZTEILVERTRIEB ÄGYPTEN",
+      "DATENBASIS",
+      "Google Sheets",
+      "Apps Script, AppSheet",
+      "ERP-Abgleich",
+      "Kunden, Umsätze",
+      "CRM",
+      "automatische Segmentierung",
+      "ABC · Trends · Reaktivierung",
+      "MODULE",
+      "Kampagnen",
+      "E-Mail & WhatsApp, per Filter",
+      "Techniker-Modul",
+      "Serviceeinsätze",
+      "Rollen",
+      "Ansichten je nach Rolle",
+      "PROSPECT-MODUL · NEUKUNDEN",
+      "25 Quellen",
+      "~6.000 Betriebe",
+      "1.700 priorisiert",
+      "per Klick in den Kundenstamm",
+      "Schematische Darstellung · keine realen Kundendaten"
     ]
   },
   cases: [
     {
-      id: "storescore",
+      id: "retailcheck",
       priority: "lead",
       statusKey: "dev",
-      status: "in Entwicklung",
-      slug: "fashion-store-score.html",
-      title: "Fashion Store Score: Retail-Analytics-Konzept für datenbasierte Verkaufsflächen",
-      shortTitle: "Fashion Store Score",
-      subtitle: "Store-Layout, Produktplatzierung und Abverkauf als Grundlage für Merchandising-Entscheidungen.",
-      period: "ab Februar 2026",
-      summary: "Gemeinsam mit zwei Kommilitonen entwickle ich ein Retail-Analytics-Konzept, das die Verkaufsfläche im Modehandel messbar macht. Store-Layout, Produktplatzierung und Abverkauf werden zusammen betrachtet, um Merchandising-Entscheidungen auf Daten statt auf Bauchgefühl zu stützen.",
+      status: "Pilotphase",
+      slug: "retail-check.html",
+      title: "Retail-Check: digitales Tool zur Bewertung von Verkaufsflächen im Modehandel",
+      shortTitle: "Retail-Check",
+      subtitle: "Verkaufsflächen bewerten, mit dem Abverkauf abgleichen und daraus Handlungsempfehlungen ableiten.",
+      period: "seit Februar 2026, Projekt von texmex",
+      summary: "Gemeinsam mit zwei Kommilitonen habe ich ein digitales Tool entwickelt, das Verkaufsflächen im Modehandel bewertet und mit dem Abverkauf abgleicht. Lage, Sichtbarkeit und Präsentation werden je Bereich erfasst; daraus entstehen ein Score und konkrete Handlungsempfehlungen. Das Tool ist aktuell in der Pilotphase.",
       problem: "Entscheidungen über Flächen, Platzierung und Präsentation werden im Modehandel oft aus Erfahrung und Gewohnheit getroffen. Der Zusammenhang zwischen Layout, Platzierung und tatsächlichem Abverkauf bleibt dabei unscharf und ist im Nachhinein schwer zu begründen.",
-      approach: "Wir zerlegen die Verkaufsfläche in bewertbare Bestandteile, verknüpfen sie mit Abverkaufsdaten und fassen das Ergebnis in einem nachvollziehbaren Score zusammen. Wichtig ist uns, dass die Logik im Alltag anwendbar bleibt und nicht nur theoretisch funktioniert.",
-      result: "Es existiert ein ausgearbeitetes Konzept mit definierter Bewertungslogik und Struktur. Die Arbeit läuft weiter, mit dem Ziel, daraus ein marktreifes Werkzeug zu entwickeln.",
-      impact: "Der Case zeigt konzeptionelles Arbeiten im Team und die Verbindung von Fashion-Retail-Verständnis mit datenbasierter Analyse – als Ergänzung zu den operativen und systemnahen Cases.",
+      approach: "Wir haben Kriterien diskutiert, Bewertungen hinterfragt und die Verkaufsfläche in bewertbare Bereiche zerlegt. Jeder Bereich wird nach Lage und Laufweg, Sichtbarkeit und Präsentation bewertet und mit dem Abverkauf verknüpft. Wichtig war, dass die Logik im Store-Alltag anwendbar bleibt.",
+      result: "Aus dem Konzept ist ein digitales Bewertungstool geworden, mit dem direkt im Store gearbeitet werden kann, inklusive Notizen und Fotos je Bereich. Aktuell läuft die Pilotphase mit Tests auf echten Verkaufsflächen.",
+      impact: "Der Case zeigt konzeptionelles Arbeiten im Team und die Verbindung von Fashion-Retail-Verständnis mit datenbasierter Analyse, vom ersten Konzept bis zu einem Werkzeug im Praxistest.",
       image: "assets/images/cases/store-score-konzept.svg",
       imageAlt: "Bewertungslogik im Überblick",
       sections: [
@@ -399,22 +410,22 @@ window.PORTFOLIO_CONTENT.de = {
         {
           title: "Meine Rolle",
           body: [
-            "Das Konzept entsteht im Dreierteam. Ich bringe vor allem die Verbindung zwischen Prozessverständnis und Analyselogik ein: Welche Größen sind überhaupt erfassbar, wie lassen sie sich sinnvoll gewichten und wo wird eine Kennzahl zur Scheingenauigkeit.",
+            "Das Tool entsteht im Dreierteam. Mein Schwerpunkt liegt auf der Verbindung zwischen Prozessverständnis und Analyselogik: Welche Größen sind im Store realistisch erfassbar, wie lassen sie sich sinnvoll gewichten und wo wird eine Kennzahl zur Scheingenauigkeit.",
             "Diese Denkweise kenne ich aus den operativen Cases: Erst verstehen, wie ein Ablauf real funktioniert, dann eine Struktur darüberlegen."
           ]
         },
         {
-          title: "Konzeptlogik",
+          title: "Bewertungslogik",
           body: [
-            "Die Verkaufsfläche wird in bewertbare Bereiche zerlegt. Für jeden Bereich werden Merkmale wie Lage, Sichtbarkeit und Art der Präsentation erfasst und anschließend mit dem Abverkauf in Beziehung gesetzt.",
-            "Aus dieser Verknüpfung entsteht ein Score, der Flächen vergleichbar macht und damit als Argumentationsgrundlage für Merchandising-Entscheidungen dienen kann."
+            "Die Verkaufsfläche wird in Bereiche zerlegt. Für jeden Bereich werden Lage und Laufweg, Sichtbarkeit und Art der Präsentation bewertet, ergänzt um Beobachtungen und Fotos.",
+            "Anschließend wird die Bewertung mit dem Abverkauf in Beziehung gesetzt, etwa Umsatz je Fläche, Abverkaufsquote und Warengruppe. Daraus entstehen ein Score und konkrete Handlungsempfehlungen."
           ]
         },
         {
-          title: "Stand und Weiterentwicklung",
+          title: "Stand und nächste Schritte",
           body: [
-            "Das Konzept ist ausgearbeitet und wird weiter geschärft. Im Fokus stehen die Validierung der Bewertungslogik und die Frage, wie sich das Modell mit vertretbarem Aufwand im Alltag erheben lässt.",
-            "Mittelfristiges Ziel ist die Marktreife: ein Werkzeug, das ohne großen Datenapparat einsetzbar ist."
+            "Aus dem Konzept ist ein digitales Tool geworden, das aktuell in der Pilotphase auf echten Verkaufsflächen getestet und geschärft wird.",
+            "Der Retail-Check ist eines der Projekte von texmex, unserem gemeinsamen Vorhaben mit Fokus auf inhabergeführte Handelsbetriebe."
           ]
         },
         {
@@ -434,12 +445,12 @@ window.PORTFOLIO_CONTENT.de = {
       slug: "ki-prozessautomatisierung.html",
       title: "Von operativen Reibungspunkten zu internen WebApps",
       shortTitle: "KI-Prozessautomatisierung",
-      subtitle: "Drei interne WebApps für Dokumentenerstellung, Social-Media-Posts und ABD-Prozesse.",
+      subtitle: "Interne WebApps für Dokumentenerstellung, Social-Media-Posts und ABD-Prozesse.",
       period: "ab April 2026",
-      summary: "Ich habe drei interne WebApps entwickelt, um wiederkehrende Unternehmensprozesse schneller, konsistenter und nutzerfreundlicher zu machen: einen Dokumenten-Generator, einen Social-Media-Post-Generator und eine eigene ABD-Software als Alternative bzw. Ergänzung zur offiziellen IAAP-Oberfläche.",
+      summary: "Ich habe interne WebApps entwickelt, um wiederkehrende Unternehmensprozesse schneller, konsistenter und nutzerfreundlicher zu machen, z. B. für die Dokumentenerstellung, für Social-Media-Posts und eine eigene ABD-Software als Alternative bzw. Ergänzung zur offiziellen IAAP-Oberfläche.",
       problem: "Dokumente wurden manuell kopiert, Social-Media-Inhalte uneinheitlich erstellt und die IAAP-Oberfläche war im praktischen Exportprozess unübersichtlich. Die Abläufe waren wiederholend, inkonsistent und durch manuelle Eingaben fehleranfällig.",
       approach: "Ich zerlegte die Prozesse in Eingaben, Verarbeitung und Output, definierte Felder und Nutzerlogik und setzte daraus schlanke WebApps mit KI-Unterstützung um. KI war Entwicklungswerkzeug; Prozessverständnis, Struktur und praktische Entscheidungen lagen bei mir.",
-      result: "Es entstanden drei funktionsfähige interne Werkzeuge: Dokumenten-Generator mit Word-Export, Social-Media-Generator mit CI-Bezug und ABD-Software mit besserer Nutzerführung und gespeicherten Firmendaten.",
+      result: "Es entstanden funktionsfähige interne Werkzeuge: Dokumentenerstellung mit Word-Export, Social-Media-Posts im Corporate Design und eine ABD-Software mit besserer Nutzerführung und gespeicherten Firmendaten.",
       impact: "Die Tools standardisieren wiederkehrende Arbeit, reduzieren manuelle Nacharbeit, verbessern Konsistenz und schaffen besonders im ABD-Bereich eine Grundlage für spätere Automatisierung.",
       image: "assets/images/cases/ki-toolchain.svg",
       imageAlt: "KI-gestützte Entwicklungskette",
@@ -459,13 +470,13 @@ window.PORTFOLIO_CONTENT.de = {
           ]
         },
         {
-          title: "Tool 1: Dokumenten-Generator",
+          title: "Tool 1: Dokumentenerstellung",
           body: [
             "Aus manuell kopierten und angepassten formellen Dokumenten wurde eine strukturierte Eingabemaske, die einen konsistenten Word-Export erzeugt."
           ]
         },
         {
-          title: "Tool 2: Social-Media-Post-Generator",
+          title: "Tool 2: Social-Media-Posts",
           body: [
             "Die App greift unternehmensspezifische Vorgaben wie Lieferanten, Themen und CI-Farben auf und bereitet Beiträge für Facebook oder Instagram vor.",
             "Dadurch wird der Markenauftritt konsistenter, weil wiederkehrende Gestaltungselemente nicht jedes Mal neu improvisiert werden müssen."
@@ -474,7 +485,7 @@ window.PORTFOLIO_CONTENT.de = {
         {
           title: "Tool 3: ABD-Software",
           body: [
-            "Die ABD-Software entstand direkt aus der eigenen Exportpraxis und der alltäglichen Arbeit mit IAAP.",
+            "Die ABD-Software dient der Erstellung von Ausfuhrdokumenten für die zollrechtliche Exportabfertigung. Sie entstand direkt aus der eigenen Exportpraxis und der alltäglichen Arbeit mit IAAP.",
             "Der Schwerpunkt liegt auf besserer Nutzerführung, wiederverwendbaren Firmendaten und einer Struktur, die spätere Automatisierung ermöglicht."
           ]
         },
@@ -556,16 +567,16 @@ window.PORTFOLIO_CONTENT.de = {
       status: "abgeschlossen · 1,0",
       slug: "brand-activism.html",
       title: "Gesellschaftspolitischer Brand Activism in der Modebranche",
-      shortTitle: "Semesterarbeit Brand Activism",
+      shortTitle: "Abschlussarbeit Brand Activism",
       subtitle: "Vergleichende visuelle Fallanalyse von Patagonia und Nike zur Rolle von Authentizität.",
-      period: "Semesterarbeit im Bachelor, TEXOVERSUM LDT Nagold",
-      summary: "In meiner Semesterarbeit habe ich untersucht, wie gesellschaftspolitisch-aktivistische Markeninszenierung in der Modebranche auf Markenwahrnehmung und Konsumverhalten wirkt. Die Arbeit verbindet eine Literaturarbeit mit einer qualitativen visuellen Fallanalyse und wurde mit der Note 1,0 bewertet.",
+      period: "Abschlussarbeit Textilbetriebswirt (BTE), Sommersemester 2026, TEXOVERSUM LDT Nagold",
+      summary: "In meiner Abschlussarbeit zum Textilbetriebswirt (BTE) habe ich untersucht, wie gesellschaftspolitisch-aktivistische Markeninszenierung in der Modebranche auf Markenwahrnehmung und Konsumverhalten wirkt. Die Arbeit verbindet eine Literaturarbeit mit einer qualitativen visuellen Fallanalyse und wurde mit der Note 1,0 bewertet.",
       problem: "Modemarken beziehen zunehmend öffentlich Stellung zu gesellschaftspolitischen Themen und tragen diese Haltung überwiegend visuell, über Bilder statt über Text. Unklar ist, unter welchen Bedingungen eine solche Inszenierung die Markenwahrnehmung stärkt und wann sie in Skepsis und Ablehnung kippt.",
       approach: "Methodisch verbindet die Arbeit eine Literaturarbeit mit einer qualitativen visuellen Fallanalyse. Auf Basis der visuellen Grammatik von Kress und van Leeuwen sowie der Methodik von Gillian Rose werden zwei kontrastierende Fälle nach identischen Kriterien untersucht: Patagonia als Beispiel langfristig konsistenter Haltung und Nike als Beispiel polarisierender Positionierung.",
       result: "Die Wirkung aktivistischer Markenkommunikation ist nicht gleichförmig, sondern an Bedingungen gebunden. Über die Richtung entscheiden vor allem zwei Faktoren, die der einzelnen Kampagne vorausliegen: der Konfliktgrad des Themas und die wahrgenommene Deckung zwischen kommunizierter Haltung und Unternehmenspraxis.",
       impact: "Aus der Analyse leiten sich drei Kriterien glaubwürdiger aktivistischer Markenkommunikation ab: strukturelle Deckung der Haltung im Unternehmen, eine zur Botschaft passende visuelle Form und die bewusste Bereitschaft, Polarisierung einzuplanen.",
       image: "assets/images/cases/brand-activism-analyse.svg",
-      imageAlt: "Untersuchungsdesign der Semesterarbeit",
+      imageAlt: "Untersuchungsdesign der Abschlussarbeit",
       sections: [
         {
           title: "Forschungsfrage",
@@ -617,8 +628,8 @@ window.PORTFOLIO_CONTENT.de = {
       statusKey: "active",
       status: "aktiv",
       slug: "exportabwicklung.html",
-      title: "Eigenständige Exportabwicklung von Spedition bis Zoll",
-      shortTitle: "Exportabwicklung A-Z",
+      title: "Eigenständige Abwicklung von Logistikprozessen & Export",
+      shortTitle: "Logistikprozesse & Export",
       subtitle: "Vollständige Exportprozesse mit Spedition, Ursprungszeugnis, ABD, Verpackung und Dokumentation.",
       period: "ab Mitte 2025, mit Vorerfahrung davor",
       summary: "Ich habe vollständige Exportsendungen eigenständig abgewickelt: Abholung buchen, Spediteur koordinieren, Ursprungszeugnisse erstellen, ABD über IAAP beantragen, Sendungen vorbereiten und Vorgänge dokumentieren.",
@@ -724,18 +735,18 @@ window.PORTFOLIO_CONTENT.de = {
     {
       id: "messe",
       priority: "support",
-      statusKey: "planned",
-      status: "Update Juli 2026",
+      statusKey: "done",
+      status: "abgeschlossen",
       slug: "messe.html",
       title: "Internationale Messevorbereitung für Techtextil und NASTEX",
       shortTitle: "Messevorbereitung",
       subtitle: "Flyer, Standplanung, Visitenkarten, Social Media und internationale Abstimmung.",
-      period: "2026, NASTEX-Teilnahme im Juli geplant",
-      summary: "Ich habe zwei Messebeteiligungen vorbereitet: die Techtextil 2026 in Frankfurt und die NASTEX 2026 in Syrien. Der Case zeigt Projektkoordination, Materialerstellung und internationale Messevorbereitung.",
+      period: "April 2026 (Techtextil), Juli 2026 (NASTEX)",
+      summary: "Ich habe zwei Messebeteiligungen vorbereitet: die Techtextil 2026 in Frankfurt und die NASTEX 2026 in Damaskus. Der Case zeigt Projektkoordination, Materialerstellung und internationale Messevorbereitung.",
       problem: "Messevorbereitung besteht aus vielen parallelen Aufgaben: Informationen bündeln, Materialien erstellen, Standplanung, Abstimmung mit Beteiligten und ein einheitlicher Außenauftritt.",
-      approach: "Ich erstellte Flyer, organisierte Visitenkarten, bereitete Social-Media-Beiträge und Infomaterialien vor, entwickelte einen Standplan und koordinierte mit Beteiligten vor Ort.",
-      result: "Die Techtextil wurde vorbereitet und besucht. Die NASTEX ist weitgehend vorbereitet bzw. in der finalen Vorbereitungsphase; die Teilnahme vor Ort ist für Juli 2026 geplant.",
-      impact: "Der Case zeigt internationale Koordination und Projektarbeit. Die stärkere Wirkungsebene entsteht nach der NASTEX mit echten Vor-Ort-Erfahrungen, Materialien, Erkenntnissen und Folgeaktionen.",
+      approach: "Ich erstellte Flyer in Canva, organisierte Visitenkarten, bereitete Social-Media-Beiträge und Infomaterialien vor, entwickelte einen Standplan und stimmte mich mit Beteiligten vor Ort ab.",
+      result: "Die Techtextil wurde vorbereitet und vor Ort besucht. Für die NASTEX in Damaskus wurden Flyer, Standplan, Visitenkarten und Infomaterial von Deutschland aus vorbereitet und mit den Beteiligten in Syrien abgestimmt.",
+      impact: "Der Case zeigt internationale Koordination und Projektarbeit über Ländergrenzen hinweg, mit einem einheitlichen Außenauftritt auf zwei sehr unterschiedlichen Messen.",
       image: "assets/images/cases/messe-timeline.svg",
       imageAlt: "Messeprojekte im Überblick",
       sections: [
@@ -743,27 +754,26 @@ window.PORTFOLIO_CONTENT.de = {
           title: "Ausgangslage",
           body: [
             "Messen sind wichtige Kontaktpunkte für Marktpräsenz, Lieferantenbeziehungen und internationale Sichtbarkeit.",
-            "Techtextil und NASTEX unterscheiden sich im Kontext: Frankfurt als internationale Fachmesse in Deutschland, NASTEX durch Vorbereitung von Deutschland aus und geplante Teilnahme vor Ort in Syrien."
+            "Techtextil und NASTEX unterscheiden sich im Kontext: Frankfurt als internationale Fachmesse in Deutschland, NASTEX mit Vorbereitung von Deutschland aus und Abstimmung mit Beteiligten in Syrien."
           ]
         },
         {
           title: "Meine Rolle",
           body: [
             "Meine Rolle lag in der eigenständigen operativen Vorbereitung: Flyer, Visitenkarten, Social Media, Infomaterialien, Standplan und internationale Abstimmung.",
-            "Bei der Techtextil nahm ich bereits vor Ort teil. Für NASTEX ist die Teilnahme im Juli 2026 geplant."
+            "Bei der Techtextil war ich vor Ort. Die NASTEX habe ich von Deutschland aus vorbereitet und koordiniert."
           ]
         },
         {
-          title: "Techtextil Frankfurt 2026",
+          title: "Techtextil Frankfurt (April 2026)",
           body: [
-            "Für die Techtextil wurden Materialien vorbereitet und die Messe vor Ort besucht."
+            "Für die Techtextil wurden Flyer in Canva, Visitenkarten und Social-Media-Beiträge vorbereitet und die Messe vor Ort besucht."
           ]
         },
         {
-          title: "NASTEX 2026 Syrien",
+          title: "NASTEX Damaskus (Juli 2026)",
           body: [
-            "Für die NASTEX wurden Flyer, Standplan, Visitenkarten und Informationsmaterialien vorbereitet und mit Beteiligten in Syrien abgestimmt.",
-            "Die Vorbereitung ist abgeschlossen. Materialien, Standplan und Abstimmung mit den Beteiligten vor Ort sind organisiert."
+            "Für die NASTEX wurden Flyer, Standplan, Visitenkarten und Informationsmaterialien vorbereitet und mit Beteiligten in Syrien abgestimmt."
           ]
         },
         {
@@ -771,12 +781,6 @@ window.PORTFOLIO_CONTENT.de = {
           body: [
             "Messevorbereitung besteht aus vielen kleinen Abhängigkeiten: Design, Inhalte, Druck, Abstimmung, Zielgruppe und Timing müssen zusammenpassen.",
             "Die NASTEX-Vorbereitung macht internationale Koordination sichtbar."
-          ]
-        },
-        {
-          title: "Update nach der NASTEX",
-          body: [
-            "Die Teilnahme vor Ort ist für Juli 2026 geplant. Danach wird dieser Case mit tatsächlichen Aufgaben vor Ort, eingesetzten Materialien, Eindrücken und Erkenntnissen von der Messe aktualisiert."
           ]
         }
       ]
@@ -787,11 +791,11 @@ window.PORTFOLIO_CONTENT.de = {
       statusKey: "done",
       status: "abgeschlossen",
       slug: "egy-stitch-tex.html",
-      title: "Messeauftritt Egy Stitch & Tex Cairo 2026",
-      shortTitle: "Egy Stitch & Tex Cairo",
+      title: "Messeauftritt Egypt Stitch & Tex Kairo 2026",
+      shortTitle: "Egypt Stitch & Tex Kairo",
       subtitle: "Einladungsmanagement, Kundenkommunikation, Messematerialien und Nachbereitung im CRM.",
-      period: "2026, Kairo",
-      summary: "Für die Egy Stitch & Tex in Kairo habe ich den Messeauftritt operativ begleitet: Einladungen an Kunden, laufende Kundenkommunikation im Vorfeld, Visitenkarten und Flyer, die Planung vor Ort und die anschließende Nachbereitung der Kontakte im CRM.",
+      period: "September 2026, Kairo",
+      summary: "Für die Egypt Stitch & Tex in Kairo habe ich den Messeauftritt operativ begleitet: Einladungen an Kunden, laufende Kundenkommunikation im Vorfeld, Visitenkarten und Flyer, die Planung vor Ort und die anschließende Nachbereitung der Kontakte im CRM.",
       problem: "Ein Messeauftritt entscheidet sich nicht nur auf dem Stand. Wer nicht vorher eingeladen wird, kommt nicht; und wer nicht nachbereitet wird, bleibt ein flüchtiger Kontakt. Einladung, Kommunikation, Material und Nachfassen müssen als ein Ablauf gedacht werden.",
       approach: "Ich habe den Ablauf entlang der Zeitachse aufgesetzt: Einladungen und Kundenkommunikation im Vorfeld, Visitenkarten und Flyer als Material, Planung für die Tage vor Ort und ein strukturiertes Follow-up, das die Kontakte im CRM festhält.",
       result: "Der Messeauftritt wurde vorbereitet, begleitet und nachbereitet. Die Kontakte aus Kairo sind im CRM erfasst, statt auf Visitenkartenstapeln liegen zu bleiben.",
@@ -802,7 +806,7 @@ window.PORTFOLIO_CONTENT.de = {
         {
           title: "Ausgangslage",
           body: [
-            "Die Egy Stitch & Tex in Kairo ist ein relevanter Branchentreffpunkt für den ägyptischen und regionalen Textilmarkt.",
+            "Die Egypt Stitch & Tex in Kairo ist ein relevanter Branchentreffpunkt für den ägyptischen und regionalen Textilmarkt.",
             "Anders als bei einer reinen Standbetreuung lag der Schwerpunkt hier darauf, den Messeauftritt von der Einladung bis zur Nachbereitung als durchgehenden Ablauf zu organisieren."
           ]
         },
@@ -837,20 +841,62 @@ window.PORTFOLIO_CONTENT.de = {
           title: "Reflexion",
           body: [
             "Der Wert einer Messe entsteht zu einem großen Teil vorher und nachher. Die Einladung entscheidet über die Gespräche, das Follow-up über das Ergebnis.",
-            "Dieser Case ist deshalb der direkte Anschluss an die Arbeit an CRM und Controlling."
+            "Dieser Case ist deshalb der direkte Anschluss an das CRM für den Ersatzteilvertrieb."
           ]
         }
       ]
     },
     {
-      id: "crmcontrolling",
+      id: "crm",
       priority: "support",
-      statusKey: "pending",
-      status: "in Vorbereitung",
-      pending: true,
-      title: "CRM und Controlling: Prozessinnovation bei Outatex",
-      shortTitle: "CRM & Controlling",
-      subtitle: "Aufbau von CRM- und Controlling-Prozessen im Familienbetrieb. Inhalte folgen."
+      statusKey: "active",
+      status: "aktiv",
+      slug: "crm-ersatzteilvertrieb.html",
+      title: "CRM für den Ersatzteilvertrieb an Strickereien in Ägypten",
+      shortTitle: "CRM Ersatzteilvertrieb",
+      subtitle: "Kundensegmentierung, Kampagnen, Serviceeinsätze und Neukundengewinnung in einem System.",
+      period: "2026, laufend",
+      summary: "Ich habe ein CRM für den Ersatzteilvertrieb an Strickereien in Ägypten konzipiert und umgesetzt, aufbauend auf Google Drive (Sheets, Apps Script) und AppSheet. Es verbindet Bestandskunden, Kampagnen, Serviceeinsätze und Neukundengewinnung in einem System.",
+      problem: "Im Ersatzteilvertrieb kommen Kundendaten, Umsätze aus den ERP-Systemen, Serviceeinsätze und neue Kontakte aus unterschiedlichen Quellen. Ohne gemeinsame Basis ist schwer zu erkennen, welche Kunden wichtig sind, welche nachlassen und wo neues Potenzial liegt.",
+      approach: "Kundendaten werden mit den ERP-Systemen abgeglichen und automatisch segmentiert. Darauf bauen Module für Kampagnen, Serviceeinsätze und Neukundengewinnung auf, mit Ansichten je nach Rolle. Umgesetzt mit Google Sheets, Apps Script und AppSheet.",
+      result: "Das CRM segmentiert Kunden nach ABC-Klassen, Umsatztrends und Reaktivierungskandidaten, ermöglicht filterbasierte E-Mail- und WhatsApp-Kampagnen und enthält ein Techniker-Modul für Serviceeinsätze. Im Prospect-Modul sind aus einer Marktrecherche über 25 Quellen rund 6.000 Betriebe erfasst, davon 1.700 als passend bewertet und priorisiert.",
+      impact: "Der Case verbindet Vertrieb, Service und Daten: Bestandskunden werden gezielter angesprochen, und neue Betriebe lassen sich per Klick in den Kundenstamm übernehmen.",
+      image: "assets/images/cases/crm-ersatzteilvertrieb.svg",
+      imageAlt: "Aufbau des CRM im Überblick",
+      sections: [
+        {
+          title: "Ausgangslage",
+          body: [
+            "Outatex vertreibt in Ägypten Ersatzteile an Strickereien. Der Vertrieb lebt von wiederkehrenden Kunden, Serviceeinsätzen und neuen Betrieben, die erst gefunden werden müssen."
+          ]
+        },
+        {
+          title: "Meine Rolle",
+          body: [
+            "Ich habe das CRM konzipiert und umgesetzt: Datenmodell, Abgleich mit den ERP-Systemen, Segmentierungslogik, Module und Ansichten je nach Rolle."
+          ]
+        },
+        {
+          title: "Bestandskunden und Kampagnen",
+          body: [
+            "Kundendaten werden mit den ERP-Systemen abgeglichen und automatisch segmentiert: ABC-Klassen, Umsatztrends und Reaktivierungskandidaten.",
+            "Auf dieser Basis lassen sich E-Mail- und WhatsApp-Kampagnen über Filter gezielt an passende Kundengruppen richten."
+          ]
+        },
+        {
+          title: "Service",
+          body: [
+            "Ein Techniker-Modul bildet Serviceeinsätze ab. Ansichten je nach Rolle sorgen dafür, dass Vertrieb und Technik jeweils sehen, was sie brauchen."
+          ]
+        },
+        {
+          title: "Neukundengewinnung",
+          body: [
+            "Für die Neukundengewinnung gibt es ein Prospect-Modul: Eine Marktrecherche über 25 Quellen hat rund 6.000 Betriebe erfasst.",
+            "Davon sind 1.700 als passend bewertet und priorisiert. Per Klick lassen sie sich in den Kundenstamm übernehmen."
+          ]
+        }
+      ]
     }
   ]
 };

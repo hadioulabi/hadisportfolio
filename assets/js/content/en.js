@@ -15,7 +15,6 @@ window.PORTFOLIO_CONTENT.en = {
       home: "Start",
       profil: "Profile",
       erfahrung: "Experience",
-      kompetenzen: "Skills",
       cases: "Cases",
       kontakt: "Contact"
     },
@@ -31,8 +30,6 @@ window.PORTFOLIO_CONTENT.en = {
       profilHeading: "From the textile industry, with an eye for processes, people and fashion.",
       erfahrungEyebrow: "Experience",
       erfahrungHeading: "What I have learned, done and built so far.",
-      kompetenzenEyebrow: "Skills",
-      kompetenzenHeading: "What I apply in practice and keep building on.",
       casesEyebrow: "Cases",
       casesHeading: "A look into projects from my working life.",
       kontaktEyebrow: "Contact",
@@ -54,6 +51,7 @@ window.PORTFOLIO_CONTENT.en = {
       result: "Result",
       impact: "Impact",
       processEyebrow: "Process",
+      swipeHint: "Swipe sideways to see the full diagram →",
       processHeading: "The approach in detail"
     },
     footer: "Fashion Management · Business Operations · Innovation Management"
@@ -66,18 +64,18 @@ window.PORTFOLIO_CONTENT.en = {
       "In our international family business I work across several areas and took on responsibility early. Since September 2026 I have been gaining experience in innovation management at Groz-Beckert's Technology and Development Centre."
     ],
     facts: [
-      { label: "Studies", value: "Bachelor of Arts, Fashion Management · TEXOVERSUM LDT Nagold · Business administration with a focus on fashion & textile management · 10.2024 to approx. 07.2027" },
+      { label: "Studies", value: "Bachelor of Arts, Fashion Management · TEXOVERSUM LDT Nagold · Business administration with a focus on fashion & textile management · 10.2024 to approx. 07.2027 · Textilbetriebswirt (BTE) qualification since 07.2026" },
       { label: "Role", value: "Innovation management internship · Groz-Beckert KG, Technology and Development Centre, Albstadt · since 09.2026" },
-      { label: "Experience", value: "Since 07.2022 at Outatex GmbH: export, ERP rollout, accounting, trade fairs, internal web apps" },
+      { label: "Experience", value: "Since 07.2022 at Outatex GmbH: logistics & export, ERP rollout, accounting, CRM, trade fairs, internal web apps" },
       { label: "Focus areas", value: "Operational processes · Systems & data · AI-supported automation" },
       { label: "Location", value: "Mötzingen, Baden-Württemberg, Germany" },
       { label: "Born", value: "15 December 2006" }
     ],
     languages: [
-      { name: "German", level: "native", bar: 100 },
-      { name: "Arabic", level: "fluent, spoken and written", bar: 95 },
-      { name: "English", level: "professional working (C1)", bar: 88 },
-      { name: "French", level: "basic knowledge", bar: 45 }
+      { name: "German", level: "Native" },
+      { name: "Arabic", level: "Fluent, spoken and written" },
+      { name: "English", level: "Professional working proficiency (C1)" },
+      { name: "French", level: "Basic knowledge" }
     ]
   },
   contact: {
@@ -98,26 +96,37 @@ window.PORTFOLIO_CONTENT.en = {
       items: [
         "Insight into the divisions of the TEZ and how they work together",
         "Insight into the processes behind innovation management and corporate development",
-        "Business model development and the path from idea to solution",
-        "Internal idea management, business design sprints and customer research"
+        "Contributing to new business models: idea management, business design sprints, customer research"
       ]
     },
     {
       period: "07.2022 - present",
-      title: "Business Operations & Process Development · Outatex GmbH",
+      title: "Working Student, Business Operations · Outatex GmbH",
       text: "Mötzingen · Working there since 07.2022, working student since 09.2025.",
       items: [
-        "Working across several areas of the international family business",
-        "Independent export handling",
+        "Independent handling of logistics processes & export",
         "Support of a custom ERP rollout",
         "Setup and use of new financial accounting software for incoming and outgoing invoices",
+        "Design and build of a CRM for spare parts sales to knitting mills in Egypt",
         "Development of internal web apps for documents, social media posts and export declaration processes with AI support",
-        "Marketing organisation, trade fair preparation and sales development"
+        "Trade fair preparation 2026 incl. Canva materials: Techtextil Frankfurt, NASTEX Syria, Egypt Stitch & Tex Cairo",
+        "Onboarding new colleagues, contributing to marketing organisation and sales development"
+      ]
+    },
+    {
+      period: "2026 - present",
+      title: "texmex · joint initiative",
+      text: "With two fellow students from Texoversum, focused on owner-managed retail businesses.",
+      items: [
+        "Projects: Retail-Check, wirKeitum, more in preparation",
+        "Retail-Check: a digital tool that assesses fashion sales floors and compares them with sell-through, currently in its pilot phase",
+        "wirKeitum: supported the web app for the Keitumer Genusswoche on Sylt, with programme, map, watchlist and individual pages for 28 exhibitors",
+        "Finding out with businesses what costs them time and money day to day, and whether buying or building a tool makes more sense"
       ]
     },
     {
       period: "03.2025 - present",
-      title: "Fundraising Manager · Ihssan gemeinnützige GmbH",
+      title: "Voluntary Donation Management · Ihssan gemeinnützige GmbH",
       text: "Ahsin donation organisation · Disaster relief and humanitarian aid.",
       items: [
         "Planning, running and managing donation campaigns",
@@ -148,8 +157,8 @@ window.PORTFOLIO_CONTENT.en = {
       items: [
         "Business administration with a focus on fashion & textile management",
         "Marketing, purchasing, product development, material studies, supply chain",
-        "Industry-focused modules, projects and field trips in the fashion and textile economy",
-        "Semester paper on the effect of socio-political brand activism in the fashion industry: a comparative analysis of Patagonia and Nike on the role of authenticity, graded 1.0"
+        "Industry-focused modules, projects and field trips in the fashion and textile economy (incl. Hugo Boss, Inditex)",
+        "Textilbetriebswirt (BTE) qualification completed 07.2026, final thesis on socio-political brand activism in the fashion industry: a comparative analysis of Patagonia and Nike on the role of authenticity, graded 1.0"
       ]
     },
     {
@@ -164,28 +173,6 @@ window.PORTFOLIO_CONTENT.en = {
       period: "2015 - 2016",
       title: "Primary school year abroad · Nefertari German International School",
       text: "Cairo."
-    }
-  ],
-  skillGroups: [
-    {
-      title: "Operations & Export",
-      skills: ["Export handling", "Freight forwarder coordination", "CargoX", "Certificates of origin", "Export declarations / IAAP", "Goods receipt & dispatch", "Logistics", "Trade fair preparation"]
-    },
-    {
-      title: "Systems, Data & Accounting",
-      skills: ["ERP rollout", "Odoo configuration", "Data maintenance", "System testing", "Error documentation", "Onboarding", "Incoming/outgoing invoices"]
-    },
-    {
-      title: "Web & Automation",
-      skills: ["HTML / CSS / JS", "TypeScript", "Python", "PWA", "Word export", "Frontend prototyping", "GitHub", "Netlify"]
-    },
-    {
-      title: "AI-supported",
-      skills: ["Prompting", "AI-supported development", "Tool design", "Research", "Debugging", "Process analysis", "Claude / ChatGPT / Codex"]
-    },
-    {
-      title: "Tools & Other",
-      skills: ["MS Office", "Excel", "Canva", "Odoo", "Jira", "Perplexity", "Driving licence class B197"]
     }
   ],
   svgText: {
@@ -281,16 +268,16 @@ window.PORTFOLIO_CONTENT.en = {
       "cluttered data entry",
       "INTERNAL WEB APPS",
       "HTML · CSS · JavaScript · Python · AI-supported development",
-      "Document generator",
+      "Document creation",
       "Word export, structured",
-      "Social media generator",
+      "Social media posts",
       "on-brand, FB & Instagram",
       "Declaration software",
       "better guidance, stored data"
     ],
     "messe-timeline": [
       "TRADE FAIR PROJECTS · OVERVIEW",
-      "2026",
+      "April 2026",
       "Techtextil",
       "Frankfurt · International",
       "Flyers, business cards",
@@ -300,15 +287,15 @@ window.PORTFOLIO_CONTENT.en = {
       "from Germany",
       "July 2026",
       "NASTEX",
-      "Syria · International",
+      "Damascus · International",
       "Flyers, stand plan",
       "Coordination DE ↔ SY",
-      "→ planned",
+      "✓ prepared",
       "completed",
-      "planned · update to follow after July 2026"
+      "prepared from Germany"
     ],
     "messe-zyklus": [
-      "TRADE FAIR CYCLE · EGY STITCH & TEX CAIRO",
+      "TRADE FAIR CYCLE · EGYPT STITCH & TEX CAIRO",
       "BEFORE",
       "ON SITE",
       "AFTER",
@@ -348,7 +335,7 @@ window.PORTFOLIO_CONTENT.en = {
       "Filing & documentation"
     ],
     "store-score-konzept": [
-      "FASHION STORE SCORE · SCORING LOGIC",
+      "RETAIL-CHECK · SCORING LOGIC",
       "FLOOR & PLACEMENT",
       "Position & zone",
       "Footpath, frequency",
@@ -363,29 +350,53 @@ window.PORTFOLIO_CONTENT.en = {
       "Stock to sales",
       "Product group",
       "Category, season",
-      "STORE SCORE",
+      "SCORE",
       "weighted link",
       "makes areas comparable",
-      "Merchandising decision with rationale",
+      "Recommendation with reasoning",
       "Schematic view · no real company data"
+    ],
+    "crm-ersatzteilvertrieb": [
+      "CRM · SPARE PARTS SALES EGYPT",
+      "DATA BASIS",
+      "Google Sheets",
+      "Apps Script, AppSheet",
+      "ERP matching",
+      "customers, revenue",
+      "CRM",
+      "automatic segmentation",
+      "ABC · trends · reactivation",
+      "MODULES",
+      "Campaigns",
+      "email & WhatsApp, by filter",
+      "Technician module",
+      "service assignments",
+      "Roles",
+      "views per role",
+      "PROSPECT MODULE · NEW CUSTOMERS",
+      "25 sources",
+      "~6,000 businesses",
+      "1,700 prioritised",
+      "one click into customer base",
+      "Schematic illustration · no real customer data"
     ]
   },
   cases: [
     {
-      id: "storescore",
+      id: "retailcheck",
       priority: "lead",
       statusKey: "dev",
-      status: "in development",
-      slug: "fashion-store-score.html",
-      title: "Fashion Store Score: a retail analytics concept for data-driven sales floors",
-      shortTitle: "Fashion Store Score",
-      subtitle: "Store layout, product placement and sell-through as a basis for merchandising decisions.",
-      period: "from February 2026",
-      summary: "Together with two fellow students I am developing a retail analytics concept that makes the sales floor measurable in fashion retail. Store layout, product placement and sell-through are looked at together, so that merchandising decisions rest on data rather than gut feeling.",
+      status: "pilot phase",
+      slug: "retail-check.html",
+      title: "Retail-Check: a digital tool for assessing fashion sales floors",
+      shortTitle: "Retail-Check",
+      subtitle: "Assess sales floors, compare them with sell-through and derive concrete recommendations.",
+      period: "since February 2026, a texmex project",
+      summary: "Together with two fellow students I developed a digital tool that assesses sales floors in fashion retail and compares them with sell-through. Location, visibility and presentation are recorded for each area; this produces a score and concrete recommendations. The tool is currently in its pilot phase.",
       problem: "In fashion retail, decisions about floor space, placement and presentation are often made from experience and habit. The link between layout, placement and actual sell-through stays blurry and is hard to justify afterwards.",
-      approach: "We break the sales floor down into assessable components, connect them with sell-through data and condense the result into a score that can be followed. What matters to us is that the logic stays usable in daily work rather than only in theory.",
-      result: "A worked-out concept exists, with a defined scoring logic and structure. The work continues, with the aim of developing it into a market-ready tool.",
-      impact: "The case shows conceptual teamwork and the combination of fashion retail understanding with data-driven analysis – a counterpart to the operational and systems-focused cases.",
+      approach: "We discussed criteria, challenged assessments and broke the sales floor down into areas that can be assessed. Each area is rated on location and customer flow, visibility and presentation, and linked with sell-through. It mattered that the logic stays usable in everyday store work.",
+      result: "The concept has become a digital assessment tool that can be used directly in the store, including notes and photos for each area. The pilot phase with tests on real sales floors is under way.",
+      impact: "The case shows conceptual teamwork and the combination of fashion retail understanding with data-driven analysis, from a first concept to a tool in practical testing.",
       image: "assets/images/cases/store-score-konzept.svg",
       imageAlt: "Scoring logic at a glance",
       sections: [
@@ -399,22 +410,22 @@ window.PORTFOLIO_CONTENT.en = {
         {
           title: "My role",
           body: [
-            "The concept is being developed by a team of three. What I mainly bring in is the link between process understanding and analytical logic: which variables can actually be captured, how they can be weighted sensibly, and where a metric turns into false precision.",
+            "The tool is being built in a team of three. My focus is the link between process understanding and analytical logic: which figures can realistically be captured in a store, how they can be weighted sensibly, and where a metric turns into false precision.",
             "I know this way of thinking from the operational cases: first understand how a workflow really runs, then lay a structure over it."
           ]
         },
         {
-          title: "How the concept works",
+          title: "Assessment logic",
           body: [
-            "The sales floor is divided into assessable zones. For each zone, characteristics such as position, visibility and type of presentation are recorded and then related to sell-through.",
-            "That link produces a score which makes areas comparable and can therefore serve as an argument base for merchandising decisions."
+            "The sales floor is broken down into areas. Each area is rated on location and customer flow, visibility and type of presentation, supplemented by observations and photos.",
+            "The assessment is then related to sell-through, for example sales per area, sell-through rate and product group. This produces a score and concrete recommendations."
           ]
         },
         {
           title: "Status and next steps",
           body: [
-            "The concept is worked out and is being sharpened further. The focus is on validating the scoring logic and on the question of how the model can be captured in daily work at reasonable effort.",
-            "The medium-term goal is market readiness: a tool that works without a large data apparatus."
+            "The concept has become a digital tool that is currently being tested and refined on real sales floors in a pilot phase.",
+            "Retail-Check is one of the projects of texmex, our joint initiative focused on owner-managed retail businesses."
           ]
         },
         {
@@ -434,12 +445,12 @@ window.PORTFOLIO_CONTENT.en = {
       slug: "ki-prozessautomatisierung.html",
       title: "From operational friction points to internal web apps",
       shortTitle: "AI process automation",
-      subtitle: "Three internal web apps for document creation, social media posts and export declaration processes.",
+      subtitle: "Internal web apps for document creation, social media posts and export declaration processes.",
       period: "from April 2026",
-      summary: "I developed three internal web apps to make recurring company processes faster, more consistent and easier to use: a document generator, a social media post generator, and our own export declaration software as an alternative and supplement to the official IAAP interface.",
+      summary: "I developed internal web apps to make recurring company processes faster, more consistent and easier to use, for example for document creation, for social media posts, and our own export declaration software as an alternative and supplement to the official IAAP interface.",
       problem: "Documents were copied by hand, social media content was created inconsistently, and the IAAP interface was hard to navigate in the practical export process. The workflows were repetitive, inconsistent and error-prone because of manual entry.",
       approach: "I broke the processes down into input, processing and output, defined the fields and user logic, and built lean web apps from that with AI support. AI was a development tool; process understanding, structure and practical decisions were mine.",
-      result: "Three working internal tools were created: a document generator with Word export, a social media generator tied to the corporate identity, and export declaration software with better user guidance and stored company data.",
+      result: "Working internal tools were created: document creation with Word export, social media posts in the corporate design, and export declaration software with better user guidance and stored company data.",
       impact: "The tools standardise recurring work, reduce manual rework, improve consistency and – especially in the export declaration area – lay the groundwork for later automation.",
       image: "assets/images/cases/ki-toolchain.svg",
       imageAlt: "AI-supported development chain",
@@ -459,13 +470,13 @@ window.PORTFOLIO_CONTENT.en = {
           ]
         },
         {
-          title: "Tool 1: document generator",
+          title: "Tool 1: document creation",
           body: [
             "Formal documents that used to be copied and adjusted by hand became a structured input form that produces a consistent Word export."
           ]
         },
         {
-          title: "Tool 2: social media post generator",
+          title: "Tool 2: social media posts",
           body: [
             "The app picks up company-specific inputs such as suppliers, topics and corporate colours and prepares posts for Facebook or Instagram.",
             "That makes the brand presence more consistent, because recurring design elements no longer have to be improvised each time."
@@ -474,7 +485,7 @@ window.PORTFOLIO_CONTENT.en = {
         {
           title: "Tool 3: export declaration software",
           body: [
-            "The export declaration software grew directly out of hands-on export practice and daily work with IAAP.",
+            "The export declaration software is used to create export documents for customs export clearance. It grew directly out of hands-on export practice and daily work with IAAP.",
             "The focus is on better user guidance, reusable company data and a structure that allows later automation."
           ]
         },
@@ -556,16 +567,16 @@ window.PORTFOLIO_CONTENT.en = {
       status: "completed · 1.0",
       slug: "brand-activism.html",
       title: "Socio-political brand activism in the fashion industry",
-      shortTitle: "Semester paper: brand activism",
+      shortTitle: "Thesis: brand activism",
       subtitle: "A comparative visual case analysis of Patagonia and Nike on the role of authenticity.",
-      period: "Semester paper, TEXOVERSUM LDT Nagold",
-      summary: "In my semester paper I examined how socio-political, activist brand staging in the fashion industry affects brand perception and consumer behaviour. The paper combines a literature review with a qualitative visual case analysis and was graded 1.0.",
+      period: "Final thesis, Textilbetriebswirt (BTE), summer semester 2026, TEXOVERSUM LDT Nagold",
+      summary: "In my final thesis for the Textilbetriebswirt (BTE) qualification I examined how socio-political, activist brand staging in the fashion industry affects brand perception and consumer behaviour. The paper combines a literature review with a qualitative visual case analysis and was graded 1.0.",
       problem: "Fashion brands increasingly take public positions on socio-political issues, and they carry that stance mainly visually, through images rather than text. What remains unclear is under which conditions such staging strengthens brand perception and when it tips into scepticism and rejection.",
       approach: "Methodologically the paper combines a literature review with a qualitative visual case analysis. Drawing on the visual grammar of Kress and van Leeuwen and the methodology of Gillian Rose, two contrasting cases are examined against identical criteria: Patagonia as an example of a long-term consistent stance and Nike as an example of polarising positioning.",
       result: "The effect of activist brand communication is not uniform but bound to conditions. Two factors that precede the individual campaign decide the direction: how contentious the topic is, and the perceived alignment between the stance communicated and actual company practice.",
       impact: "The analysis derives three criteria for credible activist brand communication: structural alignment of the stance inside the company, a visual form that fits the message, and a deliberate willingness to plan for polarisation.",
       image: "assets/images/cases/brand-activism-analyse.svg",
-      imageAlt: "Research design of the semester paper",
+      imageAlt: "Research design of the thesis",
       sections: [
         {
           title: "Research question",
@@ -617,8 +628,8 @@ window.PORTFOLIO_CONTENT.en = {
       statusKey: "active",
       status: "active",
       slug: "exportabwicklung.html",
-      title: "Independent export handling from freight forwarding to customs",
-      shortTitle: "Export handling A-Z",
+      title: "Independent handling of logistics processes & export",
+      shortTitle: "Logistics & export",
       subtitle: "Complete export processes with forwarding, certificate of origin, export declaration, packing and documentation.",
       period: "from mid-2025, with earlier experience",
       summary: "I handled complete export shipments independently: booking collection, coordinating the freight forwarder, issuing certificates of origin, filing export declarations via IAAP, preparing shipments and documenting each case.",
@@ -724,18 +735,18 @@ window.PORTFOLIO_CONTENT.en = {
     {
       id: "messe",
       priority: "support",
-      statusKey: "planned",
-      status: "update July 2026",
+      statusKey: "done",
+      status: "completed",
       slug: "messe.html",
       title: "International trade fair preparation for Techtextil and NASTEX",
       shortTitle: "Trade fair preparation",
       subtitle: "Flyers, stand planning, business cards, social media and international coordination.",
-      period: "2026, NASTEX attendance planned for July",
-      summary: "I prepared two trade fair appearances: Techtextil 2026 in Frankfurt and NASTEX 2026 in Syria. The case shows project coordination, material creation and international trade fair preparation.",
+      period: "April 2026 (Techtextil), July 2026 (NASTEX)",
+      summary: "I prepared two trade fair appearances: Techtextil 2026 in Frankfurt and NASTEX 2026 in Damascus. The case shows project coordination, material production and international trade fair preparation.",
       problem: "Trade fair preparation consists of many parallel tasks: pulling information together, producing materials, planning the stand, coordinating with everyone involved, and keeping one consistent outward appearance.",
-      approach: "I created flyers, organised business cards, prepared social media posts and information materials, developed a stand plan and coordinated with the people on site.",
-      result: "Techtextil was prepared and attended. NASTEX is largely prepared and in its final preparation phase; on-site attendance is planned for July 2026.",
-      impact: "The case shows international coordination and project work. The stronger impact layer comes after NASTEX, with real on-site experience, materials, insights and follow-up actions.",
+      approach: "I created flyers in Canva, organised business cards, prepared social media posts and information materials, developed a stand plan and coordinated with the people on site.",
+      result: "Techtextil was prepared and attended on site. For NASTEX in Damascus, flyers, the stand plan, business cards and information material were prepared from Germany and coordinated with the people involved in Syria.",
+      impact: "The case shows international coordination and project work across borders, with one consistent outward appearance at two very different trade fairs.",
       image: "assets/images/cases/messe-timeline.svg",
       imageAlt: "Trade fair projects at a glance",
       sections: [
@@ -743,27 +754,26 @@ window.PORTFOLIO_CONTENT.en = {
           title: "Starting point",
           body: [
             "Trade fairs are important contact points for market presence, supplier relationships and international visibility.",
-            "Techtextil and NASTEX differ in context: Frankfurt as an international trade fair in Germany, NASTEX through preparation from Germany and planned attendance on site in Syria."
+            "Techtextil and NASTEX differ in context: Frankfurt as an international trade fair in Germany, NASTEX prepared from Germany and coordinated with the people involved in Syria."
           ]
         },
         {
           title: "My role",
           body: [
             "My role was the independent operational preparation: flyers, business cards, social media, information materials, stand plan and international coordination.",
-            "At Techtextil I already attended in person. For NASTEX, attendance is planned for July 2026."
+            "I attended Techtextil on site. I prepared and coordinated NASTEX from Germany."
           ]
         },
         {
-          title: "Techtextil Frankfurt 2026",
+          title: "Techtextil Frankfurt (April 2026)",
           body: [
-            "Materials were prepared for Techtextil and the fair was attended in person."
+            "For Techtextil, flyers in Canva, business cards and social media posts were prepared and the fair was attended on site."
           ]
         },
         {
-          title: "NASTEX 2026 Syria",
+          title: "NASTEX Damascus (July 2026)",
           body: [
-            "For NASTEX, flyers, a stand plan, business cards and information materials were prepared and agreed with the people involved in Syria.",
-            "Preparation is complete. Materials, stand plan and coordination with those on site are organised."
+            "For NASTEX, flyers, a stand plan, business cards and information materials were prepared and coordinated with the people involved in Syria."
           ]
         },
         {
@@ -771,12 +781,6 @@ window.PORTFOLIO_CONTENT.en = {
           body: [
             "Trade fair preparation consists of many small dependencies: design, content, printing, coordination, audience and timing all have to fit together.",
             "The NASTEX preparation makes international coordination visible."
-          ]
-        },
-        {
-          title: "Update after NASTEX",
-          body: [
-            "On-site attendance is planned for July 2026. After that, this case will be updated with the actual tasks on site, the materials used, impressions and insights from the fair."
           ]
         }
       ]
@@ -787,11 +791,11 @@ window.PORTFOLIO_CONTENT.en = {
       statusKey: "done",
       status: "completed",
       slug: "egy-stitch-tex.html",
-      title: "Trade fair appearance at Egy Stitch & Tex Cairo 2026",
-      shortTitle: "Egy Stitch & Tex Cairo",
+      title: "Trade fair appearance at Egypt Stitch & Tex Cairo 2026",
+      shortTitle: "Egypt Stitch & Tex Cairo",
       subtitle: "Invitation management, customer communication, fair materials and follow-up in the CRM.",
-      period: "2026, Cairo",
-      summary: "For Egy Stitch & Tex in Cairo I supported the trade fair appearance operationally: invitations to customers, ongoing customer communication beforehand, business cards and flyers, planning for the days on site, and the follow-up of contacts in the CRM afterwards.",
+      period: "September 2026, Cairo",
+      summary: "For Egypt Stitch & Tex in Cairo I supported the trade fair appearance operationally: invitations to customers, ongoing customer communication beforehand, business cards and flyers, planning for the days on site, and the follow-up of contacts in the CRM afterwards.",
       problem: "A trade fair appearance is not decided at the stand alone. People who are not invited beforehand do not come; contacts who are not followed up stay fleeting. Invitation, communication, material and follow-up have to be thought of as one workflow.",
       approach: "I set the workflow up along a timeline: invitations and customer communication beforehand, business cards and flyers as material, planning for the days on site, and a structured follow-up that records the contacts in the CRM.",
       result: "The trade fair appearance was prepared, supported and followed up. The contacts from Cairo are recorded in the CRM instead of sitting on a pile of business cards.",
@@ -802,7 +806,7 @@ window.PORTFOLIO_CONTENT.en = {
         {
           title: "Starting point",
           body: [
-            "Egy Stitch & Tex in Cairo is a relevant industry meeting point for the Egyptian and regional textile market.",
+            "Egypt Stitch & Tex in Cairo is a relevant industry meeting point for the Egyptian and regional textile market.",
             "Unlike simply staffing a stand, the emphasis here was on organising the appearance as one continuous workflow, from invitation through to follow-up."
           ]
         },
@@ -837,20 +841,62 @@ window.PORTFOLIO_CONTENT.en = {
           title: "Reflection",
           body: [
             "Much of a trade fair's value is created before and after it. The invitation decides the conversations, the follow-up decides the outcome.",
-            "This case therefore connects directly to the work on CRM and controlling."
+            "This case therefore connects directly to the CRM for spare parts sales."
           ]
         }
       ]
     },
     {
-      id: "crmcontrolling",
+      id: "crm",
       priority: "support",
-      statusKey: "pending",
-      status: "in preparation",
-      pending: true,
-      title: "CRM and controlling: process innovation at Outatex",
-      shortTitle: "CRM & controlling",
-      subtitle: "Building CRM and controlling processes in the family business. Content to follow."
+      statusKey: "active",
+      status: "active",
+      slug: "crm-ersatzteilvertrieb.html",
+      title: "A CRM for spare parts sales to knitting mills in Egypt",
+      shortTitle: "CRM spare parts sales",
+      subtitle: "Customer segmentation, campaigns, service assignments and new customer acquisition in one system.",
+      period: "2026, ongoing",
+      summary: "I designed and built a CRM for spare parts sales to knitting mills in Egypt, based on Google Drive (Sheets, Apps Script) and AppSheet. It brings existing customers, campaigns, service assignments and new customer acquisition together in one system.",
+      problem: "In spare parts sales, customer data, revenue from the ERP systems, service assignments and new contacts come from different sources. Without a shared basis it is hard to see which customers matter most, which are slipping and where new potential lies.",
+      approach: "Customer data is matched with the ERP systems and segmented automatically. Modules for campaigns, service assignments and new customer acquisition build on this, with views depending on the role. Built with Google Sheets, Apps Script and AppSheet.",
+      result: "The CRM segments customers by ABC class, revenue trend and reactivation candidates, enables filter-based email and WhatsApp campaigns and includes a technician module for service assignments. In the prospect module, a market research across 25 sources has captured around 6,000 businesses, 1,700 of which are rated as a good fit and prioritised.",
+      impact: "The case connects sales, service and data: existing customers can be addressed more precisely, and new businesses can be moved into the customer base with one click.",
+      image: "assets/images/cases/crm-ersatzteilvertrieb.svg",
+      imageAlt: "Structure of the CRM at a glance",
+      sections: [
+        {
+          title: "Starting point",
+          body: [
+            "Outatex sells spare parts to knitting mills in Egypt. The business relies on recurring customers, service assignments and new businesses that first have to be found."
+          ]
+        },
+        {
+          title: "My role",
+          body: [
+            "I designed and built the CRM: data model, matching with the ERP systems, segmentation logic, modules and role-based views."
+          ]
+        },
+        {
+          title: "Existing customers and campaigns",
+          body: [
+            "Customer data is matched with the ERP systems and segmented automatically: ABC classes, revenue trends and reactivation candidates.",
+            "On that basis, email and WhatsApp campaigns can be aimed at suitable customer groups via filters."
+          ]
+        },
+        {
+          title: "Service",
+          body: [
+            "A technician module covers service assignments. Role-based views make sure that sales and technical staff each see what they need."
+          ]
+        },
+        {
+          title: "New customer acquisition",
+          body: [
+            "For new customer acquisition there is a prospect module: a market research across 25 sources has captured around 6,000 businesses.",
+            "1,700 of them are rated as a good fit and prioritised, and they can be moved into the customer base with one click."
+          ]
+        }
+      ]
     }
   ]
 };

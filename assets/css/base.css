@@ -21,6 +21,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "ss01", "cv11";
+  /* Long German compounds must wrap instead of pushing the page wider. */
+  overflow-wrap: break-word;
+}
+
+/* On phones, break long German headings with hyphens instead of overflowing. */
+@media (max-width: 640px) {
+  html[lang="de"] h1,
+  html[lang="de"] h3 {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 }
 
 ::selection {

@@ -54,11 +54,6 @@
         const card = ui.el("div", "lang-card");
         card.append(ui.el("div", "lang-name", item.name));
         card.append(ui.el("div", "lang-level", item.level));
-        const bar = ui.el("div", "lang-bar");
-        const fill = ui.el("div", "lang-fill");
-        fill.style.width = item.bar + "%";
-        bar.append(fill);
-        card.append(bar);
         langBlock.append(card);
       });
       mount.append(langBlock);
@@ -83,22 +78,6 @@
       }
       row.append(copy);
       mount.append(row);
-    });
-  }
-
-  function renderSkills() {
-    const mount = document.getElementById("skillGrid");
-    if (!mount) return;
-    ui.clear(mount);
-
-    ui.site.skillGroups.forEach((item) => {
-      const card = ui.el("article", "skill-card");
-      card.append(ui.el("div", "marker"));
-      card.append(ui.el("h3", "", item.title));
-      const chips = ui.el("div", "chip-row");
-      item.skills.forEach((skill) => chips.append(ui.el("span", "chip", skill)));
-      card.append(chips);
-      mount.append(card);
     });
   }
 
@@ -201,11 +180,16 @@
     const sections = [...document.querySelectorAll("#main > section:not(#start)")];
     sections.forEach((s) => s.classList.add("section-animate"));
 
+    // Reveal as soon as a section enters the viewport. A ratio threshold would
+    // never be reached by sections taller than the screen on phones.
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("is-visible");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0, rootMargin: "0px 0px -8% 0px" });
 
     sections.forEach((s) => observer.observe(s));
   }
@@ -214,7 +198,6 @@
     renderProfileCard();
     renderFacts();
     renderTimeline();
-    renderSkills();
     renderCases();
     renderContact();
   });

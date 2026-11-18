@@ -1,7 +1,7 @@
 <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
   <rect width="760" height="300" fill="#f6f8fb"></rect>
 
-  <text x="380" y="30" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em" data-t="0">FASHION STORE SCORE · BEWERTUNGSLOGIK</text>
+  <text x="380" y="30" text-anchor="middle" font-size="13" font-weight="800" fill="#0c1e48" letter-spacing="0.06em" data-t="0">RETAIL-CHECK · BEWERTUNGSLOGIK</text>
 
   <text x="130" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#1d4fa0" letter-spacing="0.04em" data-t="1">FLÄCHE &amp; PLATZIERUNG</text>
 
@@ -40,14 +40,14 @@
   <line x1="530" y1="180" x2="476" y2="152" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ss)"></line>
 
   <rect x="290" y="110" width="180" height="64" rx="8" fill="#edf2fa" stroke="#1d4fa0" stroke-width="1.5"></rect>
-  <text x="380" y="134" text-anchor="middle" font-size="12" font-weight="800" fill="#0c1e48" letter-spacing="0.04em" data-t="15">STORE SCORE</text>
+  <text x="380" y="134" text-anchor="middle" font-size="12" font-weight="800" fill="#0c1e48" letter-spacing="0.04em" data-t="15">SCORE</text>
   <text x="380" y="151" text-anchor="middle" font-size="10.5" fill="#1d4fa0" data-t="16">gewichtete Verknüpfung</text>
   <text x="380" y="166" text-anchor="middle" font-size="10.5" fill="#1d4fa0" data-t="17">Flächen vergleichbar machen</text>
 
   <line x1="380" y1="174" x2="380" y2="242" stroke="#d3dae8" stroke-width="1.5" marker-end="url(#ss)"></line>
 
   <rect x="240" y="246" width="280" height="24" rx="6" fill="#0c1e48"></rect>
-  <text x="380" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" data-t="18">Merchandising-Entscheidung mit Begründung</text>
+  <text x="380" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" data-t="18">Handlungsempfehlung mit Begründung</text>
 
   <text x="380" y="288" text-anchor="middle" font-size="10" fill="#58677a" data-t="19">Schematische Darstellung · keine realen Unternehmensdaten</text>
 
