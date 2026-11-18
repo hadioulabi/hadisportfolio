@@ -1,13 +1,15 @@
 # Digitaler Lebenslauf und Portfolio-Website
 
-Statische, dreisprachige Portfolio-Website fuer Hadi Oulabi (Englisch, Deutsch, Arabisch) mit Profil, Erfahrung, Kompetenzen, Kontakt und neun Cases zu Business Operations, ERP, Export, Buchhaltung, Messen, Retail Analytics, Markenforschung und KI-gestuetzter Automatisierung.
+Statische, dreisprachige Portfolio-Website fuer Hadi Oulabi (Englisch, Deutsch, Arabisch) mit Profil, Erfahrung, Kontakt und neun Cases zu Business Operations, ERP, Logistik und Export, Buchhaltung, CRM, Messen, Retail Analytics, Markenforschung und KI-gestuetzter Automatisierung.
 
 Die Seite ist als GitHub-Pages-ready Projekt aufgebaut: kein Backend, kein CMS, zentrale Datenpflege in JavaScript, schlanke HTML-Huellen fuer Startseite und Case-Seiten.
 
 ## Aktueller Stand
 
 - Startseite ohne Header, Hauptnavigation und Footer.
-- Profil, Timeline, Kompetenzen, Sprachen, Kontakt und Cases sind inhaltlich bereinigt.
+- Profil, Timeline, Sprachen, Kontakt und Cases sind auf dem Stand von Lebenslauf und Erfahrungsseite (11.2026).
+- Der fruehere Bereich Kompetenzen ist entfallen; die Kompetenzen zeigen sich in den Cases.
+- Mobil optimiert: Die Seiten werden bei 360-414 px nicht breiter als der Bildschirm. Case-Grafiken scrollen auf dem Handy seitlich, mit Hinweis darunter.
 - Alle sichtbaren Website-Seiten sollen gestalterisch im gleichen Stil weiterentwickelt werden.
 - Design-Referenz ist der Lebenslauf in `lebenslauf/Lebenslauf Hadi Oulabi.html`.
 - Die Seite startet standardmaessig auf Englisch. Der Sprachumschalter sitzt als schmale, mitscrollende Leiste oben rechts und wechselt zu Deutsch und Arabisch.
@@ -20,7 +22,9 @@ Die Seite ist als GitHub-Pages-ready Projekt aufgebaut: kein Backend, kein CMS, 
 ```text
 index.html
 cases/
-  fashion-store-score.html
+  retail-check.html
+  fashion-store-score.html   (Weiterleitung auf retail-check.html)
+  crm-ersatzteilvertrieb.html
   ki-prozessautomatisierung.html
   erp-einfuehrung.html
   brand-activism.html
@@ -49,14 +53,14 @@ assets/
 lebenslauf/
   Lebenslauf Hadi Oulabi.html
   Lebenslauf Hadi Oulabi.pdf
-  assets/hadi.jpg
+  assets/ (hadi.jpg, Schriften Inter und JetBrains Mono)
 outatex.jpg
 ```
 
 ## Content-Modell
 
 - `assets/js/content/<sprache>.js` ist die zentrale Inhaltsquelle, je eine Datei pro Sprache.
-- Jede Datei enthaelt denselben Aufbau: `meta`, `ui`, `profile`, `contact`, `timeline`, `skillGroups`, `cases`.
+- Jede Datei enthaelt denselben Aufbau: `meta`, `ui`, `profile`, `contact`, `timeline`, `svgText`, `cases`.
 - Neue Inhalte muessen in allen drei Dateien gepflegt werden, sonst faellt die Sprache auf leere Felder zurueck.
 - `assets/js/common.js` waehlt die Sprache, setzt `lang`/`dir`, baut den Sprachumschalter und rendert bei jedem Wechsel neu.
 - Statische Texte im HTML tragen `data-i18n="pfad.zum.text"` und werden daraus gefuellt.
@@ -88,26 +92,26 @@ Die Website zeigt Arbeit aus folgenden Bereichen:
 2. **ERP-Einfuehrung & internationales Onboarding**  
    Begleitung einer individuellen ERP-Einfuehrung mit Testing, Datenpflege, Schulung und laufender Betreuung.
 
-3. **Exportabwicklung A-Z**  
+3. **Logistikprozesse & Export**  
    Eigenstaendige Abwicklung groesserer Exportsendungen inkl. Spediteur, Ursprung, ABD und Versandvorbereitung.
 
 4. **Odoo & operative Buchhaltung**  
    Einrichtung und Nutzung von Odoo sowie Bearbeitung von Eingangs-/Ausgangsrechnungen und Altdaten.
 
 5. **Messevorbereitung**  
-   Vorbereitung von Techtextil Frankfurt 2026 und NASTEX Syrien 2026 mit Materialien, Standplanung und Koordination.
+   Vorbereitung von Techtextil Frankfurt (April 2026) und NASTEX Damaskus (Juli 2026) mit Materialien, Standplanung und Koordination.
 
-6. **Fashion Store Score**  
-   Retail-Analytics-Konzept im Dreierteam zur datenbasierten Bewertung von Verkaufsflaechen im Modehandel.
+6. **Retail-Check** (frueher Fashion Store Score)  
+   Digitales Tool im Dreierteam, das Verkaufsflaechen im Modehandel bewertet und mit dem Abverkauf abgleicht. Projekt von texmex, aktuell Pilotphase.
 
-7. **Semesterarbeit Brand Activism**  
-   Vergleichende visuelle Fallanalyse von Patagonia und Nike zur Rolle von Authentizitaet, Note 1,0.
+7. **Abschlussarbeit Brand Activism**  
+   Abschlussarbeit Textilbetriebswirt (BTE): vergleichende visuelle Fallanalyse von Patagonia und Nike zur Rolle von Authentizitaet, Note 1,0.
 
-8. **Egy Stitch & Tex Kairo 2026**  
+8. **Egypt Stitch & Tex Kairo 2026**  
    Messezyklus von Einladung und Kundenkommunikation ueber Material und Messetage bis zur Nachbereitung im CRM.
 
-9. **CRM & Controlling**  
-   Prozessinnovation bei Outatex. Platzhalter, Inhalte und Unterseite folgen.
+9. **CRM fuer den Ersatzteilvertrieb**  
+   CRM fuer den Ersatzteilvertrieb an Strickereien in Aegypten auf Basis von Google Drive (Sheets, Apps Script) und AppSheet: Segmentierung, Kampagnen, Techniker-Modul, Prospect-Modul.
 
 ## Pflegeprinzip
 
@@ -131,13 +135,14 @@ Entscheidungsregel:
 - ERP: konkrete Testfaelle, Schulungsform und laufende Betreuung weiter schaerfen.
 - Export: schwierige Sendung oder konkreten Problemfall ergaenzen.
 - Techtextil: Outcomes, Kontakte und Erkenntnisse nachtragen.
-- NASTEX: nach Juli 2026 vollstaendig aktualisieren.
+- NASTEX: Eindruecke und Ergebnisse nachtragen, falls vorhanden.
 - Odoo: Ausloeser, geschulte Personen und Startprobleme genauer festhalten.
-- Store Score: Validierung der Bewertungslogik und Erhebungsaufwand dokumentieren.
+- Retail-Check: Ergebnisse der Pilotphase nachtragen.
 - Groz-Beckert: Praktikum im TEZ nach ersten Wochen inhaltlich schaerfen.
-- CRM & Controlling: Inhalte erarbeiten und Case-Unterseite anlegen.
+- CRM: Startmonat nachtragen (aktuell "2026, laufend").
+- texmex: Startmonat nachtragen (aktuell "2026 - laufend").
 - Egy Stitch & Tex: konkretes Datum, Ergebnisse und Kontaktzahlen nachtragen.
-- Semesterarbeit: genauen Zeitraum der Arbeit ergaenzen.
+- Abschlussarbeit: Abgabedatum ergaenzen.
 
 ## Sensibilitaet
 

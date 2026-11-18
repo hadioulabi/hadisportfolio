@@ -155,6 +155,8 @@
     const wrap = ui.el("div", "evidence-visual");
     mountDiagram(wrap, data);
     container.append(wrap);
+    const hint = ui.site.ui.caseLabels.swipeHint;
+    if (hint) container.append(ui.el("p", "swipe-hint", hint));
     section.append(container);
     return section;
   }

@@ -301,3 +301,24 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Hint under a diagram that scrolls sideways on phones. */
+.swipe-hint {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .swipe-hint {
+    display: block;
+    margin: var(--space-2) 0 0;
+    color: var(--color-muted);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+  }
+
+  [dir="rtl"] .swipe-hint {
+    font-family: var(--font-sans);
+    letter-spacing: 0;
+  }
+}
